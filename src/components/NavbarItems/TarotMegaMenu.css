@@ -1,0 +1,97 @@
+.tarot-navbar-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+  
+  .tarot-navbar-link {
+    color: var(--ifm-navbar-link-color);
+    font-weight: 500;
+  }
+  
+  .tarot-mega-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -50px;
+    z-index: 1000;
+    min-width: 700px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 20px;
+    animation: fadeIn 0.2s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .tarot-mega-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tarot-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 20px;
+  }
+  
+  .tarot-section-title {
+    color: #8a4baf;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(138, 75, 175, 0.2);
+  }
+  
+  .tarot-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tarot-link-item {
+    margin: 8px 0;
+  }
+  
+  .tarot-link {
+    display: flex;
+    align-items: center;
+    color: var(--ifm-font-color-base);
+    text-decoration: none;
+    padding: 6px 0;
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .tarot-link:hover {
+    color: #8a4baf;
+  }
+  
+  .tarot-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #8a4baf;
+    font-size: 1.2rem;
+  }
+  
+  /* Dark mode support */
+  html[data-theme='dark'] .tarot-mega-dropdown {
+    background: #1c1e21;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  html[data-theme='dark'] .tarot-section-title {
+    color: #bb86fc;
+    border-bottom-color: rgba(187, 134, 252, 0.2);
+  }
+  
+  html[data-theme='dark'] .tarot-link:hover,
+  html[data-theme='dark'] .tarot-icon {
+    color: #bb86fc;
+  }

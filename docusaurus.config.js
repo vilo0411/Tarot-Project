@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tarot Guide Online',
+  tagline: 'Hướng dẫn toàn diện về bộ bài Tarot',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -76,9 +76,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'tarotguideonline',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Torotpedia Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -86,7 +86,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tài liệu',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -100,33 +100,41 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tài liệu',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Giới thiệu',
                 to: '/docs/intro',
               },
+              {
+                label: 'Các lá bài',
+                to: '/docs/cards',
+              },
+              {
+                label: 'Cách trải bài',
+                to: '/docs/spreads',
+              },
             ],
           },
           {
-            title: 'Community',
+            title: 'Cộng đồng',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discordapp.com/invite/your-tarot-community',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/your-tarot-page',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/your-tarot-account',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Thêm',
             items: [
               {
                 label: 'Blog',
@@ -134,17 +142,19 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/your-github-user/tarot-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Tarot Docs. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      hideableSidebar: true,               // Cho phép ẩn/hiện sidebar
+      autoCollapseSidebarCategories: false, // Không tự động thu gọn danh mục
     }),
 };
 
