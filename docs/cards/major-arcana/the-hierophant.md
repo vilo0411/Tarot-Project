@@ -3,6 +3,6 @@ sidebar_position: 05
 title: "05 - The Hierophant"
 ---
 
-<userStyle>Normal</userStyle>
+![The Hierophant](/img/deck/m05.jpg)
 
 

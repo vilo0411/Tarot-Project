@@ -3,6 +3,6 @@ sidebar_position: 19
 title: "19 - The Sun"
 ---
 
-<userStyle>Normal</userStyle>
+![The Sun](/img/deck/m19.jpg)
 
 

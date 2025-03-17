@@ -3,6 +3,6 @@ sidebar_position: 04
 title: "04 - The Emperor"
 ---
 
-<userStyle>Normal</userStyle>
+![The Emperor](/img/deck/m04.jpg)
 
 

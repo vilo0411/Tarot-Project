@@ -1,8 +1,8 @@
 ---
 sidebar_position: 03
-title: "21 - The Empress"
+title: "03 - The Empress"
 ---
 
-<userStyle>Normal</userStyle>
+![The Empress](/img/deck/m03.jpg)
 
 

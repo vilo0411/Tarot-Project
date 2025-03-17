@@ -3,6 +3,6 @@ sidebar_position: 8
 title: "08 - Strength"
 ---
 
-<userStyle>Normal</userStyle>
+![Strength](/img/deck/m08.jpg)
 
 

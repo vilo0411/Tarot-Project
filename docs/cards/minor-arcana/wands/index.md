@@ -3,52 +3,12 @@ sidebar_position: 1
 title: Wands (Gậy)
 ---
 
-import CardLayout from '@site/src/components/CardLayout';
-
-# Wands (Gậy)
+import TarotCardGallery from '@site/src/components/TarotCardGallery';
 
 Wands là một trong bốn chất của Bộ Ẩn Phụ, đại diện cho nguyên tố Lửa và liên quan đến năng lượng, đam mê, sáng tạo, hành động, tinh thần và tiến trình cá nhân.
 
-<CardLayout 
-  categories={[
-    {
-      title: 'Ace of Wands (Át Gậy)',
-      description: 'Sự khởi đầu mới, cảm hứng, năng lượng sáng tạo và động lực',
-      link: '/docs/cards/minor-arcana/wands/ace-of-wands',
-      icon: '🔥',
-    },
-    {
-      title: 'Two of Wands (2 Gậy)',
-      description: 'Lập kế hoạch, quyết định, chuẩn bị và nhìn xa trông rộng',
-      link: '/docs/cards/minor-arcana/wands/two-of-wands',
-      icon: '🔥',
-    },
-    {
-      title: 'Three of Wands (3 Gậy)',
-      description: 'Mở rộng, thăm dò, phát triển và nhìn xa hơn chân trời',
-      link: '/docs/cards/minor-arcana/wands/three-of-wands',
-      icon: '🔥',
-    },
-    {
-      title: 'Four of Wands (4 Gậy)',
-      description: 'Ăn mừng, hài hòa, ổn định và thành tựu',
-      link: '/docs/cards/minor-arcana/wands/four-of-wands',
-      icon: '🔥',
-    },
-    {
-      title: 'Five of Wands (5 Gậy)',
-      description: 'Xung đột, cạnh tranh, tranh luận và thử thách',
-      link: '/docs/cards/minor-arcana/wands/five-of-wands',
-      icon: '🔥',
-    },
-    {
-      title: 'Six of Wands (6 Gậy)',
-      description: 'Chiến thắng, công nhận, thành công và tự tin',
-      link: '/docs/cards/minor-arcana/wands/six-of-wands',
-      icon: '🔥',
-    },
-  ]}
-/>
+<TarotCardGallery category="wands" />
+
 
 ## Ý nghĩa tổng quát
 

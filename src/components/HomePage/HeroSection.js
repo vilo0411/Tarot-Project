@@ -1,11 +1,55 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { useColorMode } from '@docusaurus/theme-common';
 
 export default function HeroSection() {
+  const { colorMode } = useColorMode();
+  const isDarkTheme = colorMode === 'dark';
+
   return (
-    <div className="grid-background">
+    <div className={`hero-grid-background ${isDarkTheme ? 'dark' : ''}`}>
       <div className="hero-container">
         <style jsx>{`
+          /* Grid background that adapts to dark mode */
+          .hero-grid-background {
+            position: relative;
+            width: 100%;
+            background-color: var(--ifm-background-color);
+            background-image:
+              linear-gradient(rgba(209, 213, 219, 0.15) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(209, 213, 219, 0.15) 1px, transparent 1px);
+            background-size: 60px 60px;
+            background-position: -1px -1px;
+          }
+          
+          .hero-grid-background.dark {
+            background-image:
+              linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+          }
+          
+          .hero-grid-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+              linear-gradient(rgba(209, 213, 219, 0.05) 2px, transparent 2px),
+              linear-gradient(90deg, rgba(209, 213, 219, 0.05) 2px, transparent 2px);
+            background-size: 30px 30px;
+            pointer-events: none;
+          }
+          
+          .hero-grid-background.dark::before {
+            background-image:
+              linear-gradient(rgba(255, 255, 255, 0.03) 2px, transparent 2px),
+              linear-gradient(90deg, rgba(255, 255, 255, 0.03) 2px, transparent 2px);
+          }
+
           .hero-container {
             padding: 40px 20px;
             max-width: 1200px;
@@ -20,13 +64,14 @@ export default function HeroSection() {
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
+            color: var(--ifm-heading-color);
           }
           
           .hero-description {
             max-width: 800px;
             margin: 0 auto 40px;
             text-align: center;
-            color: #666;
+            color: var(--ifm-color-emphasis-700);
             font-size: 1.1rem;
             line-height: 1.6;
           }
@@ -50,13 +95,12 @@ export default function HeroSection() {
             position: relative;
             border-radius: 16px;
             overflow: hidden;
-            border: 1px solid #e5e7eb;
+            border: 1px solid var(--ifm-color-emphasis-200);
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
             transition: all 0.3s ease;
             text-decoration: none !important;
             display: flex;
             flex-direction: column;
-            background-color: #fff;
           }
           
           .card:hover {
@@ -76,7 +120,7 @@ export default function HeroSection() {
           
           .card-content {
             padding: 24px;
-            color: #333;
+            color: var(--ifm-font-color-base);
           }
           
           .card-title {
@@ -84,7 +128,7 @@ export default function HeroSection() {
             align-items: center;
             font-size: 1.25rem;
             font-weight: bold;
-            color: #333;
+            color: var(--ifm-heading-color);
             transition: color 0.3s ease;
             margin-bottom: 12px;
             text-decoration: none !important;
@@ -97,7 +141,7 @@ export default function HeroSection() {
           
           .card-description {
             font-size: 0.95rem;
-            color: #666;
+            color: var(--ifm-color-emphasis-700);
             line-height: 1.5;
             text-decoration: none !important;
           }
@@ -118,13 +162,13 @@ export default function HeroSection() {
             color: inherit;
           }
           
-          /* Card-specific styles */
+          /* Card-specific styles adapted for both light/dark modes */
           .card-meanings {
-            background: #ffffff;
+            background: var(--ifm-background-color);
           }
           
           .card-meanings:hover {
-            background: linear-gradient(to top right, #ffffff, #ffffff, rgba(30, 64, 175, 0.1));
+            background: linear-gradient(to top right, var(--ifm-background-color), var(--ifm-background-color), rgba(30, 64, 175, 0.1));
             border-color: #1e40af;
           }
           
@@ -137,37 +181,37 @@ export default function HeroSection() {
           }
           
           .card-spreads {
-            background: #f0f9ff;
+            background: ${isDarkTheme ? '#1a2536' : '#f0f9ff'};
           }
           
           .card-spreads:hover {
-            background: linear-gradient(to top right, #f0f9ff, #f0f9ff, rgba(126, 34, 206, 0.1));
+            background: linear-gradient(to top right, ${isDarkTheme ? '#1a2536' : '#f0f9ff'}, ${isDarkTheme ? '#1a2536' : '#f0f9ff'}, rgba(126, 34, 206, 0.1));
             border-color: #7e22ce;
           }
           
           .card-spreads:hover .card-title {
-            color: #7e22ce;
+            color: ${isDarkTheme ? '#a78bfa' : '#7e22ce'};
           }
           
           .card-spreads .card-icon {
-            color: #7e22ce;
+            color: ${isDarkTheme ? '#a78bfa' : '#7e22ce'};
           }
           
           .card-readings {
-            background: #fffbeb;
+            background: ${isDarkTheme ? '#2c271e' : '#fffbeb'};
           }
           
           .card-readings:hover {
-            background: linear-gradient(to top right, #fffbeb, #fffbeb, rgba(194, 65, 12, 0.1));
+            background: linear-gradient(to top right, ${isDarkTheme ? '#2c271e' : '#fffbeb'}, ${isDarkTheme ? '#2c271e' : '#fffbeb'}, rgba(194, 65, 12, 0.1));
             border-color: #c2410c;
           }
           
           .card-readings:hover .card-title {
-            color: #c2410c;
+            color: ${isDarkTheme ? '#f97316' : '#c2410c'};
           }
           
           .card-readings .card-icon {
-            color: #c2410c;
+            color: ${isDarkTheme ? '#f97316' : '#c2410c'};
           }
         `}</style>
 
@@ -231,7 +275,7 @@ export default function HeroSection() {
   );
 }
 
-// Dữ liệu tính năng Tarot
+// Dữ liệu tính năng Tarot với hình ảnh cho cả Light và Dark mode
 const TAROT_FEATURES = [
   {
     title: 'Card Meanings',

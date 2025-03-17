@@ -3,6 +3,6 @@ sidebar_position: 11
 title: "11 - Justice"
 ---
 
-<userStyle>Normal</userStyle>
+![Justice](/img/deck/m11.jpg)
 
 

@@ -3,6 +3,6 @@ sidebar_position: 12
 title: "12 - The Hanged Man"
 ---
 
-<userStyle>Normal</userStyle>
+![The Hanged Man](/img/deck/m12.jpg)
 
 

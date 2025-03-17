@@ -5,7 +5,7 @@ title: "00 - The Fool"
 
 # The Fool (Lá Kẻ Khờ)
 
-<!-- ![The Fool Card](/img/cards/the-fool.jpg) -->
+![The Fool Card](/img/deck/m00.jpg)
 
 *Số 0 - Bộ Ẩn Chính (Major Arcana)*
 

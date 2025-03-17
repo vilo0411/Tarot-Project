@@ -1,0 +1,84 @@
+.cardGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+  
+  .cardLink {
+    text-decoration: none !important;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+  }
+  
+  .cardContainer {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--ifm-card-background-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardLink:hover .cardContainer {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    width: 100%;
+    aspect-ratio: 3/5;  /* Typical ratio for tarot cards */
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+  }
+  
+  .cardName {
+    padding: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--ifm-font-color-base);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .cardGallery {
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 12px;
+    }
+    
+    .cardName {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Hover Effect */
+  .cardLink:hover .cardImage {
+    filter: brightness(1.05);
+  }
+  
+  /* Card Category Color Indicators */
+  [data-card-category="major"] .cardContainer {
+    border-bottom: 3px solid #9333ea;  /* Purple for Major Arcana */
+  }
+  
+  [data-card-category="cups"] .cardContainer {
+    border-bottom: 3px solid #0ea5e9;  /* Blue for Cups */
+  }
+  
+  [data-card-category="swords"] .cardContainer {
+    border-bottom: 3px solid #64748b;  /* Slate for Swords */
+  }
+  
+  [data-card-category="wands"] .cardContainer {
+    border-bottom: 3px solid #f59e0b;  /* Amber for Wands */
+  }
+  
+  [data-card-category="pentacles"] .cardContainer {
+    border-bottom: 3px solid #10b981;  /* Emerald for Pentacles */
+  }
