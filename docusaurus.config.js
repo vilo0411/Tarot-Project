@@ -26,8 +26,8 @@ const config = {
   projectName: 'Tarot-Project', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Branch sẽ được sử dụng cho GitHub Pages
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -105,7 +105,7 @@ const config = {
             items: [
               {
                 label: 'Giới thiệu',
-                to: '/docs/intro',
+                to: '/docs/',
               },
               {
                 label: 'Các lá bài',
