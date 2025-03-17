@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktarot_project=self.webpackChunktarot_project||[]).push([[9647],{8122:(e,r,t)=>{t.r(r),t.d(r,{default:()=>p});t(6540);var s=t(4164),a=t(1082),c=t(204),u=t(2831),o=t(1410),n=t(4848);function p(e){return(0,n.jsx)(a.e3,{className:(0,s.A)(c.G.wrapper.docsPages),children:(0,n.jsx)(o.A,{children:(0,u.v)(e.route.routes)})})}}}]);
