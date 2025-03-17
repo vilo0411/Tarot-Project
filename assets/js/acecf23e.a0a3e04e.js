@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktarot_project=self.webpackChunktarot_project||[]).push([[1903],{1912:t=>{t.exports=JSON.parse('{"blogBasePath":"/Tarot-Project/blog","blogTitle":"Blog","authorsListPath":"/Tarot-Project/blog/authors"}')}}]);
