@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktarot_project=self.webpackChunktarot_project||[]).push([[4572],{4210:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"spreads"}')}}]);
