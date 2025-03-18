@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import styles from './TarotCardGallery.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function TarotCardGallery({ category }) {
   const { colorMode } = useColorMode();
@@ -36,8 +37,8 @@ export default function TarotCardGallery({ category }) {
           className={styles.cardLink}
         >
           <div className={styles.cardContainer}>
-            <img 
-              src={`/img/deck/${card.imageFilename}`} 
+            <img  
+              src={require(`@site/static/img/deck/${card.imageFilename}`).default} 
               alt={card.name}
               className={styles.cardImage}
             />

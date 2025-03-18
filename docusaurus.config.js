@@ -24,7 +24,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vilo0411', // Usually your GitHub org/user name.
   projectName: 'Tarot-Project', // Usually your repo name.
-  deploymentBranch: 'gh-pages', // Branch sẽ được sử dụng cho GitHub Pages
+  deploymentBranch: 'demo', // Branch sẽ được sử dụng cho GitHub Pages
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
