@@ -58,7 +58,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/vilo0411/Tarot-Project/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -68,6 +68,27 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'cards',
+        path: 'cards',
+        routeBasePath: 'cards',
+        sidebarPath: require.resolve('./sidebars-cards.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'spreads',
+        path: 'spreads',
+        routeBasePath: 'spreads',
+        sidebarPath: require.resolve('./sidebars-spreads.js'),
+      },
     ],
   ],
 
@@ -89,6 +110,18 @@ const config = {
             position: 'left',
             label: 'Tài liệu',
           },
+          {
+            to: '/cards/',
+            activeBasePath: '/cards/',
+            label: 'Tarot Cards',
+            position: 'left',
+          },
+          {
+            to: '/spreads/',
+            activeBasePath: '/spreads/',
+            label: 'Tarot Spreads',
+            position: 'left',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -109,11 +142,11 @@ const config = {
               },
               {
                 label: 'Các lá bài',
-                to: '/docs/cards',
+                to: '/cards',
               },
               {
                 label: 'Cách trải bài',
-                to: '/docs/spreads',
+                to: '/spreads',
               },
             ],
           },

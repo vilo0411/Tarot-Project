@@ -279,21 +279,21 @@ export default function HeroSection() {
 const TAROT_FEATURES = [
   {
     title: 'Card Meanings',
-    link: '/docs/cards',
+    link: '/cards',
     icon: '♠️',
     text: 'Explore the detailed meanings of all 78 Tarot cards, including Major and Minor Arcana with upright and reversed interpretations.',
     cardClass: 'card-meanings',
   },
   {
     title: 'Spreads',
-    link: '/docs/spreads',
+    link: '/spreads',
     icon: '🔮',
     text: 'Discover various Tarot spreads for different purposes - from simple three-card spreads to complex Celtic Cross layouts.',
     cardClass: 'card-spreads',
   },
   {
     title: 'Interactive Readings',
-    link: '/docs/readings',
+    link: '/readings',
     icon: '✨',
     text: 'Try our interactive Tarot reading tool to gain insights into your questions and situations with personalized interpretations.',
     cardClass: 'card-readings',
