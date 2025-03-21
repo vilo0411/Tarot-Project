@@ -1,3 +1,11 @@
+---
+sidebar_position: 5
+title: "Five of Wands"
+description: "Xung đột và cạnh tranh."
+image: /img/deck/w05.jpg
+keywords: [Five of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot 5 of Wands: Xung Đột, Cạnh Tranh và Thử Thách
 
 ![Five of Wands](/img/deck/w05.jpg)

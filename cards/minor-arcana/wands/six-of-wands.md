@@ -1,3 +1,11 @@
+---
+sidebar_position: 6
+title: "Six of Wands"
+description: "Chiến thắng và công nhận."
+image: /img/deck/w06.jpg
+keywords: [Six of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot 6 of Wands (6 Gậy): Chiến Thắng, Thành Công và Được Công Nhận
 
 

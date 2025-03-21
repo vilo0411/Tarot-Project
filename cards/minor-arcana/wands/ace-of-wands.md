@@ -1,3 +1,12 @@
+---
+sidebar_position: 1
+title: "Ace of Wands"
+description: "Nguồn cảm hứng và động lực."
+image: /img/deck/w01.jpg
+keywords: [Ace of Wands]
+---
+
+
 
 # Ý Nghĩa Lá Bài Tarot Ace of Wands: Nguồn Cảm Hứng, Khởi Đầu Mới và Tiềm Năng
 

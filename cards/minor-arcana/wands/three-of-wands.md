@@ -1,3 +1,11 @@
+---
+sidebar_position: 3
+title: "Three of Wands"
+description: "Tầm nhìn và cơ hội phía trước."
+image: /img/deck/w03.jpg
+keywords: [Three of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot 3 of Wands: Tầm Nhìn, Mở Rộng và Tiến Bộ
 
 ![Three of Wands](/img/deck/w03.jpg)

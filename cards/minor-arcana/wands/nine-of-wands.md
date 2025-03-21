@@ -1,3 +1,11 @@
+---
+sidebar_position: 9
+title: "Nine of Wands"
+description: "Kiên trì và bảo vệ."
+image: /img/deck/w09.jpg
+keywords: [Nine of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot 9 of Wands: Sự Kiên Trì, Phòng Thủ, và Sức Mạnh Nội Tâm
 
 

@@ -1,3 +1,11 @@
+---
+sidebar_position: 10
+title: "Ten of Wands"
+description: "Gánh nặng và trách nhiệm."
+image: /img/deck/w10.jpg
+keywords: [Ten of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot 10 of Wands (10 Gậy): Gánh Nặng, Trách Nhiệm, và Sự Kiệt Sức
 
 

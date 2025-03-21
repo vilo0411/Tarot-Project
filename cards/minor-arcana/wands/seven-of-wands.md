@@ -1,3 +1,11 @@
+---
+sidebar_position: 7
+title: "Seven of Wands"
+description: "Bảo vệ quan điểm và thách thức."
+image: /img/deck/w07.jpg
+keywords: [Seven of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot Seven of Wands (7 Gậy): Sự Kiên Trì, Đối Mặt Thách Thức và Bảo Vệ Lập Trường
 
 

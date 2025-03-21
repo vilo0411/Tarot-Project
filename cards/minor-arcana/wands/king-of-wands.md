@@ -1,3 +1,11 @@
+---
+sidebar_position: 14
+title: "King of Wands"
+description: "Lãnh đạo và tham vọng."
+image: /img/deck/w14.jpg
+keywords: [King of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot King of Wands: Quyền Lực, Tầm Nhìn và Sự Lãnh Đạo
 
 

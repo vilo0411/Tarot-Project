@@ -1,3 +1,11 @@
+---
+sidebar_position: 11
+title: "Page of Wands"
+description: "Khám phá và sáng tạo."
+image: /img/deck/w11.jpg
+keywords: [Page of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot Page of Wands: Sự Khám Phá, Đam Mê và Khởi Đầu Mới
 
 ![Page of Wands](/img/deck/w11.jpg)

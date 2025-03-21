@@ -42,31 +42,32 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/vilo0411/Tarot-Project/edit/main/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/vilo0411/Tarot-Project/edit/main/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        docs: false,
+        //   sidebarPath: './sidebars.js',
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/vilo0411/Tarot-Project/edit/main/',
+        // },
+        // blog: false,
+        // //   {
+        // //   showReadingTime: true,
+        // //   feedOptions: {
+        // //     type: ['rss', 'atom'],
+        // //     xslt: true,
+        // //   },
+        // //   // Please change this to your repo.
+        // //   // Remove this to remove the "edit this page" links.
+        // //   editUrl:
+        // //     'https://github.com/vilo0411/Tarot-Project/edit/main/',
+        // //   // Useful options to enforce blogging best practices
+        // //   onInlineTags: 'warn',
+        // //   onInlineAuthors: 'warn',
+        // //   onUntruncatedBlogPosts: 'warn',
+        // // },
+        // theme: {
+        //   customCss: './src/css/custom.css',
+        // },
       }),
     ],
   ],
@@ -105,12 +106,6 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tài liệu',
-          },
-          {
             to: '/cards/',
             activeBasePath: '/cards/',
             label: 'Tarot Cards',
@@ -122,7 +117,6 @@ const config = {
             label: 'Tarot Spreads',
             position: 'left',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -137,16 +131,16 @@ const config = {
             title: 'Tài liệu',
             items: [
               {
-                label: 'Giới thiệu',
-                to: '/docs/',
-              },
-              {
                 label: 'Các lá bài',
                 to: '/cards',
               },
               {
                 label: 'Cách trải bài',
                 to: '/spreads',
+              },
+              {
+                label: 'Xem bài',
+                to: '/tarot-reading',
               },
             ],
           },
@@ -170,10 +164,6 @@ const config = {
           {
             title: 'Thêm',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/your-github-user/tarot-docs',

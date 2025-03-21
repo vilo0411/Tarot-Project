@@ -1,3 +1,11 @@
+---
+sidebar_position: 12
+title: "Knight of Wands"
+description: "Nhiệt huyết và hành động táo bạo."
+image: /img/deck/w12.jpg
+keywords: [Knight of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot Knight of Wands (Hiệp Sĩ Gậy): Phiêu Lưu, Đam Mê và Hành Động
 
 ![Knight of Wands](/img/deck/w12.jpg)

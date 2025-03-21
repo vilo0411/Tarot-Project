@@ -1,3 +1,11 @@
+---
+sidebar_position: 13
+title: "Queen of Wands"
+description: "Tự tin và đam mê."
+image: /img/deck/w13.jpg
+keywords: [Queen of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot Queen of Wands: Sự Tự Tin, Đam Mê và Quyền Năng
 
 

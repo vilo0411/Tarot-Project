@@ -293,7 +293,7 @@ const TAROT_FEATURES = [
   },
   {
     title: 'Interactive Readings',
-    link: '/readings',
+    link: '/tarot-reading',
     icon: '✨',
     text: 'Try our interactive Tarot reading tool to gain insights into your questions and situations with personalized interpretations.',
     cardClass: 'card-readings',

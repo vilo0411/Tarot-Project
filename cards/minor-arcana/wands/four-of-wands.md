@@ -1,3 +1,11 @@
+---
+sidebar_position: 4
+title: "Four of Wands"
+description: "Ăn mừng và nền tảng vững chắc."
+image: /img/deck/w04.jpg
+keywords: [Four of Wands]
+---
+
 # Ý Nghĩa Lá Bài Tarot Four of Wands (4 Gậy): Sự Ổn Định, Kỷ Niệm và Cộng Đồng
 
 ![Four of Wands](/img/deck/w04.jpg)
