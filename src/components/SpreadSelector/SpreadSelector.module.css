@@ -1,0 +1,43 @@
+.spreadSelector {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(20, 20, 50, 0.3);
+  border-radius: 15px;
+}
+
+.spreadOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.spreadOption {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.spreadOption:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.spreadOption.selected {
+  border-color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.spreadOption h4 {
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.spreadOption p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+} 

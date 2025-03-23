@@ -1,0 +1,100 @@
+.readingResult {
+  width: 100%;
+  padding: 30px;
+  background: rgba(20, 20, 50, 0.3);
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.cardSlot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.cardWrapper {
+  width: 220px;
+  height: 380px;
+  transition: transform 0.3s ease;
+}
+
+/* Style cho ảnh bên trong TarotCard */
+.cardWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Xoay ngược lá bài khi isReversed = true */
+.reversed {
+  transform: rotate(180deg);
+}
+
+.cardInfo {
+  margin-top: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.position {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 5px;
+}
+
+.cardName {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.orientation {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.resetButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resetButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cardsContainer {
+    gap: 20px;
+  }
+
+  .cardSlot {
+    width: 150px;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .cardName {
+    font-size: 0.9rem;
+  }
+} 

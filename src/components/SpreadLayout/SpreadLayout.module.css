@@ -1,0 +1,77 @@
+.spreadLayout {
+  width: 100%;
+  padding: 30px;
+  background: rgba(20, 20, 50, 0.3);
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.layout {
+  position: relative;
+  min-height: 500px;
+}
+
+/* Layout cho 1 lá */
+.layout1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout cho 3 lá */
+.layout3 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Layout cho 5 lá (Cross spread) */
+.layout5 {
+  display: grid;
+  grid-template-areas:
+    ". top ."
+    "left center right"
+    ". bottom .";
+  gap: 20px;
+  justify-content: center;
+}
+
+.layout5 .top { grid-area: top; }
+.layout5 .left { grid-area: left; }
+.layout5 .center { grid-area: center; }
+.layout5 .right { grid-area: right; }
+.layout5 .bottom { grid-area: bottom; }
+
+.cardPosition {
+  position: relative;
+  width: 220px;
+  text-align: center;
+  transition: none;
+}
+
+.positionInfo {
+  margin-top: 15px;
+}
+
+.positionInfo h4 {
+  margin: 0;
+  color: white;
+}
+
+.positionInfo p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.emptyPosition {
+  width: 220px;
+  height: 380px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+} 

@@ -226,6 +226,9 @@
     text-align: center;
   }
 
+  .analysisResults {
+    margin-top: 30px;
+  }
 
   .markdownContainer {
     text-align: left;

@@ -1,0 +1,73 @@
+.selectedCardsWrapper {
+  width: 100%;
+  background: rgba(20, 20, 50, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.selectedCardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.selectedCardSlot {
+  position: relative;
+  width: 180px;
+}
+
+/* Override mọi hiệu ứng từ CardSelector */
+.selectedCardSlot .cardContainer {
+  margin: 0;
+  transform: none !important;
+  transition: none !important;
+  cursor: default;
+}
+
+.selectedCardSlot .cardContainer:hover {
+  transform: none !important;
+  z-index: auto !important;
+}
+
+.positionLabel {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Vô hiệu hóa mọi hiệu ứng hover và transition */
+.selectedCardSlot * {
+  pointer-events: none;
+}
+
+.emptyState {
+  text-align: center;
+}
+
+.emptySlots {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.emptySlot {
+  width: 180px;
+  height: 280px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.emptyState p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+} 

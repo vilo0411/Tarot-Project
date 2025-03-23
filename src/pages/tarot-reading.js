@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
-import CardSelector from '../components/CardSelector';
-import TarotResult from '../components/TarotResult';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import CardSelector from '../components/CardSelector/CardSelector';
+import SpreadSelector from '../components/SpreadSelector/SpreadSelector';
+import SpreadLayout from '../components/SpreadLayout/SpreadLayout';
+import TarotResult from '../components/TarotResult/TarotResult';
 import styles from './tarot-reading.module.css';
 import ReactMarkdown from 'react-markdown';
+import { useSound } from '../hooks/useSound';
 
 function TarotReading() {
   // Tarot card generation with robust error handling
@@ -55,6 +59,11 @@ function TarotReading() {
   const [apiError, setApiError] = useState(null);
   const [readingAnalysis, setReadingAnalysis] = useState(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const { playSound } = useSound();
+  const [selectedSpread, setSelectedSpread] = useState(null);
+
+  // Cập nhật MAX_CARDS dựa trên spread đã chọn
+  const MAX_CARDS = selectedSpread?.count || 3;
 
   // Gemini API configuration
   const GEMINI_API_KEY = 'AIzaSyDo_UPahCaXZIdtGGVDMJy6QrPhLh2gE44';
@@ -88,12 +97,27 @@ function TarotReading() {
         `${card.name}${card.isReversed ? ' (Ngược)' : ' (Thuận)'}`
       ).join(', ');
       
-      const prompt = `Bạn là 1 Tarot Reader chuyên nghiệp. Người dùng sẽ nhập câu hỏi và rút bài. Phương pháp trải bài sẽ là phương pháp 3 lá. Giải nghĩa bói bài tarot bằng tiếng Việt. 
-        Câu hỏi là: ${question}. 
-        Các lá bài được chọn lần lượt là: ${cardsWithPositions}. 
-        Cung cấp một giải thích chi tiết về ý nghĩa từng lá bài và mối quan hệ giữa chúng, 
-        có tính đến vị trí thuận/ngược của từng lá. 
-        Kết luận với lời khuyên và hướng dẫn cụ thể cho người đặt câu hỏi.`;
+      const prompt = `Bạn là 1 Tarot Reader chuyên nghiệp. Người dùng sẽ nhập câu hỏi và rút bài. Giải nghĩa bói bài tarot bằng tiếng Việt. 
+      Câu hỏi là: ${question}. 
+      Các lá bài được chọn lần lượt là: ${cardsWithPositions}. 
+
+      # Các bước thực hiện:
+      1. **Hiểu câu hỏi**: Đọc kỹ và hiểu rõ câu hỏi được đặt ra. Nếu không rõ ràng, hãy suy luận nhiều nhất có thể từ thông tin hiện có.
+      2. **Phân tích từng lá bài**: Với mỗi lá bài được rút, cung cấp giải thích chi tiết bao gồm:
+         - Ý nghĩa khi lá xuôi (và ý nghĩa khi lá ngược, nếu cần) và sự liên quan của lá bài đến câu hỏi được đặt ra. Tối đa 200 từ
+      3. **Tổng hợp bài đọc**: Đưa ra tổng hợp mạch lạc về các lá bài để cung cấp câu trả lời có ý nghĩa.
+
+      # Định dạng đầu ra:
+      - Bắt đầu với câu hỏi bạn đang giải đáp.
+      - Liệt kê các lá bài tarot được rút.
+      - Cung cấp giải thích cho từng lá bài, có tính đến vị trí thuận/ngược và mối liên hệ với câu hỏi. Tối đa 200 từ.
+      - Phân tích mối quan hệ giữa các lá bài và ý nghĩa tổng thể.
+      - Kết luận với lời khuyên và hướng dẫn cụ thể cho người đặt câu hỏi.
+
+      # Lưu ý:
+      - Xem xét bối cảnh và tình huống hiện tại khi giải thích.
+      - Duy trì sự nhạy cảm và tôn trọng niềm tin của người hỏi.
+      - Kết luận luôn phải duy trì sự liên quan với câu hỏi`;
       
       const response = await fetch(
         `${GEMINI_API_ENDPOINT}?key=${GEMINI_API_KEY}`,
@@ -172,14 +196,11 @@ function TarotReading() {
   // Start reading method with improved loading UX
   const startReading = async () => {
     if (question.trim() && selectedCards.length === 3) {
-      // Set loading state immediately
       setIsAnalyzing(true);
+      playSound('card-flip');
       
       try {
-        // Skip question analysis and go directly to reading analysis
         await analyzeReading(question, selectedCards);
-        
-        // Set reading state after analysis is complete
         setIsReading(true);
       } catch (error) {
         console.error('Reading analysis error:', error);
@@ -246,6 +267,10 @@ function TarotReading() {
     );
   };
 
+  const handleCardSelect = (card) => {
+    setSelectedCards([...selectedCards, card]);
+  };
+
   return (
     <Layout title="Bói Bài Tarot" description="Trải Bài Tarot Trực Tuyến">
       <div className={styles.container}>
@@ -259,15 +284,29 @@ function TarotReading() {
           disabled={isReading || isAnalyzing}
         />
         
+        <SpreadSelector
+          onSelectSpread={setSelectedSpread}
+          selectedSpread={selectedSpread}
+        />
+
+        {selectedSpread && (
+          <>
+            <CardSelector
+              shuffledCards={shuffledCards}
+              selectedCards={selectedCards}
+              onCardSelect={handleCardSelect}
+              maxCards={selectedSpread.count}
+            />
+
+            <SpreadLayout
+              selectedCards={selectedCards}
+              spreadType={selectedSpread}
+            />
+          </>
+        )}
+        
         {!isReading && !isAnalyzing ? (
           <>
-            <h2>Chọn 3 Lá Bài (Bắt Buộc)</h2>
-            <CardSelector 
-              shuffledCards={shuffledCards || []}
-              selectedCards={selectedCards}
-              onCardSelect={selectCard}
-            />
-            
             <button 
               className={styles.startButton}
               onClick={startReading}
