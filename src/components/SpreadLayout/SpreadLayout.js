@@ -3,22 +3,30 @@ import TarotCard from '../TarotCard/TarotCard';
 import styles from './SpreadLayout.module.css';
 
 const SPREAD_LAYOUTS = {
-  1: [{ position: 'Câu Trả Lời', description: 'Thông điệp cho câu hỏi của bạn' }],
+  1: [{ position: '1' }],
   3: [
-    { position: 'Quá Khứ', description: 'Những ảnh hưởng từ quá khứ' },
-    { position: 'Hiện Tại', description: 'Tình huống hiện tại' },
-    { position: 'Tương Lai', description: 'Kết quả có thể xảy ra' }
+    { position: '1', className: 'center' },
+    { position: '2', className: 'left' },
+    { position: '3', className: 'right' }
   ],
   5: [
-    { position: 'Thử Thách', className: 'top' },
-    { position: 'Quá Khứ', className: 'left' },
-    { position: 'Hiện Tại', className: 'center' },
-    { position: 'Tương Lai', className: 'right' },
-    { position: 'Lời Khuyên', className: 'bottom' }
+    { position: '1', className: 'center' },
+    { position: '2', className: 'left' },
+    { position: '3', className: 'right' },
+    { position: '4', className: 'bottom' },
+    { position: '5', className: 'top' }
   ],
   10: [
-    // Thêm positions cho Celtic Cross spread
-    // ... (có thể thêm sau)
+    { position: '1', className: 'celtic-center' },
+    { position: '2', className: 'celtic-crossing' },
+    { position: '3', className: 'celtic-below' },
+    { position: '4', className: 'celtic-left' },
+    { position: '5', className: 'celtic-above' },
+    { position: '6', className: 'celtic-right' },
+    { position: '7', className: 'celtic-self' },
+    { position: '8', className: 'celtic-environment' },
+    { position: '9', className: 'celtic-hopes' },
+    { position: '10', className: 'celtic-outcome' }
   ]
 };
 
@@ -28,6 +36,9 @@ function SpreadLayout({ selectedCards, spreadType }) {
   }
 
   const layout = SPREAD_LAYOUTS[spreadType.count] || [];
+
+  // Kiểm tra có phải layout Celtic Cross không
+  const isCelticCross = spreadType.count === 10;
 
   return (
     <div className={styles.spreadLayout}>
@@ -43,14 +54,14 @@ function SpreadLayout({ selectedCards, spreadType }) {
                   card={selectedCards[index]}
                   isBack={true}
                   isSelected={true}
+                  variant="spread" // Dùng variant 'spread'
                 />
                 <div className={styles.positionInfo}>
-                  <h4>{index + 1}</h4>
                 </div>
               </>
             ) : (
               <div className={styles.emptyPosition}>
-                <h4>{index + 1}</h4>
+                <div className={styles.positionNumber}>{position.position}</div>
               </div>
             )}
           </div>
@@ -60,4 +71,4 @@ function SpreadLayout({ selectedCards, spreadType }) {
   );
 }
 
-export default SpreadLayout; 
+export default SpreadLayout;

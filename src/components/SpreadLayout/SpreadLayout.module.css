@@ -1,14 +1,15 @@
 .spreadLayout {
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   background: rgba(20, 20, 50, 0.3);
   border-radius: 20px;
   margin: 20px 0;
+  position: relative;
 }
 
 .layout {
   position: relative;
-  min-height: 500px;
+  margin: 0 auto;
 }
 
 /* Layout cho 1 lá */
@@ -42,36 +43,221 @@
 .layout5 .right { grid-area: right; }
 .layout5 .bottom { grid-area: bottom; }
 
-.cardPosition {
+/* Layout cho 10 lá (Celtic Cross) */
+.layout10 {
+  width: 100%;
+  height: 580px;
+  max-width: 650px;
   position: relative;
-  width: 220px;
+  margin: 0 auto;
+}
+
+/* Card 1 - Center position */
+.celtic-center {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 2 - Crossing card */
+.celtic-crossing {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: 2;
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 3 - Below central card */
+.celtic-below {
+  position: absolute;
+  left: 50%;
+  top: 78%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 4 - Left of central cross */
+.celtic-left {
+  position: absolute;
+  left: 26%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 5 - Above central card */
+.celtic-above {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 6 - Right of central cross */
+.celtic-right {
+  position: absolute;
+  left: 74%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Staff section - right column */
+/* Card 7 - Bottom of staff */
+.celtic-self {
+  position: absolute;
+  left: 90%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 8 - Second from bottom */
+.celtic-environment {
+  position: absolute;
+  left: 90%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 9 - Second from top */
+.celtic-hopes {
+  position: absolute;
+  left: 90%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Card 10 - Top of staff */
+.celtic-outcome {
+  position: absolute;
+  left: 90%;
+  top: 12%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 170px;
+}
+
+/* Layout cho 1 lá */
+.layout1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Layout cho 3 lá */
+.layout3 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Layout cho 5 lá (Cross spread) */
+.layout5 {
+  display: grid;
+  grid-template-areas:
+    ". top ."
+    "left center right"
+    ". bottom .";
+  gap: 15px;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.layout5 .top { grid-area: top; }
+.layout5 .left { grid-area: left; }
+.layout5 .center { grid-area: center; }
+.layout5 .right { grid-area: right; }
+.layout5 .bottom { grid-area: bottom; }
+
+.cardPosition {
+  width: 110px;
+  height: 170px;
   text-align: center;
-  transition: none;
+}
+
+/* Disable hover effect completely for layout10 */
+.layout10 .cardPosition:hover {
+  transform: translate(-50%, -50%);
+}
+
+.layout10 .celtic-crossing:hover {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .positionInfo {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .positionInfo h4 {
   margin: 0;
   color: white;
+  font-size: 0.8rem;
 }
 
 .positionInfo p {
-  margin: 5px 0 0;
-  font-size: 0.9rem;
+  margin: 3px 0 0;
+  font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .emptyPosition {
-  width: 220px;
-  height: 380px;
+  width: 110px;
+  height: 170px;
   border: 2px dashed rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-} 
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.emptyPosition h4 {
+  margin: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.emptyPosition p {
+  margin: 5px 0 0;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.positionNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 auto 5px;
+}

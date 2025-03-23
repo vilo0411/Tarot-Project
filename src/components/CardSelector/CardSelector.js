@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useRef, useState, useEffect } from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import TarotCard from '../TarotCard/TarotCard';
 import styles from './CardSelector.module.css';
 
@@ -60,12 +59,13 @@ function CardSelector({
             if (selectedCards.some(selected => selected.code === card.code)) return null;
             
             return (
-              <TarotCard 
+              <TarotCard
                 key={card.code || index}
                 card={card}
                 isBack={true}
                 isSelected={false}
                 onClick={() => handleCardSelect(card)}
+                variant="selector" // Dùng variant 'selector'
                 style={{
                   cursor: canSelectMore ? 'pointer' : 'not-allowed'
                 }}

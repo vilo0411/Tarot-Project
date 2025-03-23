@@ -62,9 +62,6 @@ function TarotReading() {
   const { playSound } = useSound();
   const [selectedSpread, setSelectedSpread] = useState(null);
 
-  // Cập nhật MAX_CARDS dựa trên spread đã chọn
-  const MAX_CARDS = selectedSpread?.count || 3;
-
   // Gemini API configuration
   const GEMINI_API_KEY = 'AIzaSyDo_UPahCaXZIdtGGVDMJy6QrPhLh2gE44';
   const GEMINI_API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
@@ -170,32 +167,28 @@ function TarotReading() {
     setQuestion(e.target.value);
   };
 
-  // Select card logic with preserving the isReversed state
-  const selectCard = (card) => {
-    // Ensure card and shuffledCards exist
-    if (!card || !shuffledCards || shuffledCards.length === 0) return;
+  // Handle spread selection
+  const handleSpreadSelect = (spread) => {
+    setSelectedSpread(spread);
+    // Reset selected cards when changing spread type
+    setSelectedCards([]);
+  };
 
-    const isAlreadySelected = selectedCards.some(
-      selectedCard => selectedCard.code === card.code
-    );
-
-    if (isAlreadySelected) {
-      // Deselect card if already selected
-      setSelectedCards(
-        selectedCards.filter(selectedCard => selectedCard.code !== card.code)
-      );
-    } else if (selectedCards.length < 3) {
-      // Select card while preserving the isReversed value from shuffled cards
-      const selectedCard = shuffledCards.find(c => c.code === card.code);
-      if (selectedCard) {
-        setSelectedCards([...selectedCards, selectedCard]);
-      }
+  // Handle card selection
+  const handleCardSelect = (card) => {
+    if (!selectedSpread) return;
+    
+    // Check if we already have the maximum number of cards
+    if (selectedCards.length < selectedSpread.count) {
+      setSelectedCards([...selectedCards, card]);
     }
   };
 
   // Start reading method with improved loading UX
   const startReading = async () => {
-    if (question.trim() && selectedCards.length === 3) {
+    if (!selectedSpread) return;
+    
+    if (question.trim() && selectedCards.length === selectedSpread.count) {
       setIsAnalyzing(true);
       playSound('card-flip');
       
@@ -267,8 +260,13 @@ function TarotReading() {
     );
   };
 
-  const handleCardSelect = (card) => {
-    setSelectedCards([...selectedCards, card]);
+  // Check if ready to start reading
+  const canStartReading = () => {
+    return (
+      question.trim() && 
+      selectedSpread && 
+      selectedCards.length === selectedSpread.count
+    );
   };
 
   return (
@@ -284,12 +282,14 @@ function TarotReading() {
           disabled={isReading || isAnalyzing}
         />
         
-        <SpreadSelector
-          onSelectSpread={setSelectedSpread}
-          selectedSpread={selectedSpread}
-        />
+        {!isReading && !isAnalyzing && (
+          <SpreadSelector
+            onSelectSpread={handleSpreadSelect}
+            selectedSpread={selectedSpread}
+          />
+        )}
 
-        {selectedSpread && (
+        {selectedSpread && !isReading && !isAnalyzing && (
           <>
             <CardSelector
               shuffledCards={shuffledCards}
@@ -310,7 +310,7 @@ function TarotReading() {
             <button 
               className={styles.startButton}
               onClick={startReading}
-              disabled={!question.trim() || selectedCards.length !== 3}
+              disabled={!canStartReading()}
             >
               Bắt Đầu Bói
             </button>

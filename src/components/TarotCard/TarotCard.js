@@ -7,11 +7,17 @@ function TarotCard({
     isBack = true, 
     isSelected = false, 
     onClick,
-    style = {}
+    style = {},
+    variant = 'selector' // Thêm param variant: 'selector' hoặc 'spread'
   }) {
+    // Chọn class dựa vào variant
+    const cardContainerClass = variant === 'selector' 
+      ? styles.selectorCardContainer 
+      : styles.spreadCardContainer;
+      
     return (
       <div 
-        className={`${styles.cardContainer} ${
+        className={`${cardContainerClass} ${
           isSelected ? styles.selectedCardContainer : ''
         }`}
         onClick={onClick}
