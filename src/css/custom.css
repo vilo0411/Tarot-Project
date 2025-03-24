@@ -74,3 +74,14 @@
   margin-right: auto;
   max-width: 100%;
 }
+
+/* Hiển thị dropdown khi hover */
+.navbar-dropdown-hover:hover .dropdown__menu {
+  display: block;
+}
+
+/* Style cho dropdown menu */
+.navbar-dropdown-hover .dropdown__menu {
+  top: 100%;
+  display: none;
+}

@@ -1,0 +1,200 @@
+/* HeroSection.module.css */
+.heroContainer {
+padding: 40px 20px;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.heroHeading {
+font-size: 2.5rem;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+color: var(--ifm-heading-color);
+}
+
+.heroDescription {
+max-width: 800px;
+margin: 0 auto 40px;
+text-align: center;
+color: var(--ifm-color-emphasis-700);
+font-size: 1.1rem;
+line-height: 1.6;
+}
+
+.cardContainer {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+width: 100%;
+}
+
+.cardRow {
+display: flex;
+justify-content: center;
+gap: 20px;
+width: 100%;
+}
+
+.card {
+position: relative;
+border-radius: 16px;
+overflow: hidden;
+border: 1px solid var(--ifm-color-emphasis-200);
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+transition: all 0.3s ease;
+text-decoration: none !important;
+display: flex;
+flex-direction: column;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.standardCard {
+width: 350px;
+max-width: calc(50% - 10px);
+}
+
+.wideCard {
+width: 720px;
+max-width: calc(100% - 40px);
+}
+
+.cardContent {
+padding: 24px;
+color: var(--ifm-font-color-base);
+}
+
+.cardTitle {
+display: flex;
+align-items: center;
+font-size: 1.25rem;
+font-weight: bold;
+color: var(--ifm-heading-color);
+transition: color 0.3s ease;
+margin-bottom: 12px;
+text-decoration: none !important;
+}
+
+.cardIcon {
+font-size: 24px;
+margin-right: 12px;
+}
+
+.cardDescription {
+font-size: 0.95rem;
+color: var(--ifm-color-emphasis-700);
+line-height: 1.5;
+text-decoration: none !important;
+}
+
+.cardImage {
+margin-top: 8px;
+width: 100%;
+transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage {
+transform: scale(1.05);
+}
+
+/* Remove all link decoration */
+.cardLink {
+text-decoration: none !important;
+color: inherit;
+}
+
+/* Card-specific styles adapted for both light/dark modes */
+.cardMeanings {
+background: var(--ifm-background-color);
+}
+
+.cardMeanings:hover {
+background: linear-gradient(to top right, var(--ifm-background-color), var(--ifm-background-color), rgba(30, 64, 175, 0.1));
+border-color: #1e40af;
+}
+
+.cardMeanings:hover .cardTitle {
+color: #1e40af;
+}
+
+.cardMeanings .cardIcon {
+color: #1e40af;
+}
+
+/* Light mode specific styles */
+.cardSpreads {
+background: #f0f9ff;
+}
+
+.cardSpreads:hover {
+background: linear-gradient(to top right, #f0f9ff, #f0f9ff, rgba(126, 34, 206, 0.1));
+border-color: #7e22ce;
+}
+
+.cardSpreads:hover .cardTitle {
+color: #7e22ce;
+}
+
+.cardSpreads .cardIcon {
+color: #7e22ce;
+}
+
+.cardReadings {
+background: #fffbeb;
+}
+
+.cardReadings:hover {
+background: linear-gradient(to top right, #fffbeb, #fffbeb, rgba(194, 65, 12, 0.1));
+border-color: #c2410c;
+}
+
+.cardReadings:hover .cardTitle {
+color: #c2410c;
+}
+
+.cardReadings .cardIcon {
+color: #c2410c;
+}
+
+/* Dark mode specific styles */
+:global([data-theme='dark']) .cardSpreads {
+background: #1a2536;
+}
+
+:global([data-theme='dark']) .cardSpreads:hover {
+background: linear-gradient(to top right, #1a2536, #1a2536, rgba(126, 34, 206, 0.1));
+border-color: #7e22ce;
+}
+
+:global([data-theme='dark']) .cardSpreads:hover .cardTitle {
+color: #a78bfa;
+}
+
+:global([data-theme='dark']) .cardSpreads .cardIcon {
+color: #a78bfa;
+}
+
+:global([data-theme='dark']) .cardReadings {
+background: #2c271e;
+}
+
+:global([data-theme='dark']) .cardReadings:hover {
+background: linear-gradient(to top right, #2c271e, #2c271e, rgba(194, 65, 12, 0.1));
+border-color: #c2410c;
+}
+
+:global([data-theme='dark']) .cardReadings:hover .cardTitle {
+color: #f97316;
+}
+
+:global([data-theme='dark']) .cardReadings .cardIcon {
+color: #f97316;
+}

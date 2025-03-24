@@ -118,10 +118,28 @@ const config = {
             position: 'left',
           },
           {
+            to: '/tarot-reading/',
+            activeBasePath: '/tarot-reading/',
+            label: 'Tarot Reading (ver 1)',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'dropdown',
+            label: 'Tarot Reading (ver 2)',
+            to: '/reading',
+            className: 'navbar-dropdown-hover',
+            items: [
+              {
+                label: 'One Card Tarot',
+                to: '/reading/one-card-tarot',
+              }
+            ],
+          }
         ],
       },
       footer: {

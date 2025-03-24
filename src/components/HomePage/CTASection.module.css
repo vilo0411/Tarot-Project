@@ -1,0 +1,106 @@
+/* src/components/HomePage/CTASection.module.css */
+.ctaSection {
+width: 100%;
+padding: 60px 0;
+text-align: center;
+position: relative;
+margin-top: 40px;
+overflow: hidden;
+}
+
+/* Add a subtle divider before the CTA section */
+.ctaSection::before {
+content: '';
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 80%;
+max-width: 1200px;
+height: 1px;
+background: linear-gradient(to right, transparent, var(--ifm-color-emphasis-300), transparent);
+}
+
+.ctaContainer {
+max-width: 900px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.ctaTitle {
+font-size: 2.8rem;
+font-weight: 800;
+line-height: 1.2;
+margin-bottom: 16px;
+background-clip: text;
+}
+
+.ctaTitleDark {
+color: #222;
+}
+
+.ctaTitleBlue {
+color: #4263eb;
+font-weight: 700;
+}
+
+/* Dark mode adjustments */
+:global([data-theme='dark']) .ctaTitleDark {
+color: #f8f9fa;
+}
+
+:global([data-theme='dark']) .ctaTitleBlue {
+color: #5c7cfa;
+}
+
+.ctaDescription {
+font-size: 1.25rem;
+line-height: 1.6;
+margin-bottom: 40px;
+color: var(--ifm-color-emphasis-700);
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.ctaButtonContainer {
+display: flex;
+justify-content: center;
+}
+
+.ctaButton {
+display: inline-block;
+background-color: #7c3aed;
+color: white;
+font-weight: 600;
+padding: 16px 30px;
+border-radius: 50px;
+text-decoration: none;
+transition: all 0.3s ease;
+font-size: 1.1rem;
+box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+}
+
+.ctaButton:hover {
+background-color: #6d28d9;
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+text-decoration: none;
+color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+.ctaTitle {
+    font-size: 2.2rem;
+}
+
+.ctaDescription {
+    font-size: 1.1rem;
+}
+
+.ctaButton {
+    padding: 14px 24px;
+    font-size: 1rem;
+}
+}

@@ -1,0 +1,164 @@
+/* src/components/TarotReading/ErrorDisplay/styles.module.css */
+
+.container {
+width: 100%;
+margin-bottom: 24px;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+transition: all 0.3s ease;
+border-left: 4px solid #e53e3e;
+background-color: white;
+}
+
+.container:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.error {
+border-left-color: #e53e3e;
+}
+
+.warning {
+border-left-color: #dd6b20;
+}
+
+.info {
+border-left-color: #3182ce;
+}
+
+.content {
+display: flex;
+padding: 16px;
+}
+
+.iconContainer {
+margin-right: 16px;
+display: flex;
+align-items: flex-start;
+padding-top: 2px;
+}
+
+.icon {
+font-size: 1.5rem;
+}
+
+.messageContainer {
+flex: 1;
+}
+
+.title {
+margin: 0 0 8px 0;
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--ifm-heading-color);
+}
+
+.message {
+margin: 0 0 12px 0;
+font-size: 0.95rem;
+line-height: 1.5;
+color: var(--ifm-font-color-base);
+}
+
+.details {
+margin-bottom: 12px;
+font-size: 0.9rem;
+}
+
+.details summary {
+cursor: pointer;
+color: var(--ifm-color-primary);
+font-weight: 500;
+margin-bottom: 8px;
+}
+
+.stackTrace {
+background-color: var(--ifm-color-emphasis-100);
+padding: 12px;
+border-radius: 4px;
+overflow-x: auto;
+font-size: 0.8rem;
+margin: 0;
+max-height: 200px;
+}
+
+.actions {
+display: flex;
+gap: 8px;
+}
+
+.retryButton, .dismissButton {
+padding: 6px 12px;
+border-radius: 4px;
+font-size: 0.9rem;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.2s ease;
+border: none;
+}
+
+.retryButton {
+background-color: var(--ifm-color-primary);
+color: white;
+}
+
+.retryButton:hover {
+background-color: var(--ifm-color-primary-darker);
+}
+
+.dismissButton {
+background-color: var(--ifm-color-emphasis-200);
+color: var(--ifm-color-emphasis-800);
+}
+
+.dismissButton:hover {
+background-color: var(--ifm-color-emphasis-300);
+}
+
+/* Error type specific styles */
+.error .title {
+color: #e53e3e;
+}
+
+.warning .title {
+color: #dd6b20;
+}
+
+.info .title {
+color: #3182ce;
+}
+
+/* Dark mode adjustments */
+:global([data-theme='dark']) .container {
+background-color: var(--ifm-card-background-color);
+}
+
+:global([data-theme='dark']) .stackTrace {
+background-color: var(--ifm-color-emphasis-200);
+}
+
+:global([data-theme='dark']) .dismissButton {
+background-color: var(--ifm-color-emphasis-300);
+color: var(--ifm-color-emphasis-900);
+}
+
+:global([data-theme='dark']) .dismissButton:hover {
+background-color: var(--ifm-color-emphasis-400);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.content {
+    flex-direction: column;
+}
+
+.iconContainer {
+    margin-right: 0;
+    margin-bottom: 12px;
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+}

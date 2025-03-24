@@ -2,6 +2,7 @@ import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './TarotCard.module.css';
 
+
 function TarotCard({ 
     card, 
     isBack = true, 
@@ -14,6 +15,9 @@ function TarotCard({
     const cardContainerClass = variant === 'selector' 
       ? styles.selectorCardContainer 
       : styles.spreadCardContainer;
+
+    const cardBackUrl = useBaseUrl('img/deck/back.jpg');
+    const cardFrontUrl = useBaseUrl(`img/deck/${card.code}.jpg`);
       
     return (
       <div 
@@ -25,7 +29,7 @@ function TarotCard({
       >
         <div className={styles.card}>
           <img 
-            src={isBack ? 'img/deck/back.jpg' : `img/deck/${card.code}.jpg`}
+            src={isBack ? cardBackUrl : cardFrontUrl}
             alt={isBack ? "Card Back" : card.name}
             className={styles.cardImage}
           />
