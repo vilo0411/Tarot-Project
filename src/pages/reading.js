@@ -37,7 +37,25 @@ function ReadingPage() {
       { name: 'The Fool', code: 'm00' },
       { name: 'The Magician', code: 'm01' },
       { name: 'The High Priestess', code: 'm02' },
-      // ... thêm các lá bài khác
+      { name: 'The Empress', code: 'm03' },
+      { name: 'The Emperor', code: 'm04' },
+      { name: 'The Hierophant', code: 'm05' },
+      { name: 'The Lovers', code: 'm06' },
+      { name: 'The Chariot', code: 'm07' },
+      { name: 'Strength', code: 'm08' },
+      { name: 'The Hermit', code: 'm09' },
+      { name: 'Wheel of Fortune', code: 'm10' },
+      { name: 'Justice', code: 'm11' },
+      { name: 'The Hanged Man', code: 'm12' },
+      { name: 'Death', code: 'm13' },
+      { name: 'Temperance', code: 'm14' },
+      { name: 'The Devil', code: 'm15' },
+      { name: 'The Tower', code: 'm16' },
+      { name: 'The Star', code: 'm17' },
+      { name: 'The Moon', code: 'm18' },
+      { name: 'The Sun', code: 'm19' },
+      { name: 'Judgement', code: 'm20' },
+      { name: 'The World', code: 'm21' }
     ];
 
     // Minor Arcana suits
@@ -50,6 +68,8 @@ function ReadingPage() {
         }))
     );
 
+    const result = [...majorArcana, ...minorArcana];
+    console.log(result)
     return [...majorArcana, ...minorArcana];
   };
   
