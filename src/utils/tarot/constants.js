@@ -1,3 +1,4 @@
+import { GEMINI_PROMPTS } from './prompts';
 // src/utils/tarot/constants.js
 
 /**
@@ -65,10 +66,14 @@ export const IMAGE_PATHS = {
   CARD_FRONT_SUFFIX: '.jpg',
 };
 
+// Re-export GEMINI_PROMPTS
+export { GEMINI_PROMPTS };
+
 export default {
   GEMINI_API_KEY,
   GEMINI_API_ENDPOINT,
   GEMINI_MODEL,
+  GEMINI_PROMPTS,
   SPREAD_TYPES,
   USE_MOCK_DATA,
   ENABLE_DEBUG_LOGGING,

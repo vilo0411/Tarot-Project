@@ -1,9 +1,11 @@
+/* Cập nhật src/components/TarotCard/TarotCard.module.css */
+
 /* Thẻ dùng cho CardSelector - lớn và có hiệu ứng hover */
 .selectorCardContainer {
   position: relative;
   display: inline-block;
   width: 180px;
-  height: 280px;
+  height: 300px;
   margin-right: -130px;
   transition: all 0.3s ease;
   vertical-align: middle;
@@ -22,15 +24,22 @@
   margin-right: 0;
 }
 
-/* Thẻ dùng cho SpreadLayout - nhỏ hơn và không có hiệu ứng hover */
+/* Thẻ dùng cho SpreadLayout - lớn hơn và có đổ bóng */
 .spreadCardContainer {
   position: relative;
   display: inline-block;
-  width: 110px;
-  height: 170px;
+  width: 150px;
+  height: 250px;
   margin: 0;
-  border-radius: 10px;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.spreadCardContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  z-index: 5;
 }
 
 /* Phần CSS chung cho cả hai loại */
@@ -51,4 +60,26 @@
   height: 100%;
   object-fit: cover;
   border-radius: inherit;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .spreadCardContainer {
+    width: 130px;
+    height: 217px; /* Giữ tỷ lệ 3:5 */
+  }
+}
+
+@media (max-width: 768px) {
+  .spreadCardContainer {
+    width: 100px;
+    height: 167px; /* Giữ tỷ lệ 3:5 */
+  }
+}
+
+@media (max-width: 480px) {
+  .spreadCardContainer {
+    width: 80px;
+    height: 133px; /* Giữ tỷ lệ 3:5 */
+  }
 }

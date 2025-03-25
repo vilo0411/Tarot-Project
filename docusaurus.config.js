@@ -137,6 +137,18 @@ const config = {
               {
                 label: 'One Card Tarot',
                 to: '/reading/one-card-tarot',
+              },
+              {
+                label: 'Three Card Tarot',
+                to: '/reading/three-cards-tarot',
+              },
+              {
+                label: 'Five Cards Tarot',
+                to: '/reading/five-cards-tarot',
+              },
+              {
+                label: 'Ten Card Tarot',
+                to: '/reading/ten-cards-tarot',
               }
             ],
           }

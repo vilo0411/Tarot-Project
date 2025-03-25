@@ -1,6 +1,6 @@
 // src/api/tarot/geminiClient.js
 import { AIAnalysisClient } from './aiAnalysisClient';
-import { GEMINI_PROMPTS } from '../../utils/tarot/prompts';
+import { GEMINI_PROMPTS, generateTarotAnalysisPrompt } from '../../utils/tarot/prompts';
 import { GEMINI_API_KEY, GEMINI_API_ENDPOINT, GEMINI_MODEL } from '../../utils/tarot/constants';
 
 /**
@@ -62,30 +62,47 @@ export class GeminiClient extends AIAnalysisClient {
    * @returns {string} Formatted prompt
    */
   formatPrompt(question, cards, spreadType) {
+    // Approach 1: Use template-based prompts with placeholders
     // Get the appropriate prompt template based on spread type
-    let promptTemplate;
-    switch (spreadType) {
-      case 'single-card':
-        promptTemplate = GEMINI_PROMPTS.SINGLE_CARD;
-        break;
-      case 'past-present-future':
-        promptTemplate = GEMINI_PROMPTS.THREE_CARD;
-        break;
-      case 'celtic-cross':
-        promptTemplate = GEMINI_PROMPTS.CELTIC_CROSS;
-        break;
-      default:
-        promptTemplate = GEMINI_PROMPTS.GENERAL;
+    try {
+      let promptTemplate;
+      switch (spreadType) {
+        case 'single-card':
+          promptTemplate = GEMINI_PROMPTS.SINGLE_CARD;
+          break;
+        case 'past-present-future':
+          promptTemplate = GEMINI_PROMPTS.THREE_CARD;
+          break;
+        case 'celtic-cross':
+          promptTemplate = GEMINI_PROMPTS.CELTIC_CROSS;
+          break;
+        default:
+          promptTemplate = GEMINI_PROMPTS.GENERAL;
+      }
+      
+      // Ensure we have a valid prompt template
+      if (!promptTemplate) {
+        console.warn(`No template found for spread type: ${spreadType}, using generateTarotAnalysisPrompt instead`);
+        // Fall back to approach 2 if template is missing
+        throw new Error('Missing prompt template');
+      }
+      
+      // Format the cards as a string
+      const formattedCards = this.formatCardsForPrompt(cards);
+      
+      // Replace placeholders in the prompt template
+      return promptTemplate
+        .replace('{{QUESTION}}', question)
+        .replace('{{CARDS}}', formattedCards)
+        .replace('{{SPREAD_TYPE}}', spreadType);
     }
-    
-    // Format the cards as a string
-    const formattedCards = this.formatCardsForPrompt(cards);
-    
-    // Replace placeholders in the prompt template
-    return promptTemplate
-      .replace('{{QUESTION}}', question)
-      .replace('{{CARDS}}', formattedCards)
-      .replace('{{SPREAD_TYPE}}', spreadType);
+    catch (error) {
+      // Approach 2: Use function-based prompt generation (fallback)
+      console.log('Using functional prompt generation as fallback');
+      const formattedCards = this.formatCardsForPrompt(cards);
+      // Pass spreadType to the function for better context
+      return generateTarotAnalysisPrompt(question, formattedCards, spreadType);
+    }
   }
   
   /**
@@ -150,6 +167,11 @@ export class GeminiClient extends AIAnalysisClient {
    */
   async sendRequest(prompt) {
     try {
+      // Check if API key is available
+      if (!this.config.apiKey) {
+        throw new Error('API key is not configured for Gemini API');
+      }
+      
       const url = `${this.config.apiEndpoint}?key=${this.config.apiKey}`;
       
       const response = await fetch(url, {
@@ -189,7 +211,16 @@ export class GeminiClient extends AIAnalysisClient {
    */
   async analyzeReading(question, cards, spreadType) {
     try {
-      const prompt = this.formatPrompt(question, cards, spreadType);
+      // Format the prompt with error handling
+      let prompt;
+      try {
+        prompt = this.formatPrompt(question, cards, spreadType);
+      } catch (promptError) {
+        console.error('Error formatting prompt:', promptError);
+        throw new Error('Failed to format the analysis prompt');
+      }
+      
+      // Make API request
       const response = await this.sendRequest(prompt);
       return this.processResponse(response);
     } catch (error) {

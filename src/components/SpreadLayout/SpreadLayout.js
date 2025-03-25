@@ -30,7 +30,7 @@ const SPREAD_LAYOUTS = {
   ]
 };
 
-function SpreadLayout({ selectedCards, spreadType }) {
+function SpreadLayout({ selectedCards, spreadType, isBack = true }) {
   if (!spreadType) {
     return null; // Không hiển thị gì nếu chưa chọn kiểu trải bài
   }
@@ -49,16 +49,12 @@ function SpreadLayout({ selectedCards, spreadType }) {
             className={`${styles.cardPosition} ${styles[position.className] || ''}`}
           >
             {selectedCards[index] ? (
-              <>
-                <TarotCard
-                  card={selectedCards[index]}
-                  isBack={true}
-                  isSelected={true}
-                  variant="spread" // Dùng variant 'spread'
-                />
-                <div className={styles.positionInfo}>
-                </div>
-              </>
+              <TarotCard
+                card={selectedCards[index]}
+                isBack={isBack} // Sử dụng tham số isBack mới
+                isSelected={true}
+                variant="spread"
+              />
             ) : (
               <div className={styles.emptyPosition}>
                 <div className={styles.positionNumber}>{position.position}</div>

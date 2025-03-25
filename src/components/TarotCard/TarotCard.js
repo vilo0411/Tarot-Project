@@ -9,15 +9,21 @@ function TarotCard({
     isSelected = false, 
     onClick,
     style = {},
-    variant = 'selector' // Thêm param variant: 'selector' hoặc 'spread'
+    variant = 'selector' // 'selector' hoặc 'spread'
   }) {
     // Chọn class dựa vào variant
-    const cardContainerClass = variant === 'selector' 
+    let cardContainerClass = variant === 'selector' 
       ? styles.selectorCardContainer 
       : styles.spreadCardContainer;
 
     const cardBackUrl = useBaseUrl('img/deck/back.jpg');
     const cardFrontUrl = useBaseUrl(`img/deck/${card.code}.jpg`);
+    
+    // Tạo style riêng cho các lá bài ở mode spread khi flip lên
+    const finalStyle = {
+      ...style,
+      ...(variant === 'spread' && !isBack && card.isReversed ? { transform: 'rotate(180deg)' } : {})
+    };
       
     return (
       <div 
@@ -25,7 +31,7 @@ function TarotCard({
           isSelected ? styles.selectedCardContainer : ''
         }`}
         onClick={onClick}
-        style={style}
+        style={finalStyle}
       >
         <div className={styles.card}>
           <img 

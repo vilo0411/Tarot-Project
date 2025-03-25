@@ -129,7 +129,8 @@
 }
 
 /* Specific tab content styling */
-.summaryTab, .fullTab, .cardsTab {
+.summaryTab, .fullTab, .cardsTab, .aiTab {
+  text-align: left;
   line-height: 1.6;
   color: var(--ifm-font-color-base);
 }
@@ -235,6 +236,7 @@
 .cardsTab h1,
 .cardsTab h2,
 .cardsTab h3 {
+  text-align: center;
   margin-top: 1.5em;
   margin-bottom: 0.8em;
   color: var(--ifm-heading-color);
@@ -261,6 +263,7 @@
 .fullTab p,
 .summaryTab p,
 .cardsTab p {
+  text-align: left;
   margin-bottom: 1em;
 }
 
@@ -270,6 +273,7 @@
 .summaryTab ol,
 .cardsTab ul,
 .cardsTab ol {
+  text-align: left;
   padding-left: 1.5em;
   margin-bottom: 1em;
 }
@@ -277,6 +281,7 @@
 .fullTab li,
 .summaryTab li,
 .cardsTab li {
+  text-align: left;
   margin-bottom: 0.5em;
 }
 
@@ -331,5 +336,77 @@
   
   .controls {
     justify-content: center;
+  }
+}
+
+/* Add these styles to src/components/TarotReading/ReadingResults/ReadingResults.module.css */
+
+.aiTab {
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+  padding: 16px;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  border-left: 4px solid #6366f1; /* Indigo color for AI tab */
+}
+
+.aiTab h3 {
+  color: #6366f1;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+/* Active tab styling for AI tab */
+.tabs .tab[data-active="ai"] {
+  color: #6366f1;
+  border-bottom-color: #6366f1;
+}
+
+/* Dark mode adjustments */
+:global([data-theme='dark']) .aiTab {
+  background-color: var(--ifm-color-emphasis-200);
+  border-left-color: #818cf8; /* Lighter indigo for dark mode */
+}
+
+:global([data-theme='dark']) .aiTab h3 {
+  color: #818cf8;
+}
+
+:global([data-theme='dark']) .tabs .tab[data-active="ai"] {
+  color: #818cf8;
+  border-bottom-color: #818cf8;
+}
+
+.spreadLayoutContainer {
+  margin-bottom: 30px;
+  padding: 0; /* Bỏ padding để SpreadLayout có thể hiển thị full kích thước */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.spreadLayoutTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+/* Dark mode adjustments */
+:global([data-theme='dark']) .spreadLayoutContainer {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .spreadLayoutContainer {
+    padding: 15px 10px;
+  }
+  
+  .spreadLayoutTitle {
+    font-size: 1.1rem;
   }
 }

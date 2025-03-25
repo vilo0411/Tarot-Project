@@ -16,6 +16,11 @@ import CardSelector from '../components/CardSelector/CardSelector';
 import SpreadSelector from '../components/SpreadSelector/SpreadSelector';
 import SpreadLayout from '../components/SpreadLayout/SpreadLayout';
 
+// Import API functions trực tiếp từ các module đã có
+import { getMockAnalysis } from '../api/tarot/mockAnalysis';
+import { analyzeTarotReading } from '../api/tarot/geminiClient';
+import { useSound } from '../hooks/useSound';
+
 function ReadingPage() {
   // Get context
   const { siteConfig } = useDocusaurusContext();
@@ -26,9 +31,11 @@ function ReadingPage() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [selectedSpread, setSelectedSpread] = useState(null);
   const [shuffledCards, setShuffledCards] = useState([]);
-  const [selectedCards, setSelectedCards] = useState([]); // Thêm state selectedCards
-  const [readingAnalysis, setReadingAnalysis] = useState(null);
+  const [selectedCards, setSelectedCards] = useState([]);
+  const [mockAnalysis, setMockAnalysis] = useState(null);
+  const [aiAnalysis, setAIAnalysis] = useState(null);
   const [error, setError] = useState(null);
+  const { playSound } = useSound();
   
   // Tarot card generation
   const generateTarotCards = () => {
@@ -68,22 +75,24 @@ function ReadingPage() {
         }))
     );
 
-    const result = [...majorArcana, ...minorArcana];
-    console.log(result)
     return [...majorArcana, ...minorArcana];
   };
   
   // Initialize cards on mount
   useEffect(() => {
-    const allCards = generateTarotCards();
-    const shuffled = allCards
-      .map(card => ({
-        ...card,
-        isReversed: Math.random() > 0.5
-      }))
-      .sort(() => Math.random() - 0.5);
-    
-    setShuffledCards(shuffled);
+    try {
+      const allCards = generateTarotCards();
+      const shuffled = allCards
+        .map(card => ({
+          ...card,
+          isReversed: Math.random() > 0.5
+        }))
+        .sort(() => Math.random() - 0.5);
+      
+      setShuffledCards(shuffled);
+    } catch (err) {
+      setError('Error loading Tarot cards: ' + (err.message || 'Unknown error'));
+    }
   }, []);
   
   // Handle question input
@@ -105,40 +114,79 @@ function ReadingPage() {
     // Check if already at max cards for this spread
     if (selectedCards.length < selectedSpread.count) {
       setSelectedCards(prev => [...prev, card]);
+      
+      // Play card selection sound
+      try {
+        playSound('/sounds/card-sounds-35956.mp3');
+      } catch (error) {
+        console.error('Error playing sound:', error);
+      }
     }
   };
   
-  // Mock function to analyze cards
-  const analyzeCards = () => {
-    setIsAnalyzing(true);
+  // Get spread type string from selected spread object
+  const getSpreadType = () => {
+    if (!selectedSpread) return 'general';
     
-    // Simulate API call with timeout
-    setTimeout(() => {
-      const analysis = {
-        text: generateMockAnalysis()
-      };
-      
-      setReadingAnalysis(analysis);
-      setIsReading(true);
-      setIsAnalyzing(false);
-    }, 2000);
+    switch (selectedSpread.count) {
+      case 1:
+        return 'single-card';
+      case 3:
+        return 'past-present-future';
+      case 5:
+        return 'cross-spread';
+      case 10:
+        return 'celtic-cross';
+      default:
+        return 'general';
+    }
   };
   
-  // Generate mock analysis
-  const generateMockAnalysis = () => {
-    return `# Phân tích trải bài Tarot\n\n` +
-           `## Câu hỏi của bạn\n"${question}"\n\n` +
-           `## Các lá bài được chọn\n` +
-           selectedCards.map((card, index) => 
-             `${index + 1}. ${card.name} (${card.isReversed ? 'Ngược' : 'Thuận'})`
-           ).join('\n') +
-           `\n\n## Phân tích chi tiết\nĐây là phân tích mô phỏng...`;
+  // Analyze the reading using both mock and AI analysis
+  const analyzeReading = async () => {
+    if (!canStartReading()) return;
+    
+    setIsAnalyzing(true);
+    setError(null);
+    
+    try {
+      // Sử dụng song song cả 2 phân tích: mock và AI
+      const spreadType = getSpreadType();
+      
+      // Gọi mock analysis trước để đảm bảo luôn có một phân tích
+      const mockResult = await getMockAnalysis(question, selectedCards, spreadType);
+      console.log('Mock Analysis result:', mockResult);
+      setMockAnalysis(mockResult);
+      
+      // Thử gọi AI analysis (có thể thất bại)
+      try {
+        const aiResult = await analyzeTarotReading(question, selectedCards, spreadType);
+        console.log('AI Analysis result:', aiResult);
+        setAIAnalysis(aiResult);
+      } catch (aiError) {
+        console.warn('AI analysis failed, using only mock analysis:', aiError);
+        // Không set error state để tránh ảnh hưởng đến toàn bộ quy trình
+      }
+      
+      // Đánh dấu là đã hoàn thành đọc bài
+      setIsReading(true);
+    } catch (err) {
+      console.error('Error analyzing reading:', err);
+      setError(err.message || 'An error occurred while analyzing your reading');
+    } finally {
+      setIsAnalyzing(false);
+    }
   };
   
   // Start reading
-  const startReading = () => {
+  const startReading = async () => {
     if (canStartReading()) {
-      analyzeCards();
+      try {
+        await analyzeReading();
+      } catch (error) {
+        console.error('Failed to start reading:', error);
+        setError('Không thể bắt đầu phân tích bài Tarot. Vui lòng thử lại.');
+      }
     }
   };
   
@@ -147,7 +195,9 @@ function ReadingPage() {
     setQuestion('');
     setSelectedCards([]);
     setIsReading(false);
-    setReadingAnalysis(null);
+    setMockAnalysis(null);
+    setAIAnalysis(null);
+    setError(null);
     
     // Re-shuffle cards
     const allCards = generateTarotCards();
@@ -213,6 +263,7 @@ function ReadingPage() {
           <ErrorDisplay
             error={error}
             type="error"
+            retryAction={() => setError(null)}
           />
         )}
         
@@ -265,16 +316,24 @@ function ReadingPage() {
             message="Đang phân tích bói bài của bạn..."
             type="cards"
           />
-        ) : (
+        ) : mockAnalysis ? (
           <>
-            {/* Reading Results */}
+            {/* Reading Results with both standard and AI analysis */}
             <ReadingResults
-              reading={readingAnalysis}
+              reading={mockAnalysis}
+              aiAnalysis={aiAnalysis}
               selectedCards={selectedCards}
               onReset={resetReading}
               showControls={true}
+              timestamp={new Date()}
             />
           </>
+        ) : (
+          <ErrorDisplay
+            message="Không thể hiển thị kết quả bói bài. Vui lòng thử lại."
+            type="error"
+            retryAction={resetReading}
+          />
         )}
       </div>
     </Layout>

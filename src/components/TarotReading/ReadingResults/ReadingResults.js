@@ -1,10 +1,14 @@
-// src/components/TarotReading/ReadingResults/index.js
+// src/components/TarotReading/ReadingResults/ReadingResults.js
 import React, { useState, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styles from './ReadingResults.module.css';
 
+// Import SpreadLayout để sử dụng trong kết quả
+import SpreadLayout from '../../SpreadLayout/SpreadLayout';
+
 const ReadingResults = ({
   reading = null,
+  aiAnalysis = null,
   selectedCards = [],
   timestamp = new Date(),
   onSave = null,
@@ -18,11 +22,29 @@ const ReadingResults = ({
 }) => {
   const [expanded, setExpanded] = useState(initiallyExpanded);
   const resultRef = useRef(null);
-  const [activeTab, setActiveTab] = useState('full'); // 'full', 'summary', 'cards'
+  const [activeTab, setActiveTab] = useState('full'); // 'full', 'summary', 'cards', 'ai'
   
   if (!reading && !isLoading) {
     return null;
   }
+
+  // Quyết định loại trải bài dựa trên số lượng lá bài được chọn
+  const getSpreadType = () => {
+    if (!selectedCards || selectedCards.length === 0) return null;
+    
+    switch (selectedCards.length) {
+      case 1:
+        return { name: 'Rút 1 Lá', count: 1 };
+      case 3:
+        return { name: 'Rút 3 Lá', count: 3 };
+      case 5:
+        return { name: 'Rút 5 Lá', count: 5 };
+      case 10:
+        return { name: 'Rút 10 Lá', count: 10 };
+      default:
+        return { name: `Rút ${selectedCards.length} Lá`, count: selectedCards.length };
+    }
+  };
   
   const toggleExpanded = () => {
     if (expandable) {
@@ -267,6 +289,14 @@ const ReadingResults = ({
       >
         Từng lá bài
       </button>
+      {aiAnalysis && (
+        <button 
+          className={`${styles.tab} ${activeTab === 'ai' ? styles.activeTab : ''}`}
+          onClick={() => setActiveTab('ai')}
+        >
+          Phân tích AI
+        </button>
+      )}
     </div>
   );
   
@@ -295,6 +325,19 @@ const ReadingResults = ({
                 )}
               </div>
             ))}
+          </div>
+        );
+      case 'ai':
+        return (
+          <div className={styles.aiTab}>
+            <h3>Phân tích từ AI</h3>
+            {aiAnalysis ? (
+              <ReactMarkdown>{aiAnalysis.text || ''}</ReactMarkdown>
+            ) : (
+              <p className={styles.noInterpretation}>
+                Không có phân tích AI cho lần đọc bài này.
+              </p>
+            )}
           </div>
         );
       case 'full':
@@ -331,6 +374,15 @@ const ReadingResults = ({
       
       {expanded && (
         <div className={styles.content}>
+          {/* Thêm SpreadLayout ở đầu kết quả với isBack=false để hiển thị mặt trước của lá bài */}
+          <div className={styles.spreadLayoutContainer}>
+            <SpreadLayout
+              selectedCards={selectedCards}
+              spreadType={getSpreadType()}
+              isBack={false} // Tham số mới để lật lá bài lên
+            />
+          </div>
+          
           {renderTabs()}
           
           <div className={styles.tabContent}>
