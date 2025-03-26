@@ -415,3 +415,75 @@
     height: 190px;
   }
 }
+
+
+.emailSection {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emailForm {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.emailInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.emailInput.validEmail {
+  border-color: rgba(76, 175, 80, 0.7);
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.emailSubmitButton {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emailSubmitButton:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.emailError {
+  color: #ff5252;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.resetButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resetButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}

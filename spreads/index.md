@@ -1,38 +1,102 @@
 ---
 sidebar_position: 1
+title: Các Cách Trải Bài Tarot
+description: Khám phá nghệ thuật trải bài Tarot từ cơ bản đến chuyên sâu
 ---
 
 import CardLayout from '@site/src/components/CardLayout';
 
-# Các cách trải bài Tarot
+# 🔮 Nghệ Thuật Trải Bài Tarot
 
-Trải bài Tarot là cách bạn sắp xếp các lá bài để đọc và diễn giải. Mỗi vị trí trong một cách trải bài có một ý nghĩa cụ thể và khi kết hợp lại, chúng tạo nên câu chuyện hoặc thông điệp hoàn chỉnh.
+Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, năng lượng và insights cá nhân. Mỗi cách trải bài là một câu chuyện riêng, mang đến những góc nhìn độc đáo về cuộc sống.
+
+## 📊 Phân Loại Trải Bài
 
 <CardLayout 
   categories={[
     {
-      title: 'Nguyên tắc trải bài',
-      description: 'Các nguyên tắc cơ bản của việc trải bài Tarot và chuẩn bị',
-      link: '/docs/spreads',
+      title: 'Theo Số Lượng Lá',
+      description: 'Khám phá insights thông qua số lượng lá bài khác nhau',
+      link: '/spreads/so-luong',
       icon: '📖',
     },
     {
-      title: 'Trải bài một lá',
-      description: 'Cách thức và ý nghĩa của việc trải một lá bài Tarot',
-      link: '/docs/spreads/single-card',
+      title: 'Theo Chủ Đề Câu Hỏi',
+      description: 'Trải bài chuyên sâu cho từng loại vấn đề',
+      link: '/spreads/chu-de',
       icon: '🃏',
-    },
-    {
-      title: 'Trải bài ba lá',
-      description: 'Phương pháp trải bài ba lá đơn giản và hiệu quả cho nhiều câu hỏi',
-      link: '/docs/spreads/three-card',
-      icon: '🔄',
-    },
-    {
-      title: 'Trải bài Celtic Cross',
-      description: 'Một trong những cách trải bài phổ biến và sâu sắc nhất trong Tarot',
-      link: '/docs/spreads/celtic-cross',
-      icon: '🔄',
     }
   ]}
 />
+
+## 🌟 Các Loại Trải Bài Phổ Biến
+
+<CardLayout 
+  categories={[
+    {
+      title: 'Trải Bài Một Lá',
+      description: 'Phương pháp đơn giản nhất, lý tưởng cho những câu hỏi ngắn gọn',
+      link: '/spreads/so-luong/mot-la',
+      icon: '1️⃣',
+    },
+    {
+      title: 'Trải Bài Ba Lá',
+      description: 'Khám phá quá khứ, hiện tại và tương lai',
+      link: '/spreads/so-luong/ba-la',
+      icon: '3️⃣',
+    },
+    {
+      title: 'Trải Bài Năm Lá',
+      description: 'Khám phá quá khứ, hiện tại và tương lai',
+      link: '/spreads/so-luong/nam-la',
+      icon: '5️⃣',
+    },
+    {
+      title: 'Celtic Cross',
+      description: 'Trải bài toàn diện và sâu sắc nhất',
+      link: '/spreads/so-luong/muoi-la',
+      icon: '🔟',
+    }
+  ]}
+/>
+
+## 🌈 Chủ Đề Trải Bài Phổ Biến
+
+<CardLayout 
+  categories={[
+    {
+      title: 'Tình Yêu',
+      description: 'Insights sâu sắc về mối quan hệ',
+      link: 'spreads/chu-de/tinh-yeu',
+      icon: '❤️',
+    },
+    {
+      title: 'Sự Nghiệp',
+      description: 'Khám phá hướng đi và cơ hội nghề nghiệp',
+      link: 'spreads/chu-de/su-nghiep',
+      icon: '💼',
+    },
+    {
+      title: 'Tài Chính',
+      description: 'Đánh giá và định hướng tài chính',
+      link: 'spreads/chu-de/tai-chinh',
+      icon: '💰',
+    },
+        {
+      title: 'Sức khỏe',
+      description: 'Khám phá tính trạng sức khỏe',
+      link: 'spreads/chu-de/suc-khoe',
+      icon: '💪',
+    }
+  ]}
+/>
+
+## 💡 Lời Khuyên Quan Trọng
+
+1. **Tập Trung Năng Lượng**: Luôn giữ tâm trạng tĩnh tâm khi trải bài.
+2. **Diễn Giải Linh Hoạt**: Tarot là công cụ hướng dẫn, không phải là định mệnh.
+3. **Tin Vào Trực Giác**: Kết hợp giữa ý nghĩa lá bài và cảm nhận cá nhân.
+
+## 🌠 Bắt Đầu Hành Trình Tarot
+
+Cho dù bạn là người mới bắt đầu hay đã có kinh nghiệm, mỗi lần trải bài đều là một cuộc khám phá mới. Hãy tiếp cận Tarot với sự tôn trọng, cởi mở và khát khao học hỏi.

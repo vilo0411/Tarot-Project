@@ -7,7 +7,6 @@ import styles from './three-cards-tarot.module.css';
 import QuestionInput from '../../components/TarotReading/QuestionInput/QuestionInput';
 import LoadingIndicator from '../../components/TarotReading/LoadingIndicator/LoadingIndicator';
 import ErrorDisplay from '../../components/TarotReading/ErrorDisplay/ErrorDisplay';
-import InstructionBox from '../../components/TarotReading/InstructionBox/InstructionBox';
 import ReadingResults from '../../components/TarotReading/ReadingResults/ReadingResults';
 
 // Import card-related components

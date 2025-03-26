@@ -261,6 +261,7 @@ function ThreeCardsTarotPage() {
                 selectedCards={selectedCards}
                 onCardSelect={handleCardSelect}
                 maxCards={3}
+                isBack={true}
               />
             </div>
             

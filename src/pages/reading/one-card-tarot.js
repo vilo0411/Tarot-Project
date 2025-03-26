@@ -13,6 +13,11 @@ import ReadingResults from '../../components/TarotReading/ReadingResults/Reading
 import CardSelector from '../../components/CardSelector/CardSelector';
 import SpreadLayout from '../../components/SpreadLayout/SpreadLayout';
 
+// Import API functions
+import { getMockAnalysis } from '../../api/tarot/mockAnalysis';
+import { analyzeTarotReading } from '../../api/tarot/geminiClient';
+import { useSound } from '../../hooks/useSound';
+
 function OneCardTarotPage() {
   const { siteConfig } = useDocusaurusContext();
   
@@ -22,8 +27,10 @@ function OneCardTarotPage() {
   const [shuffledCards, setShuffledCards] = useState([]);
   const [isReading, setIsReading] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [readingAnalysis, setReadingAnalysis] = useState(null);
+  const [mockAnalysis, setMockAnalysis] = useState(null);
+  const [aiAnalysis, setAIAnalysis] = useState(null);
   const [error, setError] = useState(null);
+  const { playSound } = useSound();
   
   // Tạo spread object (cố định cho rút 1 lá)
   const spreadType = {
@@ -118,78 +125,65 @@ function OneCardTarotPage() {
   // Xử lý chọn lá bài
   const handleCardSelect = (card) => {
     if (selectedCards.length < spreadType.count) {
-      setSelectedCards([card]);
+      setSelectedCards(prev => [...prev, card]);
+      
+      // Play card selection sound
+      try {
+        playSound('/sounds/card-sounds-35956.mp3');
+      } catch (error) {
+        console.error('Error playing sound:', error);
+      }
     }
   };
 
   // Phân tích kết quả (mô phỏng)
-  const analyzeReading = () => {
+  const analyzeReading = async () => {
     if (!selectedCards.length || !question.trim()) return;
     
     setIsAnalyzing(true);
-    
-    // Giả lập phân tích bài với setTimeout
-    setTimeout(() => {
-      const card = selectedCards[0];
-      let analysis = `# Phân tích lá bài: ${card.name}\n\n`;
+    setError(null);
+
+    try {
+      // Sử dụng song song cả 2 phân tích: mock và AI
+      const spreadTypeValue = 'past-present-future';
       
-      // Phân tích dựa trên loại lá bài
-      if (card.type === 'major') {
-        analysis += `## Lá bài Ẩn Chính (Major Arcana)\n\n`;
-        analysis += `Lá ${card.name} là một lá bài Ẩn Chính, tượng trưng cho những năng lượng mạnh mẽ và các bài học quan trọng trong cuộc sống. `;
-        
-        // Thêm ý nghĩa cụ thể cho một vài lá Major Arcana
-        if (card.name.includes('Fool')) {
-          analysis += `Lá này tượng trưng cho sự khởi đầu mới, tinh thần phiêu lưu, và tiềm năng vô hạn. `;
-        } else if (card.name.includes('Magician')) {
-          analysis += `Lá này tượng trưng cho khả năng biến ý tưởng thành hiện thực, năng lực sáng tạo và sự khéo léo. `;
-        } else if (card.name.includes('Priestess')) {
-          analysis += `Lá này tượng trưng cho trực giác, sự thông thái bên trong và những bí ẩn chưa được tiết lộ. `;
-        }
-      } else {
-        analysis += `## Lá bài Ẩn Phụ (Minor Arcana)\n\n`;
-        analysis += `Lá ${card.name} thuộc bộ Ẩn Phụ, `;
-        
-        // Phân tích dựa trên suit
-        if (card.suit === 'cups') {
-          analysis += `chất Cups liên quan đến cảm xúc, mối quan hệ, trực giác và sự sáng tạo. `;
-        } else if (card.suit === 'wands') {
-          analysis += `chất Wands liên quan đến đam mê, năng lượng, hành động và tinh thần. `;
-        } else if (card.suit === 'swords') {
-          analysis += `chất Swords liên quan đến suy nghĩ, trí tuệ, thách thức và giao tiếp. `;
-        } else if (card.suit === 'pentacles') {
-          analysis += `chất Pentacles liên quan đến vật chất, sự nghiệp, tài chính và sức khỏe. `;
-        }
+      // Gọi mock analysis trước để đảm bảo luôn có một phân tích
+      const mockResult = await getMockAnalysis(question, selectedCards, spreadTypeValue);
+      console.log('Mock Analysis result:', mockResult);
+      setMockAnalysis(mockResult);
+      
+      // Thử gọi AI analysis (có thể thất bại)
+      try {
+        const aiResult = await analyzeTarotReading(question, selectedCards, spreadTypeValue);
+        console.log('AI Analysis result:', aiResult);
+        setAIAnalysis(aiResult);
+      } catch (aiError) {
+        console.warn('AI analysis failed, using only mock analysis:', aiError);
+        // Không set error state để tránh ảnh hưởng đến toàn bộ quy trình
       }
       
-      // Phân tích dựa trên hướng lá bài
-      if (card.isReversed) {
-        analysis += `\n\n## Ý nghĩa khi lá bài ngược\n\n`;
-        analysis += `Khi lá bài xuất hiện ở vị trí ngược, nó thường biểu thị những khía cạnh tiêu cực hơn hoặc năng lượng bị chặn. Điều này có thể chỉ ra rằng bạn đang gặp khó khăn trong việc thể hiện trọn vẹn tiềm năng của mình, hoặc đang đối mặt với những thử thách nội tâm liên quan đến bản chất của lá bài này.`;
-      } else {
-        analysis += `\n\n## Ý nghĩa khi lá bài thuận\n\n`;
-        analysis += `Khi lá bài xuất hiện ở vị trí thuận, nó thể hiện năng lượng tích cực và dòng chảy tự nhiên. Điều này gợi ý rằng bạn đang có khả năng tiếp cận và khai thác đầy đủ tiềm năng liên quan đến bản chất của lá bài này.`;
-      }
-      
-      // Liên hệ với câu hỏi
-      analysis += `\n\n## Liên hệ với câu hỏi của bạn\n\n`;
-      analysis += `Liên quan đến câu hỏi: "${question}", lá ${card.name} gợi ý rằng bạn nên... `;
-      
-      // Cung cấp lời khuyên
-      analysis += `\n\n## Lời khuyên\n\n`;
-      analysis += `- Hãy dành thời gian suy ngẫm về ý nghĩa của lá bài này trong cuộc sống của bạn\n`;
-      analysis += `- Nhận ra những mẫu hình và năng lượng đang ảnh hưởng đến tình huống của bạn\n`;
-      analysis += `- Sử dụng trực giác của bạn để hiểu sâu hơn về thông điệp của lá bài\n`;
-      
-      setReadingAnalysis({ text: analysis });
+      // Đánh dấu là đã hoàn thành đọc bài
       setIsReading(true);
+    } catch (err) {
+      console.error('Error analyzing reading:', err);
+      setError(err.message || 'An error occurred while analyzing your reading');
+    } finally {
       setIsAnalyzing(false);
-    }, 2000);
+    }
   };
 
+
+
   // Bắt đầu đọc bài
-  const startReading = () => {
-    analyzeReading();
+  const startReading = async () => {
+    if (canStartReading()) {
+      try {
+        await analyzeReading();
+      } catch (error) {
+        console.error('Failed to start reading:', error);
+        setError('Không thể bắt đầu phân tích bài Tarot. Vui lòng thử lại.');
+      }
+    }
   };
 
   // Reset lại trạng thái
@@ -197,7 +191,9 @@ function OneCardTarotPage() {
     setQuestion('');
     setSelectedCards([]);
     setIsReading(false);
-    setReadingAnalysis(null);
+    setMockAnalysis(null);
+    setAIAnalysis(null);
+    setError(null);
     
     // Xáo lại bài
     const allCards = generateTarotCards();
@@ -242,6 +238,7 @@ function OneCardTarotPage() {
           <ErrorDisplay
             error={error}
             type="error"
+            retryAction={() => setError(null)}
           />
         )}
         
@@ -294,12 +291,20 @@ function OneCardTarotPage() {
             message="Đang phân tích bói bài của bạn..."
             type="cards"
           />
-        ) : (
+        ) : mockAnalysis ? (
           <ReadingResults
-            reading={readingAnalysis}
+            reading={mockAnalysis}
+            aiAnalysis={aiAnalysis}
             selectedCards={selectedCards}
             onReset={resetReading}
             showControls={true}
+            timestamp={new Date()}
+          />
+        ) : (
+          <ErrorDisplay
+            message="Không thể hiển thị kết quả bói bài. Vui lòng thử lại."
+            type="error"
+            retryAction={resetReading}
           />
         )}
       </div>

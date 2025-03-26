@@ -53,7 +53,7 @@ export default function TestimonialSection() {
       rating: 5
     },
     {
-      text: "rang web này là một [[nguồn tài nguyên tuyệt vời cho bất kỳ ai quan tâm đến tarot]]. Các bài đọc chi tiết và sâu sắc, và các độc giả rất chính xác.",
+      text: "Trang web này là một [[nguồn tài nguyên tuyệt vời cho bất kỳ ai quan tâm đến tarot]]. Các bài đọc chi tiết và sâu sắc, và các độc giả rất chính xác.",
       author: "Trinh Nguyễn",
       role: "Business Consultant",
       rating: 5
