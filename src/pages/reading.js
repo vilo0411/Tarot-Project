@@ -10,13 +10,13 @@ function ReadingPage() {
   
   return (
     <Layout 
-      title="Bói Bài Tarot" 
+      title="Bói Bài Tarot Online Miễn Phí 100%" 
       description="Các phương pháp Trải Bài Tarot Trực Tuyến"
     >
       <div className={styles.pageBackground}>
         <div className={styles.container}>
           <div className={styles.headerSection}>
-            <h1 className={styles.title}>Khám Phá Bài Tarot</h1>
+            <h1 className={styles.title}>Bói Bài Tarot Online Miễn Phí</h1>
             <p className={styles.subtitle}>
               Trải nghiệm các phương pháp đọc bài Tarot khác nhau để tìm kiếm câu trả lời cho những câu hỏi của bạn.
               Mỗi phương pháp trải bài sẽ mang đến một góc nhìn độc đáo về tình huống của bạn.

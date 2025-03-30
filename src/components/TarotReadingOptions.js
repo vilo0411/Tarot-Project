@@ -23,12 +23,6 @@ const TarotReadingOptions = () => {
       description: "Trải bài chữ thập. Phân tích chi tiết hơn cho các tình huống phức tạp, giúp bạn hiểu rõ các khía cạnh khác nhau của vấn đề.",
       link: "/reading/five-cards-tarot",
       backgroundColor: "green"
-    },
-    {
-      title: "Rút 10 Lá",
-      description: "Trải bài Celtic Cross. Phân tích toàn diện và sâu sắc cho các câu hỏi phức tạp về tình yêu, sự nghiệp, tài chính và các khía cạnh khác của cuộc sống.",
-      link: "/reading/ten-cards-tarot",
-      backgroundColor: "amber"
     }
   ];
 

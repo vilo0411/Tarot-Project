@@ -220,14 +220,6 @@ function OneCardTarotPage() {
                 onSubmit={startReading}
               />
             </div>
-            {/* Hiển thị lá bài úp */}
-            <div className={styles.cardDisplayArea}>
-              <SpreadLayout
-                selectedCards={randomCards}
-                spreadType={spreadType}
-                isBack={true} // Lá bài luôn úp
-              />
-            </div>
             
             {/* Hướng dẫn */}
             <div className={styles.instructionBox}>
@@ -238,6 +230,16 @@ function OneCardTarotPage() {
                 <li>Nhấn mũi tên hoặc phím Enter để xem kết quả</li>
               </ol>
             </div>
+            
+            {/* Hiển thị lá bài úp */}
+            <div className={styles.cardDisplayArea}>
+              <SpreadLayout
+                selectedCards={randomCards}
+                spreadType={spreadType}
+                isBack={true} // Lá bài luôn úp
+              />
+            </div>
+          
           </div>
         ) : isAnalyzing ? (
           <div className={styles.loadingContainer}>

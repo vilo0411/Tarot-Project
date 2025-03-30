@@ -2,7 +2,6 @@
 
 .container {
     width: 100%;
-    margin-bottom: 24px;
     transition: all 0.3s ease;
   }
   
@@ -29,7 +28,7 @@
     padding-right: 46px; /* Make room for the arrow button */
     border: 2px solid var(--ifm-color-emphasis-300);
     border-radius: 10px;
-    background-color: #1e3932; /* Dark background for textarea */
+    background-color: #f4f4f5; /* Dark background for textarea */
     font-size: 1rem;
     line-height: 1.5;
     color: white;
@@ -45,7 +44,7 @@
   }
   
   .textarea::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
   }
   
   .textarea:disabled {

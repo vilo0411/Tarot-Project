@@ -9,11 +9,8 @@ export default function HeroSection() {
         Discover Tarot Reading
       </h2>
       <p className={styles.heroDescription}>
-        Explore the mystical world of Tarot with our comprehensive guide. 
-        Learn card meanings, spreads, and interpretations to unlock insights 
-        into your past, present, and future.
+        Thế giới Tarot là một hệ thống huyền bí đầy sức mạnh, giúp bạn hiểu rõ hơn về quá khứ, hiện tại và tương lai. Hãy cùng tôi khám phá ý nghĩa các lá bài, các dạng trải bài và cách giải đoán để mở khóa những thông điệp sâu sắc.
       </p>
-
       <div className={styles.cardContainer}>
         {/* Row 1: Card Meanings and Spreads */}
         <div className={styles.cardRow}>
@@ -67,24 +64,24 @@ export default function HeroSection() {
 // Dữ liệu tính năng Tarot
 const TAROT_FEATURES = [
   {
-    title: 'Card Meanings',
+    title: 'Ý nghĩa lá bài',
     link: '/cards',
     icon: '♠️',
-    text: 'Explore the detailed meanings of all 78 Tarot cards, including Major and Minor Arcana with upright and reversed interpretations.',
+    text: 'Khám phá ý nghĩa chi tiết của tất cả 78 lá bài Tarot, bao gồm Bộ Ẩn Chính và Bộ Ẩn Phụ với các diễn giải khi xuất hiện chính ngược và đảo ngược.',
     cardClass: 'cardMeanings',
   },
   {
-    title: 'Spreads',
+    title: 'Các loại trải bài',
     link: '/spreads',
     icon: '🔮',
-    text: 'Discover various Tarot spreads for different purposes - from simple three-card spreads to complex Celtic Cross layouts.',
+    text: 'Khám phá các dạng trải bài Tarot khác nhau cho nhiều mục đích khác nhau - từ dạng trải đơn giản ba lá bài đến bố cục phức tạp',
     cardClass: 'cardSpreads',
   },
   {
-    title: 'Interactive Readings',
-    link: '/tarot-reading',
+    title: 'Luận bài',
+    link: '/reading',
     icon: '✨',
-    text: 'Try our interactive Tarot reading tool to gain insights into your questions and situations with personalized interpretations.',
+    text: 'Hãy thử công cụ đọc bài Tarot tương tác của chúng tôi để có được những hiểu biết sâu sắc về các câu hỏi và tình huống của bạn với những diễn giải được cá nhân hóa.',
     cardClass: 'cardReadings',
   },
 ];

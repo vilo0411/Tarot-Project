@@ -108,13 +108,13 @@ const config = {
           {
             to: '/cards/',
             activeBasePath: '/cards/',
-            label: 'Tarot Cards',
+            label: 'Lá Bài',
             position: 'left',
           },
           {
             to: '/spreads/',
             activeBasePath: '/spreads/',
-            label: 'Tarot Spreads',
+            label: 'Trải Bài',
             position: 'left',
           },
           {
@@ -124,7 +124,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'Tarot Reading',
+            label: 'Đọc bài',
             to: '/reading',
             className: 'navbar-dropdown-hover',
             items: [
@@ -139,10 +139,6 @@ const config = {
               {
                 label: 'Five Cards Tarot',
                 to: '/reading/five-cards-tarot',
-              },
-              {
-                label: 'Ten Card Tarot',
-                to: '/reading/ten-cards-tarot',
               }
             ],
           }
@@ -152,50 +148,62 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Tài liệu',
+            title: 'Site Map',
             items: [
               {
-                label: 'Các lá bài',
+                label: 'Trang chủ',
+                to: '/',
+              },
+              {
+                label: 'Các Lá Bài',
                 to: '/cards',
               },
               {
-                label: 'Cách trải bài',
+                label: 'Trải Bài',
                 to: '/spreads',
+              }
+            ],
+          },
+          {
+            title: ' ',
+            items: [
+              {
+                label: 'Đọc bài',
+                to: '/reading',
               },
               {
-                label: 'Xem bài',
-                to: '/tarot-reading',
+                label: 'Bói Tarot 1 lá',
+                to: '/one-card-tarot',
+              },
+              {
+                label: 'Bói Tarot 3 lá',
+                to: '/three-cards-tarot',
+              },
+              {
+                label: 'Bòi Tarot 5 lá',
+                to: '/five-cards-tarot',
               },
             ],
           },
           {
-            title: 'Cộng đồng',
+            title: 'Thông tin khác',
             items: [
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/your-tarot-community',
+                label: 'Liên Hệ',
+                to: '/contact-us',
               },
               {
-                label: 'Facebook',
-                href: 'https://www.facebook.com/your-tarot-page',
+                label: 'Chính sách',
+                to: '/privacy',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/your-tarot-account',
-              },
-            ],
-          },
-          {
-            title: 'Thêm',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/your-github-user/tarot-docs',
+                label: 'Phản Hồi',
+                to: '/feedback',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Tarot Docs. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} Tarot Guide Online. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,

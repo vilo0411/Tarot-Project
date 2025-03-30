@@ -13,10 +13,10 @@ export default function CTASection() {
           <span className={styles.ctaTitleDark}>Miễn Phí</span>
         </h2>
         <p className={styles.ctaDescription}>
-          Experience the latest 2025 online tarot card drawing system and tarot divination tests
+          Trải nghiệm hệ thống rút bài tarot trực tuyến mới nhất năm 2025 và các bài kiểm tra bói toán tarot
         </p>
         <div className={styles.ctaButtonContainer}>
-          <Link to="/tarot-reading" className={styles.ctaButton}>
+          <Link to="/reading" className={styles.ctaButton}>
             Bắt đầu bói
           </Link>
         </div>

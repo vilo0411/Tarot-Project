@@ -1,35 +1,31 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/**  * Custom CSS with purple theme based on original Docusaurus CSS */
 
-/* You can override the default Infima variables here. */
+/* Light mode color palette */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #7828c8;
+  --ifm-color-primary-dark: #6b24b5;
+  --ifm-color-primary-darker: #6120a8;
+  --ifm-color-primary-darkest: #501a85;
+  --ifm-color-primary-light: #8d3edb;
+  --ifm-color-primary-lighter: #9650e0;
+  --ifm-color-primary-lightest: #a86ae4;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode color palette */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #a86ae4;
+  --ifm-color-primary-dark: #9650e0;
+  --ifm-color-primary-darker: #8d3edb;
+  --ifm-color-primary-darkest: #7828c8;
+  --ifm-color-primary-light: #b57eea;
+  --ifm-color-primary-lighter: #c292ee;
+  --ifm-color-primary-lightest: #d1a6f2;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Grid Background Styles */
+/* Rest of the original CSS remains the same */
 .grid-background {
   position: relative;
   width: 100%;
@@ -41,7 +37,6 @@
   background-position: -1px -1px;
 }
 
-/* For even lighter grid lines */
 .grid-background::before {
   content: '';
   position: absolute;
@@ -67,7 +62,6 @@
                    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
 }
 
-/* Căn giữa tất cả hình ảnh trong nội dung Markdown */
 .markdown img {
   display: block;
   margin-left: auto;
@@ -75,12 +69,10 @@
   max-width: 100%;
 }
 
-/* Hiển thị dropdown khi hover */
 .navbar-dropdown-hover:hover .dropdown__menu {
   display: block;
 }
 
-/* Style cho dropdown menu */
 .navbar-dropdown-hover .dropdown__menu {
   top: 100%;
   display: none;

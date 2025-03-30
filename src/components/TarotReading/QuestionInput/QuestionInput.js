@@ -97,7 +97,6 @@ const QuestionInput = ({
   return (
     <div className={getContainerClass()}>
       <label htmlFor="tarot-question" className={styles.label}>
-        Câu hỏi của bạn
         {showCharacterCount && (
           <span className={`${styles.characterCount} ${getCharacterCountClass()}`}>
             {characterCount}{maxLength ? `/${maxLength}` : ""}

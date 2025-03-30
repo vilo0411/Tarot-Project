@@ -11,7 +11,7 @@
     font-weight: 700;
     color: var(--ifm-heading-color);
     margin-bottom: 16px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #7828c8, #d0b3ed);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -29,7 +29,6 @@
   .readingFlow {
     display: flex;
     flex-direction: column;
-    gap: 30px;
   }
   
   /* Question Section */

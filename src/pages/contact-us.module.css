@@ -1,0 +1,149 @@
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--ifm-heading-color);
+  }
+  
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .contactSection {
+    padding: 2rem;
+    background-color: var(--ifm-color-emphasis-100);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .contactSection h2 {
+    margin-bottom: 1rem;
+    color: var(--ifm-color-primary);
+    font-size: 1.5rem;
+  }
+  
+  .contactSection p {
+    color: var(--ifm-color-emphasis-700);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Email styling */
+  .emailLink {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ifm-color-primary);
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .emailLink:hover {
+    color: var(--ifm-color-primary-dark);
+    text-decoration: underline;
+  }
+  
+  .responseNote {
+    font-size: 0.9rem;
+    color: var(--ifm-color-emphasis-600);
+    font-style: italic;
+  }
+  
+  /* Social links styling */
+  .socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .socialLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--ifm-color-emphasis-800);
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 1rem;
+    width: 100px;
+  }
+  
+  .socialIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .socialLink:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+  }
+  
+  /* Social network colors */
+  .socialLink:nth-child(1):hover {
+    color: #4267B2; /* Facebook blue */
+  }
+  
+  .socialLink:nth-child(2):hover {
+    color: #E1306C; /* Instagram pink */
+  }
+  
+  .socialLink:nth-child(3):hover {
+    color: #1DA1F2; /* Twitter blue */
+  }
+  
+  .socialLink:nth-child(4):hover {
+    color: #FF0000; /* YouTube red */
+  }
+  
+  /* Feedback button styling */
+  .feedbackButton {
+    display: inline-block;
+    background-color: var(--ifm-color-primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feedbackButton:hover {
+    background-color: var(--ifm-color-primary-dark);
+    transform: translateY(-3px);
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Dark mode adjustments */
+  :global([data-theme='dark']) .contactSection {
+    background-color: var(--ifm-color-emphasis-200);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contactSection {
+      padding: 1.5rem;
+    }
+    
+    .socialLink {
+      width: 80px;
+      padding: 0.8rem;
+    }
+  }
