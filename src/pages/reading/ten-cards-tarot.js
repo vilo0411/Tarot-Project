@@ -297,6 +297,7 @@ function ThreeCardsTarotPage() {
             onReset={resetReading}
             showControls={true}
             timestamp={new Date()}
+            question={question}
           />
         ) : (
           <ErrorDisplay

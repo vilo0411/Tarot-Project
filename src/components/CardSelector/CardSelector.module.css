@@ -11,16 +11,29 @@
 
 .cardsContainer {
   display: flex;
-  gap: 10px;
-  padding: 20px;
-  min-height: 400px;
-  justify-content: center;
   flex-wrap: nowrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  min-height: 320px;
+  overflow-x: auto;
   align-items: center;
 }
 
-.sliderContainer {
-  display: none;
+/* Style đặc biệt khi đang ở chế độ chọn 1 lá */
+.singleCardMode {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  overflow-x: visible;
+  align-items: start;
+  justify-items: center;
+  padding: 20px 10px;
+}
+
+.singleCardMode > div {
+  margin-left: 0 !important;
+  transform: none !important;
 }
 
 .maxCardsMessage {
@@ -30,51 +43,77 @@
   font-weight: bold;
 }
 
-.cardContainer {
-  position: relative;
-  display: inline-block;
-  width: 180px;
-  height: 280px;
-  margin-right: -130px;
-  vertical-align: middle;
-  border-radius: 15px;
+.selectedCountMessage {
+  text-align: center;
+  color: #4CAF50;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-/* Ẩn hoàn toàn card đã được chọn */
-.selectedCardContainer {
-  display: none;
+/* Style cho các lá bài trong ChonNhieuLa */
+.cardsContainer:not(.singleCardMode) > div {
+  margin-left: -110px;
+  transition: transform 0.3s ease;
 }
 
-/* Chỉ áp dụng hover cho card chưa được chọn */
-.cardContainer:not(.selectedCardContainer):hover {
-  transform: translateY(-20px);
-  z-index: 1;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.cardImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-/* Thêm style cho card khi không thể chọn thêm */
-.cardContainer.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-/* Có thể thêm style cho các lá bài để chúng xếp chồng lên nhau một chút */
-.cardsContainer > * {
-  margin-left: -30px;
-}
-
-.cardsContainer > *:first-child {
+.cardsContainer:not(.singleCardMode) > div:first-child {
   margin-left: 0;
-} 
+}
+
+.cardsContainer:not(.singleCardMode) > div:hover {
+  transform: translateY(-20px);
+  z-index: 5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cardsContainer {
+    min-height: 280px;
+  }
+  
+  .singleCardMode {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    min-height: auto;
+    padding: 15px 5px;
+  }
+  
+  .cardsContainer:not(.singleCardMode) > div {
+    margin-left: -90px;
+  }
+  
+  .cardsContainer:not(.singleCardMode) > div:hover {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .cardsContainer {
+    min-height: 250px;
+    padding: 15px 5px;
+  }
+  
+  .singleCardMode {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+    padding: 10px 5px;
+  }
+  
+  .cardsContainer:not(.singleCardMode) > div {
+    margin-left: -70px;
+  }
+  
+  .cardsContainer:not(.singleCardMode) > div:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 360px) {
+  .singleCardMode {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 5px;
+  }
+  
+  .cardsContainer:not(.singleCardMode) > div {
+    margin-left: -60px;
+  }
+}

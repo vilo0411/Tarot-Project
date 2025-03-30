@@ -10,7 +10,6 @@ import ErrorDisplay from '../../components/TarotReading/ErrorDisplay/ErrorDispla
 import ReadingResults from '../../components/TarotReading/ReadingResults/ReadingResults';
 
 // Import card-related components
-import CardSelector from '../../components/CardSelector/CardSelector';
 import SpreadLayout from '../../components/SpreadLayout/SpreadLayout';
 
 // Import API functions
@@ -23,8 +22,7 @@ function OneCardTarotPage() {
   
   // Tạo state
   const [question, setQuestion] = useState('');
-  const [selectedCards, setSelectedCards] = useState([]);
-  const [shuffledCards, setShuffledCards] = useState([]);
+  const [randomCards, setRandomCards] = useState([]);
   const [isReading, setIsReading] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [mockAnalysis, setMockAnalysis] = useState(null);
@@ -100,8 +98,13 @@ function OneCardTarotPage() {
   // Viết hoa chữ cái đầu
   const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
-  // Xáo bài khi component mount
+  // Random các lá bài khi component mount
   useEffect(() => {
+    randomizeCards();
+  }, []);
+
+  // Hàm random lá bài
+  const randomizeCards = () => {
     try {
       const allCards = generateTarotCards();
       const shuffled = allCards
@@ -111,55 +114,49 @@ function OneCardTarotPage() {
         }))
         .sort(() => Math.random() - 0.5);
       
-      setShuffledCards(shuffled);
+      // Chọn số lượng lá bài theo spreadType.count
+      const selected = shuffled.slice(0, spreadType.count);
+      setRandomCards(selected);
     } catch (err) {
-      setError(err.message || 'Failed to load tarot cards');
+      setError(err.message || 'Failed to generate random cards');
     }
-  }, []);
+  };
 
   // Xử lý thay đổi câu hỏi
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value);
   };
 
-  // Xử lý chọn lá bài
-  const handleCardSelect = (card) => {
-    if (selectedCards.length < spreadType.count) {
-      setSelectedCards(prev => [...prev, card]);
-      
-      // Play card selection sound
-      try {
-        playSound('/sounds/card-sounds-35956.mp3');
-      } catch (error) {
-        console.error('Error playing sound:', error);
-      }
-    }
-  };
-
-  // Phân tích kết quả (mô phỏng)
+  // Phân tích kết quả
   const analyzeReading = async () => {
-    if (!selectedCards.length || !question.trim()) return;
+    if (!randomCards.length || !question.trim()) return;
     
     setIsAnalyzing(true);
     setError(null);
 
     try {
+      // Play sound khi bắt đầu đọc bài
+      try {
+        playSound('/sounds/card-sounds-35956.mp3');
+      } catch (error) {
+        console.error('Error playing sound:', error);
+      }
+
       // Sử dụng song song cả 2 phân tích: mock và AI
-      const spreadTypeValue = 'past-present-future';
+      const spreadTypeValue = 'single-card';
       
       // Gọi mock analysis trước để đảm bảo luôn có một phân tích
-      const mockResult = await getMockAnalysis(question, selectedCards, spreadTypeValue);
+      const mockResult = await getMockAnalysis(question, randomCards, spreadTypeValue);
       console.log('Mock Analysis result:', mockResult);
       setMockAnalysis(mockResult);
       
       // Thử gọi AI analysis (có thể thất bại)
       try {
-        const aiResult = await analyzeTarotReading(question, selectedCards, spreadTypeValue);
+        const aiResult = await analyzeTarotReading(question, randomCards, spreadTypeValue);
         console.log('AI Analysis result:', aiResult);
         setAIAnalysis(aiResult);
       } catch (aiError) {
         console.warn('AI analysis failed, using only mock analysis:', aiError);
-        // Không set error state để tránh ảnh hưởng đến toàn bộ quy trình
       }
       
       // Đánh dấu là đã hoàn thành đọc bài
@@ -171,8 +168,6 @@ function OneCardTarotPage() {
       setIsAnalyzing(false);
     }
   };
-
-
 
   // Bắt đầu đọc bài
   const startReading = async () => {
@@ -189,27 +184,16 @@ function OneCardTarotPage() {
   // Reset lại trạng thái
   const resetReading = () => {
     setQuestion('');
-    setSelectedCards([]);
     setIsReading(false);
     setMockAnalysis(null);
     setAIAnalysis(null);
     setError(null);
-    
-    // Xáo lại bài
-    const allCards = generateTarotCards();
-    const reshuffled = allCards
-      .map(card => ({
-        ...card,
-        isReversed: Math.random() > 0.5
-      }))
-      .sort(() => Math.random() - 0.5);
-    
-    setShuffledCards(reshuffled);
+    randomizeCards();
   };
 
   // Kiểm tra xem có thể bắt đầu đọc bài không
   const canStartReading = () => {
-    return question.trim() && selectedCards.length === spreadType.count;
+    return question.trim() && randomCards.length === spreadType.count;
   };
 
   return (
@@ -223,15 +207,64 @@ function OneCardTarotPage() {
           Trả lời nhanh cho một câu hỏi đơn giản. Lá bài đơn lẻ sẽ cung cấp thông tin rõ ràng và trực tiếp.
         </p>
         
-        {/* Question Input */}
-        <QuestionInput
-          question={question}
-          onChange={handleQuestionChange}
-          isDisabled={isReading || isAnalyzing}
-          placeholder="Nhập câu hỏi của bạn ở đây... (Bắt Buộc)"
-          showHints={true}
-          showCharacterCount={true}
-        />
+        {!isReading && !isAnalyzing ? (
+          <div className={styles.readingFlow}>
+            {/* Form nhập câu hỏi với mũi tên */}
+            <div className={styles.questionSection}>
+              <QuestionInput
+                question={question}
+                onChange={handleQuestionChange}
+                isDisabled={isAnalyzing}
+                placeholder="Nhập câu hỏi của bạn ở đây..."
+                showCharacterCount={true}
+                onSubmit={startReading}
+              />
+            </div>
+            {/* Hiển thị lá bài úp */}
+            <div className={styles.cardDisplayArea}>
+              <SpreadLayout
+                selectedCards={randomCards}
+                spreadType={spreadType}
+                isBack={true} // Lá bài luôn úp
+              />
+            </div>
+            
+            {/* Hướng dẫn */}
+            <div className={styles.instructionBox}>
+              <h3>Hướng Dẫn</h3>
+              <ol>
+                <li>Viết câu hỏi của bạn vào ô trên</li>
+                <li>Hít thở sâu và tập trung vào câu hỏi của bạn</li>
+                <li>Nhấn mũi tên hoặc phím Enter để xem kết quả</li>
+              </ol>
+            </div>
+          </div>
+        ) : isAnalyzing ? (
+          <div className={styles.loadingContainer}>
+            <LoadingIndicator
+              message="Đang phân tích bài Tarot của bạn..."
+              type="cards"
+            />
+          </div>
+        ) : mockAnalysis ? (
+          <div className={styles.resultsContainer}>
+            <ReadingResults
+              reading={mockAnalysis}
+              aiAnalysis={aiAnalysis}
+              selectedCards={randomCards}
+              onReset={resetReading}
+              showControls={true}
+              timestamp={new Date()}
+              question={question}
+            />
+          </div>
+        ) : (
+          <ErrorDisplay
+            message="Không thể hiển thị kết quả bói bài. Vui lòng thử lại."
+            type="error"
+            retryAction={resetReading}
+          />
+        )}
         
         {/* Error Display */}
         {error && (
@@ -239,72 +272,6 @@ function OneCardTarotPage() {
             error={error}
             type="error"
             retryAction={() => setError(null)}
-          />
-        )}
-        
-        {!isReading && !isAnalyzing && !error && (
-          <>
-            <div className={styles.instructionBox}>
-              <h3>Hướng Dẫn</h3>
-              <ol>
-                <li>Viết câu hỏi của bạn vào ô trên</li>
-                <li>Tập trung vào câu hỏi và thở sâu</li>
-                <li>Chọn một lá bài bên dưới</li>
-                <li>Nhấn "Đọc Bài" để xem kết quả</li>
-              </ol>
-            </div>
-          
-            <div className={styles.cardSelectionArea}>
-              <h3>Chọn Một Lá Bài</h3>
-              <CardSelector
-                shuffledCards={shuffledCards}
-                selectedCards={selectedCards}
-                onCardSelect={handleCardSelect}
-                maxCards={1}
-                isBack={true}
-              />
-            </div>
-            
-            {selectedCards.length > 0 && (
-              <div className={styles.previewArea}>
-                <h3>Lá Bài Đã Chọn</h3>
-                <SpreadLayout
-                  selectedCards={selectedCards}
-                  spreadType={spreadType}
-                />
-              </div>
-            )}
-          </>
-        )}
-        
-        {/* Start Button or Loading Indicator */}
-        {!isReading && !isAnalyzing ? (
-          <button 
-            className={styles.startButton}
-            onClick={startReading}
-            disabled={!canStartReading()}
-          >
-            Đọc Bài
-          </button>
-        ) : isAnalyzing ? (
-          <LoadingIndicator
-            message="Đang phân tích bói bài của bạn..."
-            type="cards"
-          />
-        ) : mockAnalysis ? (
-          <ReadingResults
-            reading={mockAnalysis}
-            aiAnalysis={aiAnalysis}
-            selectedCards={selectedCards}
-            onReset={resetReading}
-            showControls={true}
-            timestamp={new Date()}
-          />
-        ) : (
-          <ErrorDisplay
-            message="Không thể hiển thị kết quả bói bài. Vui lòng thử lại."
-            type="error"
-            retryAction={resetReading}
           />
         )}
       </div>

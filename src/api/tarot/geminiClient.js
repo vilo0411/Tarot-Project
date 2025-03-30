@@ -13,7 +13,7 @@ export class GeminiClient extends AIAnalysisClient {
       apiEndpoint: GEMINI_API_ENDPOINT,
       model: GEMINI_MODEL,
       temperature: 0.7,
-      maxTokens: 1024,
+      maxTokens: 500, // Reduced tokens for more concise responses
       ...config
     });
   }
@@ -62,8 +62,6 @@ export class GeminiClient extends AIAnalysisClient {
    * @returns {string} Formatted prompt
    */
   formatPrompt(question, cards, spreadType) {
-    // Approach 1: Use template-based prompts with placeholders
-    // Get the appropriate prompt template based on spread type
     try {
       let promptTemplate;
       switch (spreadType) {
@@ -83,7 +81,6 @@ export class GeminiClient extends AIAnalysisClient {
       // Ensure we have a valid prompt template
       if (!promptTemplate) {
         console.warn(`No template found for spread type: ${spreadType}, using generateTarotAnalysisPrompt instead`);
-        // Fall back to approach 2 if template is missing
         throw new Error('Missing prompt template');
       }
       
@@ -97,10 +94,9 @@ export class GeminiClient extends AIAnalysisClient {
         .replace('{{SPREAD_TYPE}}', spreadType);
     }
     catch (error) {
-      // Approach 2: Use function-based prompt generation (fallback)
+      // Fallback
       console.log('Using functional prompt generation as fallback');
       const formattedCards = this.formatCardsForPrompt(cards);
-      // Pass spreadType to the function for better context
       return generateTarotAnalysisPrompt(question, formattedCards, spreadType);
     }
   }

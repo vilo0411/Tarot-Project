@@ -1,9 +1,6 @@
-"use client"
-
 import React, { useRef, useState, useEffect } from 'react';
 import TarotCard from '../TarotCard/TarotCard';
 import styles from './CardSelector.module.css';
-
 
 function CardSelector({ 
   shuffledCards, 
@@ -51,11 +48,14 @@ function CardSelector({
   };
 
   const canSelectMore = selectedCards.length < maxCards;
+  
+  // Xác định xem đây có phải là chế độ chọn 1 lá không
+  const isSingleCardMode = maxCards === 1;
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.cardLayout}>
-        <div className={styles.cardsContainer}>
+        <div className={`${styles.cardsContainer} ${isSingleCardMode ? styles.singleCardMode : ''}`}>
           {shuffledCards.map((card, index) => {
             if (selectedCards.some(selected => selected.code === card.code)) return null;
             
@@ -79,6 +79,12 @@ function CardSelector({
       {!canSelectMore && (
         <div className={styles.maxCardsMessage}>
           Bạn đã chọn đủ {maxCards} lá bài
+        </div>
+      )}
+      
+      {selectedCards.length > 0 && (
+        <div className={styles.selectedCountMessage}>
+          Bạn đã chọn {selectedCards.length}/{maxCards} lá bài
         </div>
       )}
     </div>

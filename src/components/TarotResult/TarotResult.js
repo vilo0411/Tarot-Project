@@ -12,7 +12,7 @@ function TarotResult({
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Định nghĩa vị trí lá bài dựa trên loại trải bài
+  // Define positions based on spread type
   const getPositions = () => {
     switch (spreadType.count) {
       case 1:
@@ -71,8 +71,8 @@ function TarotResult({
         await onSubmitEmail(email, selectedCards);
       }
       
-      // Optional: Show success message
-      alert('Kết quả bói bài sẽ được gửi đến email của bạn.');
+      // Show success message
+      alert('Kết quả phân tích chi tiết bài tarot sẽ được gửi đến email của bạn.');
     } catch (error) {
       console.error('Email submission error:', error);
       alert('Có lỗi xảy ra. Vui lòng thử lại.');
@@ -111,6 +111,9 @@ function TarotResult({
       </div>
       
       <div className={styles.emailSection}>
+        <p className={styles.emailDescription}>
+          Nhận phân tích chi tiết với ý nghĩa của các lá bài và lời khuyên cụ thể qua email
+        </p>
         <form onSubmit={handleEmailSubmit} className={styles.emailForm}>
           <input 
             type="email" 

@@ -1,20 +1,6 @@
-// src/components/TarotReading/QuestionInput/index.js
 import React, { useState, useEffect } from 'react';
 import styles from './QuestionInput.module.css';
 
-/**
- * QuestionInput component for Tarot reading questions
- * 
- * @param {Object} props
- * @param {string} props.question - Current question value
- * @param {function} props.onChange - Function to handle question changes
- * @param {boolean} props.isDisabled - Whether the input should be disabled
- * @param {string} props.placeholder - Placeholder text for the input
- * @param {number} props.maxLength - Maximum length of the question (optional)
- * @param {boolean} props.showCharacterCount - Whether to show character count (optional)
- * @param {boolean} props.showHints - Whether to show question hints (optional)
- * @param {string} props.className - Additional CSS class (optional)
- */
 const QuestionInput = ({
   question,
   onChange,
@@ -24,6 +10,7 @@ const QuestionInput = ({
   showCharacterCount = false,
   showHints = false,
   className = "",
+  onSubmit = () => {},
 }) => {
   // State to track validation and character count
   const [isValid, setIsValid] = useState(true);
@@ -58,6 +45,22 @@ const QuestionInput = ({
     }
     
     onChange(e);
+  };
+
+  // Handle key press
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter' && isValid && question.trim().length >= MIN_CHARACTERS) {
+      e.preventDefault();
+      onSubmit();
+    }
+  };
+
+  // Handle submit button click
+  const handleSubmitClick = (e) => {
+    e.preventDefault();
+    if (isValid && question.trim().length >= MIN_CHARACTERS) {
+      onSubmit();
+    }
   };
 
   // Calculate character count class based on current length
@@ -102,19 +105,31 @@ const QuestionInput = ({
         )}
       </label>
       
-      <textarea
-        id="tarot-question"
-        className={styles.textarea}
-        value={question}
-        onChange={handleInputChange}
-        placeholder={placeholder}
-        disabled={isDisabled}
-        aria-invalid={!isValid}
-        aria-describedby="question-validation-message question-hints"
-        maxLength={maxLength || undefined}
-        onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
-      />
+      <div className={styles.inputWrapper}>
+        <textarea
+          id="tarot-question"
+          className={styles.textarea}
+          value={question}
+          onChange={handleInputChange}
+          onKeyPress={handleKeyPress}
+          placeholder={placeholder}
+          disabled={isDisabled}
+          aria-invalid={!isValid}
+          aria-describedby="question-validation-message question-hints"
+          maxLength={maxLength || undefined}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+        />
+        
+        <button 
+          className={`${styles.submitArrow} ${question.trim().length >= MIN_CHARACTERS ? styles.active : ''}`}
+          onClick={handleSubmitClick}
+          disabled={!isValid || question.trim().length < MIN_CHARACTERS || isDisabled}
+          aria-label="Gửi câu hỏi"
+        >
+          ↑
+        </button>
+      </div>
       
       {validationMessage && !isValid && (
         <div 

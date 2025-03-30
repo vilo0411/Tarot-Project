@@ -2,18 +2,19 @@
 
 .spreadLayout {
   width: 100%;
-  height: 800px; /* Chiều cao cố định */
+  height: auto;
+  min-height: 400px;
   padding: 20px;
-  background: #1e3932; /* Màu xanh lá cây đậm - màu của thảm trải bài Tarot truyền thống */
+  background: #1e3932;
   border-radius: 20px;
   margin: 20px 0;
   position: relative;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
-  border: 2px solid #4a6c64; /* Viền tinh tế */
+  border: 2px solid #4a6c64;
   overflow: hidden;
 }
 
-/* Thêm họa tiết trang trí cho thảm */
+/* Thêm background pattern */
 .spreadLayout::before {
   content: '';
   position: absolute;
@@ -28,6 +29,31 @@
     radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.05) 2px, transparent 2px),
     radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08) 100px, transparent 100px);
   pointer-events: none;
+  z-index: 1;
+}
+
+/* Style đặc biệt cho layout một lá */
+.singleCardLayout {
+  min-height: 300px;
+  padding-bottom: 30px;
+}
+
+/* Style đặc biệt cho layout ba lá */
+.threeCardsLayout {
+  min-height: 320px;
+  padding-bottom: 40px;
+}
+
+/* Style đặc biệt cho layout năm lá */
+.fiveCardsLayout {
+  min-height: 350px;
+  padding-bottom: 40px;
+}
+
+/* Style đặc biệt cho layout mười lá (Celtic Cross) */
+.tenCardsLayout {
+  min-height: 550px;
+  padding-bottom: 40px;
 }
 
 .layout {
@@ -35,13 +61,23 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  z-index: 2;
 }
 
 /* Layout cho 1 lá */
 .layout1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+}
+
+/* Style đặc biệt cho lá bài đơn */
+.singleCard {
+  width: 160px;
+  height: 250px;
+  transition: transform 0.3s ease;
 }
 
 /* Layout cho 3 lá */
@@ -49,7 +85,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
+  padding: 30px 0;
+  flex-wrap: wrap;
 }
 
 /* Layout cho 5 lá (Cross spread) */
@@ -59,11 +97,11 @@
     ". top ."
     "left center right"
     ". bottom .";
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  padding: 30px 0;
 }
 
 .layout5 .top { grid-area: top; }
@@ -77,14 +115,14 @@
   width: 100%;
   height: 100%;
   position: relative;
-  margin: 0 auto;
+  padding: 30px 0;
 }
 
 /* Card 1 - Center position */
 .celtic-center {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -93,7 +131,7 @@
 .celtic-crossing {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
   z-index: 2;
 }
@@ -110,7 +148,7 @@
 .celtic-left {
   position: absolute;
   left: 30%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -118,7 +156,7 @@
 .celtic-above {
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 25%;
   transform: translate(-50%, -50%);
 }
 
@@ -126,7 +164,7 @@
 .celtic-right {
   position: absolute;
   left: 70%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -135,7 +173,7 @@
 .celtic-self {
   position: absolute;
   left: 85%;
-  top: 85%;
+  top: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -143,7 +181,7 @@
 .celtic-environment {
   position: absolute;
   left: 85%;
-  top: 65%;
+  top: 60%;
   transform: translate(-50%, -50%);
 }
 
@@ -151,7 +189,7 @@
 .celtic-hopes {
   position: absolute;
   left: 85%;
-  top: 35%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
 
@@ -159,34 +197,41 @@
 .celtic-outcome {
   position: absolute;
   left: 85%;
-  top: 15%;
+  top: 20%;
   transform: translate(-50%, -50%);
+}
+
+/* Position styling cho ba lá */
+.left, .center, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardPositionLabel {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.emptyPositionLabel {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 .cardPosition {
-  width: 150px; /* Tăng kích thước card */
-  height: 250px; /* Tăng kích thước card */
   text-align: center;
   transition: all 0.3s ease;
-}
-
-/* Thêm hiệu ứng lấp lánh nhẹ cho lá bài */
-.cardPosition:hover {
-  filter: brightness(1.1);
-}
-
-/* Disable hover effect completely for layout10 */
-.layout10 .cardPosition:hover {
-  transform: translate(-50%, -50%);
-}
-
-.layout10 .celtic-crossing:hover {
-  transform: translate(-50%, -50%) rotate(90deg);
+  margin: 5px;
 }
 
 .emptyPosition {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 180px;
   border: 2px dashed rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   display: flex;
@@ -199,14 +244,14 @@
 }
 
 .positionNumber {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   border-radius: 50%;
   margin: 0 auto 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -215,23 +260,41 @@
 /* Media queries để đảm bảo responsiveness */
 @media (max-width: 992px) {
   .spreadLayout {
-    height: 500px;
+    min-height: 350px;
   }
   
-  .cardPosition {
-    width: 130px;
-    height: 217px;
+  .singleCardLayout {
+    min-height: 280px;
+  }
+  
+  .threeCardsLayout {
+    min-height: 300px;
+  }
+  
+  .fiveCardsLayout {
+    min-height: 320px;
+  }
+  
+  .tenCardsLayout {
+    min-height: 500px;
+  }
+  
+  .singleCard {
+    width: 140px;
+    height: 220px;
   }
   
   .layout3 {
-    gap: 40px;
+    gap: 20px;
+    padding: 20px 0;
   }
   
   .layout5 {
-    gap: 30px;
+    gap: 15px;
+    padding: 20px 0;
   }
   
-  /* Điều chỉnh vị trí cho Celtic Cross */
+  /* Điều chỉnh layout Celtic Cross */
   .celtic-left {
     left: 28%;
   }
@@ -240,32 +303,117 @@
     left: 72%;
   }
   
-  .celtic-self, .celtic-environment, .celtic-hopes, .celtic-outcome {
+  .celtic-self, 
+  .celtic-environment, 
+  .celtic-hopes, 
+  .celtic-outcome {
     left: 88%;
+  }
+  
+  .cardPositionLabel {
+    font-size: 1.1rem;
+    margin-top: 12px;
+  }
+  
+  .emptyPosition {
+    width: 110px;
+    height: 170px;
   }
 }
 
 @media (max-width: 768px) {
   .spreadLayout {
-    height: 450px;
-    padding: 10px;
+    min-height: 450px;
+    padding: 15px;
   }
   
-  .cardPosition {
-    width: 100px;
-    height: 167px;
+  .singleCardLayout {
+    min-height: 250px;
+  }
+  
+  .threeCardsLayout {
+    min-height: 280px;
+  }
+  
+  .fiveCardsLayout {
+    min-height: 300px;
+  }
+  
+  .tenCardsLayout {
+    min-height: 800px; /* Tăng chiều cao cho layout Celtic Cross trên mobile */
+  }
+  
+  .singleCard {
+    width: 120px;
+    height: 190px;
   }
   
   .layout3 {
-    gap: 30px;
+    gap: 15px;
+    padding: 15px 0;
   }
   
   .layout5 {
-    gap: 20px;
+    /* Chuyển sang layout linh hoạt hơn cho màn hình nhỏ */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". top ."
+      "left center right"
+      ". bottom .";
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  /* Điều chỉnh layout Celtic Cross cho mobile */
+  .layout10 {
+    /* Chuyển sang layout dạng dọc cho Celtic Cross */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  
+  /* Điều chỉnh từng vị trí lá bài */
+  .celtic-center,
+  .celtic-crossing,
+  .celtic-below,
+  .celtic-left,
+  .celtic-above,
+  .celtic-right,
+  .celtic-self,
+  .celtic-environment,
+  .celtic-hopes,
+  .celtic-outcome {
+    position: static;
+    transform: none;
+    margin: 5px 0;
+  }
+  
+  /* Chỉ lá crossing giữ nguyên xoay 90 độ */
+  .celtic-crossing {
+    transform: rotate(90deg);
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+  
+  .cardPositionLabel {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .emptyPositionLabel {
+    font-size: 0.9rem;
+  }
+  
+  .emptyPosition {
+    width: 100px;
+    height: 155px;
   }
   
   .positionNumber {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 32px;
     height: 32px;
     line-height: 32px;
@@ -274,24 +422,71 @@
 
 @media (max-width: 480px) {
   .spreadLayout {
-    height: 400px;
+    min-height: 400px;
+    padding: 10px;
   }
   
-  .cardPosition {
-    width: 80px;
-    height: 133px;
+  .singleCardLayout {
+    min-height: 220px;
+  }
+  
+  .threeCardsLayout {
+    min-height: 230px;
+  }
+  
+  .fiveCardsLayout {
+    min-height: 280px;
+  }
+  
+  .tenCardsLayout {
+    min-height: 750px;
+  }
+  
+  .singleCard {
+    width: 100px;
+    height: 160px;
   }
   
   .layout3 {
-    gap: 20px;
+    gap: 10px;
+    padding: 10px 0;
   }
   
   .layout5 {
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  /* Tiếp tục tinh chỉnh layout dọc cho Celtic Cross */
+  .layout10 {
+    padding: 10px 5px;
+  }
+  
+  .celtic-crossing {
+    margin-top: -40px;
+    margin-bottom: 15px;
+  }
+  
+  .cardPositionLabel {
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+  
+  .emptyPositionLabel {
+    font-size: 0.8rem;
+  }
+  
+  .emptyPosition {
+    width: 80px;
+    height: 130px;
   }
   
   .positionNumber {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 28px;
     height: 28px;
     line-height: 28px;
