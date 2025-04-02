@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /chu-de/su-nghiep
+slug: /theme/career
 ---
 
 # Trải Bài Tarot Về Sự Nghiệp

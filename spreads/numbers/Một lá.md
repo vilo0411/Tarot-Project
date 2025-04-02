@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /so-luong/mot-la
+slug: /numbers/one-cards
 ---
 
 # Trải Bài 1 Lá Tarot

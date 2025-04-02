@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /chu-de/tinh-than
+slug: /theme/spiritual
 ---
 
 # Trải Bài Tinh Thần & Tâm Linh

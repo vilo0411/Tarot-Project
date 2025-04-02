@@ -17,13 +17,13 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
     {
       title: 'Theo Số Lượng Lá',
       description: 'Khám phá insights thông qua số lượng lá bài khác nhau',
-      link: '/spreads/so-luong',
+      link: '/spreads/numbers',
       icon: '📖',
     },
     {
       title: 'Theo Chủ Đề Câu Hỏi',
       description: 'Trải bài chuyên sâu cho từng loại vấn đề',
-      link: '/spreads/chu-de',
+      link: '/spreads/theme',
       icon: '🃏',
     }
   ]}
@@ -36,25 +36,25 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
     {
       title: 'Trải Bài Một Lá',
       description: 'Phương pháp đơn giản nhất, lý tưởng cho những câu hỏi ngắn gọn',
-      link: '/spreads/so-luong/mot-la',
+      link: '/spreads/numbers/one-card',
       icon: '1️⃣',
     },
     {
       title: 'Trải Bài Ba Lá',
       description: 'Khám phá quá khứ, hiện tại và tương lai',
-      link: '/spreads/so-luong/ba-la',
+      link: '/spreads/numbers/three-cards',
       icon: '3️⃣',
     },
     {
       title: 'Trải Bài Năm Lá',
       description: 'Khám phá quá khứ, hiện tại và tương lai',
-      link: '/spreads/so-luong/nam-la',
+      link: '/spreads/numbers/five-cards',
       icon: '5️⃣',
     },
     {
       title: 'Celtic Cross',
       description: 'Trải bài toàn diện và sâu sắc nhất',
-      link: '/spreads/so-luong/muoi-la',
+      link: '/spreads/numbers/ten-cards',
       icon: '🔟',
     }
   ]}
@@ -67,25 +67,25 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
     {
       title: 'Tình Yêu',
       description: 'Insights sâu sắc về mối quan hệ',
-      link: 'spreads/chu-de/tinh-yeu',
+      link: 'spreads/theme/love',
       icon: '❤️',
     },
     {
       title: 'Sự Nghiệp',
       description: 'Khám phá hướng đi và cơ hội nghề nghiệp',
-      link: 'spreads/chu-de/su-nghiep',
+      link: 'spreads/theme/career',
       icon: '💼',
     },
     {
       title: 'Tài Chính',
       description: 'Đánh giá và định hướng tài chính',
-      link: 'spreads/chu-de/tai-chinh',
+      link: 'spreads/theme/finance',
       icon: '💰',
     },
         {
       title: 'Sức khỏe',
       description: 'Khám phá tính trạng sức khỏe',
-      link: 'spreads/chu-de/suc-khoe',
+      link: 'spreads/theme/heath',
       icon: '💪',
     }
   ]}

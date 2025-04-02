@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /chu-de/hang-ngay
+slug: /theme/daily-energy
 ---
 
 # Trải Bài Năng Lượng Hằng Ngày

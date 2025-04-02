@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-slug: /chu-de/suc-khoe
+slug: /theme/heath
 ---
 
 # Trải Bài Tarot Về Sức Khỏe

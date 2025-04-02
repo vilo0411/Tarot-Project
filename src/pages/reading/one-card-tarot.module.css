@@ -96,13 +96,7 @@
     background-color: var(--ifm-card-background-color);
     border-color: var(--ifm-color-emphasis-300);
   }
-  
-  :global([data-theme='dark']) .title {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .container {

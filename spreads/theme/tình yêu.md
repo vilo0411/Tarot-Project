@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /chu-de/tinh-yeu
+slug: /theme/love
 ---
 
 # Trải Bài Tarot Về Tình Yêu

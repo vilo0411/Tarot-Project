@@ -220,16 +220,6 @@ function FiveCardsTarotPage() {
                 onSubmit={startReading}
               />
             </div>
-            
-            {/* Hiển thị lá bài úp */}
-            <div className={styles.cardDisplayArea}>
-              <SpreadLayout
-                selectedCards={randomCards}
-                spreadType={spreadType}
-                isBack={true} // Lá bài luôn úp
-              />
-            </div>
-            
             {/* Hướng dẫn */}
             <div className={styles.instructionBox}>
               <h3>Hướng Dẫn</h3>
@@ -240,6 +230,17 @@ function FiveCardsTarotPage() {
                 <li>Năm lá bài sẽ đại diện cho các khía cạnh khác nhau của vấn đề</li>
               </ol>
             </div>
+                        
+            {/* Hiển thị lá bài úp */}
+            <div className={styles.cardDisplayArea}>
+              <SpreadLayout
+                selectedCards={randomCards}
+                spreadType={spreadType}
+                isBack={true} // Lá bài luôn úp
+              />
+            </div>
+            
+
           </div>
         ) : isAnalyzing ? (
           <div className={styles.loadingContainer}>

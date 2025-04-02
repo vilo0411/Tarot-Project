@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /chu-de/trang-tron
+slug: /theme/full-moon
 ---
 
 # Trải Bài Trăng Tròn

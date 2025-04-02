@@ -221,16 +221,6 @@ function ThreeCardsTarotPage() {
                 onSubmit={startReading}
               />
             </div>
-            
-            {/* Hiển thị lá bài úp */}
-            <div className={styles.cardDisplayArea}>
-              <SpreadLayout
-                selectedCards={randomCards}
-                spreadType={spreadType}
-                isBack={true} // Lá bài luôn úp
-              />
-            </div>
-            
             {/* Hướng dẫn */}
             <div className={styles.instructionBox}>
               <h3>Hướng Dẫn</h3>
@@ -241,6 +231,17 @@ function ThreeCardsTarotPage() {
                 <li>Ba lá bài sẽ đại diện cho Quá khứ, Hiện tại và Tương lai</li>
               </ol>
             </div>
+                        
+            {/* Hiển thị lá bài úp */}
+            <div className={styles.cardDisplayArea}>
+              <SpreadLayout
+                selectedCards={randomCards}
+                spreadType={spreadType}
+                isBack={true} // Lá bài luôn úp
+              />
+            </div>
+            
+
           </div>
         ) : isAnalyzing ? (
           <div className={styles.loadingContainer}>

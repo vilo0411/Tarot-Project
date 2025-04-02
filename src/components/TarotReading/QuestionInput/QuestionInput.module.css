@@ -31,7 +31,7 @@
     background-color: #f4f4f5; /* Dark background for textarea */
     font-size: 1rem;
     line-height: 1.5;
-    color: white;
+    color: black;
     transition: all 0.2s ease;
     resize: vertical;
     font-family: inherit;

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-slug: /chu-de/tai-chinh
+slug: /theme/finance
 ---
 
 # Trải Bài Tarot Về Tài Chính

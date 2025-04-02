@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /chu-de/trang-moi
+slug: /theme/new-moon
 ---
 
 # Trải Bài Trăng Mới
