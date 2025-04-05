@@ -55,13 +55,44 @@ function ReadingResults({
     try {
       setIsSubmitting(true);
       
+      // Chuẩn bị dữ liệu để gửi đến webhook
+      const formData = {
+        email: email,
+        question: question || "Không có câu hỏi",
+        selectedCards: selectedCards.map(card => ({
+          name: card.name,
+          isReversed: card.isReversed,
+          code: card.code
+        })),
+        readingType: selectedCards.length === 1 ? "Một lá" : 
+                    selectedCards.length === 3 ? "Ba lá" :
+                    selectedCards.length === 5 ? "Năm lá" : 
+                    selectedCards.length === 10 ? "Mười lá" : "Khác",
+        timestamp: new Date().toISOString()
+      };
+      
+      // Gửi dữ liệu đến webhook của n8n
+      const webhookResponse = await fetch('https://n8n.banhduc.vn/webhook-test/tarot-reading', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      if (!webhookResponse.ok) {
+        throw new Error(`Webhook request failed with status ${webhookResponse.status}`);
+      }
+      
+      // Gọi hàm onSubmitEmail từ props nếu có
       if (onSubmitEmail) {
         await onSubmitEmail(email, selectedCards);
       }
       
+      // Show success message
       alert('Kết quả phân tích chi tiết sẽ được gửi đến email của bạn.');
     } catch (error) {
-      console.error('Email submission error:', error);
+      console.error('Submission error:', error);
       alert('Có lỗi xảy ra. Vui lòng thử lại.');
     } finally {
       setIsSubmitting(false);

@@ -30,6 +30,22 @@ function ThreeCardsTarotPage() {
   const [error, setError] = useState(null);
   const { playSound } = useSound();
   
+    // Hàm xử lý gửi email
+  const handleSubmitEmail = async (email, cards) => {
+    try {
+      // Có thể thêm logic riêng cho trang một lá bài nếu cần
+      console.log(`Sending email to ${email} with ${cards.length} cards`);
+      
+      // Nếu bạn muốn thực hiện các tác vụ bổ sung trước hoặc sau khi gửi webhook
+      // Tuy nhiên, phần xử lý chính để gửi đến webhook đã được thực hiện trong component ReadingResults
+      
+      return true; // Trả về true để chỉ ra rằng xử lý thành công
+    } catch (error) {
+      console.error('Email submission failed:', error);
+      throw error; // Ném lại lỗi để component ReadingResults có thể xử lý
+    }
+  };
+
   // Tạo spread object cố định cho rút 3 lá - Quá khứ, Hiện tại, Tương lai
   const spreadType = {
     name: 'Bói Bài Tarot 3 Lá',
@@ -260,6 +276,7 @@ function ThreeCardsTarotPage() {
               showControls={true}
               timestamp={new Date()}
               question={question}
+              onSubmitEmail={handleSubmitEmail}
             />
           </div>
         ) : (
