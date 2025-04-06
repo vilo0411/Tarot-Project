@@ -1,6 +1,7 @@
 // src/components/TarotReading/ReadingResults/ReadingResults.js
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { useHistory } from '@docusaurus/router';
 import SpreadLayout from '../../SpreadLayout/SpreadLayout';
 import styles from './ReadingResults.module.css';
 
@@ -15,9 +16,12 @@ function ReadingResults({
   onSubmitEmail,
 }) {
   const [activeTab, setActiveTab] = useState('summary');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [isEmailValid, setIsEmailValid] = useState(false);
+  const [isNameValid, setIsNameValid] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const history = useHistory();
   
   // Format timestamp
   const formattedDate = new Intl.DateTimeFormat('vi-VN', {
@@ -36,6 +40,13 @@ function ReadingResults({
     return re.test(String(email).toLowerCase());
   };
 
+  // Handle name input change
+  const handleNameChange = (e) => {
+    const inputName = e.target.value;
+    setName(inputName);
+    setIsNameValid(inputName.trim().length > 0);
+  };
+
   // Handle email input change
   const handleEmailChange = (e) => {
     const inputEmail = e.target.value;
@@ -51,12 +62,18 @@ function ReadingResults({
       alert('Vui lòng nhập địa chỉ email hợp lệ.');
       return;
     }
+    
+    if (!isNameValid) {
+      alert('Vui lòng nhập họ và tên của bạn.');
+      return;
+    }
 
     try {
       setIsSubmitting(true);
       
       // Chuẩn bị dữ liệu để gửi đến webhook
       const formData = {
+        name: name,
         email: email,
         question: question || "Không có câu hỏi",
         selectedCards: selectedCards.map(card => ({
@@ -86,11 +103,14 @@ function ReadingResults({
       
       // Gọi hàm onSubmitEmail từ props nếu có
       if (onSubmitEmail) {
-        await onSubmitEmail(email, selectedCards);
+        await onSubmitEmail(email, selectedCards, name);
       }
       
       // Show success message
       alert('Kết quả phân tích chi tiết sẽ được gửi đến email của bạn.');
+      
+      // Redirect về trang đọc bài
+      history.push('/reading');
     } catch (error) {
       console.error('Submission error:', error);
       alert('Có lỗi xảy ra. Vui lòng thử lại.');
@@ -212,22 +232,32 @@ function ReadingResults({
         <h3 className={styles.emailHeading}>Nhận phân tích chi tiết về bài Tarot của bạn</h3>
         <p className={styles.emailDescription}>
           Để nhận được phân tích chi tiết và sâu sắc hơn về từng lá bài và ý nghĩa trong câu hỏi của bạn, 
-          vui lòng để lại email:
+          vui lòng để lại thông tin liên hệ:
         </p>
         
         <form onSubmit={handleEmailSubmit} className={styles.emailForm}>
-          <input 
-            type="email" 
-            placeholder="Nhập email của bạn" 
-            value={email}
-            onChange={handleEmailChange}
-            className={`${styles.emailInput} ${isEmailValid ? styles.validEmail : ''}`}
-            required
-          />
+          <div className={styles.formFields}>
+            <input 
+              type="text" 
+              placeholder="Họ và tên của bạn" 
+              value={name}
+              onChange={handleNameChange}
+              className={`${styles.nameInput} ${isNameValid ? styles.validName : ''}`}
+              required
+            />
+            <input 
+              type="email" 
+              placeholder="Địa chỉ email" 
+              value={email}
+              onChange={handleEmailChange}
+              className={`${styles.emailInput} ${isEmailValid ? styles.validEmail : ''}`}
+              required
+            />
+          </div>
           <button 
             type="submit" 
             className={styles.emailSubmitButton}
-            disabled={!isEmailValid || isSubmitting}
+            disabled={!isEmailValid || !isNameValid || isSubmitting}
           >
             {isSubmitting ? 'Đang gửi...' : 'Gửi Cho Tôi'}
           </button>
@@ -235,6 +265,11 @@ function ReadingResults({
         {!isEmailValid && email && (
           <p className={styles.emailError}>
             Vui lòng nhập địa chỉ email hợp lệ
+          </p>
+        )}
+        {!isNameValid && name && (
+          <p className={styles.emailError}>
+            Vui lòng nhập họ và tên của bạn
           </p>
         )}
       </div>
