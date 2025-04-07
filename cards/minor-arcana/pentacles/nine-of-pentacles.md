@@ -1,10 +1,12 @@
 ---
 sidebar_position: 9
 title: "Nine of Pentacles"
-description: "Độc lập và thành tựu cá nhân."
-image: /img/deck/p09.jpg
-keywords: [Nine of Pentacles]
+description: "Khám phá ý nghĩa lá bài Tarot Nine of Pentacles: Biểu tượng của độc lập tài chính, thành tựu cá nhân, tự chủ và khả năng tận hưởng thành quả sau nỗ lực."
+keywords: 
+  - Nine of Pentacles
+  - Chín Xu
 ---
+
 # Ý Nghĩa Lá Bài Tarot 9 of Pentacles (9 Đồng Tiền): Sự Độc Lập, Thành Công và Tận Hưởng
 
 ![Nine of Pentacles](/img/deck/p09.jpg)

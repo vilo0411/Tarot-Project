@@ -1,7 +1,10 @@
 ---
 sidebar_position: 12
 title: "12 - The Hanged Man"
+keywords: ["Tarot The Hanged Man", "Người Treo Ngược", "Ý nghĩa lá bài The Hanged Man", "Sacrifice", "New perspective", "Letting go", "Suspension", "Hy sinh", "Buông bỏ", "Góc nhìn mới"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Hanged Man (Người Treo Ngược) - biểu tượng của sự hy sinh, buông bỏ và thay đổi góc nhìn."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Hanged Man (Người Treo Ngược): Sự Hy Sinh, Buông Bỏ và Góc Nhìn Mới
 
 ![The Hanged Man](/img/deck/m12.jpg)

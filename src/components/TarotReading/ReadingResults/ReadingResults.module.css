@@ -68,73 +68,42 @@
   text-align: center;
 }
 
-.tabContainer {
+/* Content Container (replacing tab container) */
+.contentContainer {
   background-color: #f9fafb;
   border-radius: 0.5rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #e5e7eb;
-}
-
-.tabHeader {
-  display: flex;
-  border-bottom: 1px solid #e5e7eb;
-  margin-bottom: 1.5rem;
-}
-
-.tabButton {
-  padding: 0.75rem 1.5rem;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  color: #6b7280;
-  transition: all 0.3s;
-  border-bottom: 2px solid transparent;
-}
-
-.tabButton:hover {
-  color: #4b5563;
-}
-
-.tabButton.active {
-  color: #7c3aed;
-  border-bottom: 2px solid #7c3aed;
-}
-
-.tabContent {
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.6;
-}
-
-.summaryTab, .fullResultTab {
   min-height: 200px;
 }
 
-.summaryTab p, .fullResultTab p {
+.contentContainer p {
   margin-bottom: 1rem;
 }
 
-.summaryTab h1, .summaryTab h2, .summaryTab h3, 
-.fullResultTab h1, .fullResultTab h2, .fullResultTab h3 {
+.contentContainer h1, 
+.contentContainer h2, 
+.contentContainer h3 {
   color: #1f2937;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
-.summaryTab h1, .fullResultTab h1 {
+.contentContainer h1 {
   font-size: 1.5rem;
 }
 
-.summaryTab h2, .fullResultTab h2 {
+.contentContainer h2 {
   font-size: 1.25rem;
 }
 
-.summaryTab h3, .fullResultTab h3 {
+.contentContainer h3 {
   font-size: 1.125rem;
 }
 
@@ -249,22 +218,35 @@
 }
 
 /* Fix markdown rendering */
-.summaryTab ul, .fullResultTab ul,
-.summaryTab ol, .fullResultTab ol {
+.contentContainer ul,
+.contentContainer ol {
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
 
-.summaryTab li, .fullResultTab li {
+.contentContainer li {
   margin-bottom: 0.5rem;
 }
 
-.summaryTab blockquote, .fullResultTab blockquote {
+.contentContainer blockquote {
   border-left: 3px solid #d1d5db;
   padding-left: 1rem;
   margin-left: 0;
   margin-right: 0;
   color: #6b7280;
+}
+
+/* Dark mode adjustments */
+:global([data-theme='dark']) .contentContainer {
+  background-color: var(--ifm-card-background-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+:global([data-theme='dark']) .questionContent,
+:global([data-theme='dark']) .cardsContent,
+:global([data-theme='dark']) .emailSection {
+  background-color: var(--ifm-card-background-color);
+  border-color: var(--ifm-color-emphasis-300);
 }
 
 @media (max-width: 640px) {

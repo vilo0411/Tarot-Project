@@ -1,13 +1,13 @@
 ---
 sidebar_position: 0
 title: "00 - The Fool"
+keywords: ["Tarot The Fool", "Kẻ Khờ", "Ý nghĩa lá bài The Fool", "New beginnings", "Spontaneity", "Faith", "Khởi đầu mới", "Tiềm năng", "Tự phát", "Phiêu lưu"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Fool (Kẻ Khờ) - biểu tượng của sự khởi đầu mới, tiềm năng vô hạn và tinh thần phiêu lưu trong bộ bài Ẩn Chính."
 ---
 
 # The Fool (Lá Kẻ Khờ)
 
 ![The Fool Card](/img/deck/m00.jpg)
-
-*Số 0 - Bộ Ẩn Chính (Major Arcana)*
 
 The Fool (Kẻ Khờ), lá bài mang số 0 trong bộ Ẩn Chính (Major Arcana), là biểu tượng của sự khởi đầu, của những chuyến phiêu lưu mới và tiềm năng vô hạn. Nó đại diện cho sự tự do, tinh thần tự phát và một tâm hồn cởi mở đón nhận những điều chưa biết. Bài viết này sẽ đi sâu vào giải mã ý nghĩa, biểu tượng, cách diễn giải khi lá bài xuôi và ngược, các kết hợp quan trọng với những lá bài khác, và những lời khuyên hữu ích khi The Fool xuất hiện trong trải bài của bạn.
 

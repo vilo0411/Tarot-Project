@@ -1,7 +1,10 @@
 ---
 sidebar_position: 13
 title: "13 - The Death"
+keywords: ["Tarot Death", "Thần Chết", "Ý nghĩa lá bài Death", "Transformation", "Endings", "Change", "Rebirth", "Transition", "Kết thúc", "Biến đổi", "Tái sinh"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot Death (Thần Chết) - biểu tượng của sự kết thúc, biến đổi sâu sắc và tái sinh trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot Death (Thần Chết): Sự Kết Thúc, Biến Đổi và Tái Sinh
 ![Death](/img/deck/m13.jpg)
 

@@ -1,7 +1,10 @@
 ---
 sidebar_position: 18
 title: "18 - The Moon"
+keywords: ["Tarot The Moon", "Mặt Trăng", "Ý nghĩa lá bài The Moon", "Illusion", "Fear", "Intuition", "Subconscious", "Dreams", "Ảo ảnh", "Tiềm thức", "Sợ hãi", "Trực giác"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Moon (Mặt Trăng) - biểu tượng của ảo ảnh, tiềm thức, nỗi sợ hãi và sức mạnh trực giác trong đêm tối."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Moon (Mặt Trăng): Ảo Ảnh, Tiềm Thức và Trực Giác
 
 ![The Moon](/img/deck/m18.jpg)

@@ -1,10 +1,12 @@
 ---
 sidebar_position: 5
 title: "Five of Pentacles"
-description: "Mất mát tài chính và khó khăn."
-image: /img/deck/p05.jpg
-keywords: [Five of Pentacles]
+description: "Khám phá ý nghĩa lá bài Tarot Five of Pentacles: Biểu tượng của khó khăn tài chính, thiếu thốn, mất mát, cảm giác bị bỏ rơi và giai đoạn thử thách vật chất."
+keywords: 
+  - Five of Pentacles
+  - Năm Xu
 ---
+
 # Ý Nghĩa Lá Bài Tarot Five of Pentacles (5 Đồng Tiền): Sự Khó Khăn, Thiếu Thốn và Cô Lập
 
 ![Five of Pentacles](/img/deck/p05.jpg)

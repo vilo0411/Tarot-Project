@@ -1,9 +1,10 @@
 ---
 sidebar_position: 9
 title: "Nine of Cups"
-description: "Sự hài lòng và ước mơ thành hiện thực."
-image: /img/deck/c09.jpg
-keywords: [Nine of Cups]
+description: "Khám phá ý nghĩa lá bài Tarot Nine of Cups: Biểu tượng của sự hài lòng, ước mơ thành hiện thực, hạnh phúc viên mãn và sự thỏa mãn cảm xúc."
+keywords: 
+  - Nine of Cups
+  - Chín Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot Nine of Cups (9 Cốc): Sự Hài Lòng, Mong Ước Thành Hiện Thực và Hạnh Phúc

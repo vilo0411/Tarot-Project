@@ -1,9 +1,8 @@
 ---
 sidebar_position: 13
 title: "Queen of Wands"
-description: "Tự tin và đam mê."
-image: /img/deck/w13.jpg
-keywords: [Queen of Wands]
+keywords: [Queen of Wands, Hoàng Hậu Gậy]
+description: "Khám phá ý nghĩa của lá bài Queen of Wands (Hoàng Hậu Gậy) - sự tự tin, quyết đoán và đam mê mãnh liệt kết hợp với sự hấp dẫn tự nhiên trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot Queen of Wands: Sự Tự Tin, Đam Mê và Quyền Năng

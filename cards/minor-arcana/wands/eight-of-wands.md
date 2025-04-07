@@ -1,9 +1,8 @@
 ---
 sidebar_position: 8
 title: "Eight of Wands"
-description: "Tiến triển nhanh và hành động."
-image: /img/deck/w08.jpg
-keywords: [Eight of Wands]
+keywords: [Eight of Wands, 8 Gậy]
+description: "Khám phá ý nghĩa của lá bài Eight of Wands (8 Gậy) - sự tiến triển nhanh chóng, hành động quyết đoán và những thay đổi đến bất ngờ trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot Eight of Wands (8 Gậy): Tốc Độ, Hành Động, và Thay Đổi Nhanh Chóng

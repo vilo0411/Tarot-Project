@@ -1,7 +1,10 @@
 ---
-sidebar_position: 03
+sidebar_position: 3
 title: "03 - The Empress"
+keywords: ["Tarot The Empress", "Hoàng Hậu", "Ý nghĩa lá bài The Empress", "Nurturing", "Fertility", "Abundance", "Creativity", "Sự nuôi dưỡng", "Phong phú", "Sáng tạo"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Empress (Hoàng Hậu) - biểu tượng của sự nuôi dưỡng, sáng tạo và thịnh vượng trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Empress (Hoàng Hậu): Sự Nuôi Dưỡng, Sáng Tạo và Thịnh Vượng
 
 ![The Empress](/img/deck/m03.jpg)

@@ -1,9 +1,8 @@
 ---
 sidebar_position: 2
 title: "Two of Wands"
-description: "Lập kế hoạch và nhìn xa trông rộng."
-image: /img/deck/w02.jpg
-keywords: [Two of Wands]
+keywords: [Two of Wands, 2 Gậy]
+description: "Khám phá ý nghĩa của lá bài Two of Wands (2 Gậy) - thời điểm lập kế hoạch, đưa ra quyết định quan trọng và mở rộng tầm nhìn trong Tarot."
 ---
 
 

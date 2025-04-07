@@ -1,10 +1,12 @@
 ---
 sidebar_position: 14
 title: "King of Pentacles"
-description: "Sự ổn định và thành công tài chính."
-image: /img/deck/p14.jpg
-keywords: [King of Pentacles]
+description: "Khám phá ý nghĩa lá bài Tarot King of Pentacles: Biểu tượng của sự ổn định và thành công tài chính, khả năng lãnh đạo vững vàng và sự thịnh vượng dài lâu."
+keywords: 
+  - King of Pentacles
+  - Vua Xu
 ---
+
 # Ý Nghĩa Lá Bài Tarot King of Pentacles (Vua Tiền): Sự Thịnh Vượng, Ổn Định và Thành Công Tài Chính
 
 ![King of Pentacles](/img/deck/p14.jpg)

@@ -1,177 +1,193 @@
-/* src/components/TarotReadingOptions/styles.module.css */
+/* Updated TarotReadingOptions.module.css */
 .optionsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    width: 100%;
-  }
-  
-  .optionCard {
-    display: block;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-    text-decoration: none !important;
-    color: var(--ifm-font-color-base);
-    height: 100%;
-  }
-  
-  .optionCard:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Background colors for each card type */
-  .bgColorblue {
-    background-color: rgba(240, 249, 255, 0.7);
-    border-color: rgba(30, 64, 175, 0.2);
-  }
-  
-  .bgColorblue:hover {
-    border-color: rgba(30, 64, 175, 0.5);
-  }
-  
-  .bgColorpurple {
-    background-color: rgba(245, 243, 255, 0.7);
-    border-color: rgba(124, 58, 237, 0.2);
-  }
-  
-  .bgColorpurple:hover {
-    border-color: rgba(124, 58, 237, 0.5);
-  }
-  
-  .bgColorgreen {
-    background-color: rgba(240, 253, 244, 0.7);
-    border-color: rgba(16, 185, 129, 0.2);
-  }
-  
-  .bgColorgreen:hover {
-    border-color: rgba(16, 185, 129, 0.5);
-  }
-  
-  .bgColoramber {
-    background-color: rgba(255, 251, 235, 0.7);
-    border-color: rgba(245, 158, 11, 0.2);
-  }
-  
-  .bgColoramber:hover {
-    border-color: rgba(245, 158, 11, 0.5);
-  }
-  
-  .cardImageContainer {
-    height: 180px;
-    overflow: hidden;
-  }
-  
-  .cardImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .optionCard:hover .cardImage {
-    transform: scale(1.05);
-  }
-  
-  .cardContent {
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.optionCard {
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  color: var(--ifm-font-color-base);
+  height: 100%;
+}
+
+.optionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Background colors for each card type */
+.bgColorblue {
+  background-color: rgba(240, 249, 255, 0.7);
+  border-color: rgba(30, 64, 175, 0.2);
+}
+
+.bgColorblue:hover {
+  border-color: rgba(30, 64, 175, 0.5);
+}
+
+.bgColorpurple {
+  background-color: rgba(245, 243, 255, 0.7);
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+.bgColorpurple:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.bgColorgreen {
+  background-color: rgba(240, 253, 244, 0.7);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.bgColorgreen:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.bgColoramber {
+  background-color: rgba(255, 251, 235, 0.7);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.bgColoramber:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
+.cardImageContainer {
+  height: 180px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.optionCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--ifm-heading-color);
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 20px;
+}
+
+.cardAction {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7828c8;
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.optionCard:hover .actionButton {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode adjustments */
+:global([data-theme='dark']) .bgColorblue {
+  background-color: rgba(30, 58, 138, 0.1);
+  border-color: rgba(30, 58, 138, 0.3);
+}
+
+:global([data-theme='dark']) .bgColorblue:hover {
+  border-color: rgba(30, 58, 138, 0.6);
+}
+
+:global([data-theme='dark']) .bgColorpurple {
+  background-color: rgba(88, 28, 135, 0.1);
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+:global([data-theme='dark']) .bgColorpurple:hover {
+  border-color: rgba(124, 58, 237, 0.6);
+}
+
+:global([data-theme='dark']) .bgColorgreen {
+  background-color: rgba(6, 78, 59, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+:global([data-theme='dark']) .bgColorgreen:hover {
+  border-color: rgba(16, 185, 129, 0.6);
+}
+
+:global([data-theme='dark']) .bgColoramber {
+  background-color: rgba(120, 53, 15, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+:global([data-theme='dark']) .bgColoramber:hover {
+  border-color: rgba(245, 158, 11, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .optionsContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .cardTitle {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: var(--ifm-heading-color);
+    font-size: 1.3rem;
   }
   
   .cardDescription {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--ifm-color-emphasis-700);
-    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
   
-  .cardAction {
-    display: flex;
-    justify-content: flex-end;
+  .cardImageContainer {
+    height: 150px;
   }
   
   .actionButton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--ifm-color-primary);
-    color: white;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 1.2rem;
   }
   
-  .optionCard:hover .actionButton {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  .cardContent {
+    padding: 16px;
   }
   
-  /* Dark mode adjustments */
-  :global([data-theme='dark']) .bgColorblue {
-    background-color: rgba(30, 58, 138, 0.1);
-    border-color: rgba(30, 58, 138, 0.3);
+  .cardDescription {
+    margin-bottom: 15px;
   }
-  
-  :global([data-theme='dark']) .bgColorblue:hover {
-    border-color: rgba(30, 58, 138, 0.6);
-  }
-  
-  :global([data-theme='dark']) .bgColorpurple {
-    background-color: rgba(88, 28, 135, 0.1);
-    border-color: rgba(124, 58, 237, 0.3);
-  }
-  
-  :global([data-theme='dark']) .bgColorpurple:hover {
-    border-color: rgba(124, 58, 237, 0.6);
-  }
-  
-  :global([data-theme='dark']) .bgColorgreen {
-    background-color: rgba(6, 78, 59, 0.1);
-    border-color: rgba(16, 185, 129, 0.3);
-  }
-  
-  :global([data-theme='dark']) .bgColorgreen:hover {
-    border-color: rgba(16, 185, 129, 0.6);
-  }
-  
-  :global([data-theme='dark']) .bgColoramber {
-    background-color: rgba(120, 53, 15, 0.1);
-    border-color: rgba(245, 158, 11, 0.3);
-  }
-  
-  :global([data-theme='dark']) .bgColoramber:hover {
-    border-color: rgba(245, 158, 11, 0.6);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .optionsContainer {
-      gap: 20px;
-    }
-    
-    .cardTitle {
-      font-size: 1.3rem;
-    }
-    
-    .cardDescription {
-      font-size: 0.9rem;
-    }
-    
-    .cardImageContainer {
-      height: 150px;
-    }
-    
-    .actionButton {
-      padding: 8px 16px;
-      font-size: 0.9rem;
-    }
-  }
+}

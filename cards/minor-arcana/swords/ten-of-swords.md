@@ -1,9 +1,8 @@
 ---
 sidebar_position: 10
 title: "Ten of Swords"
-description: "Kết thúc đau đớn."
-image: /img/deck/s10.jpg
-keywords: [Ten of Swords]
+keywords: [Ten of Swords, 10 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Ten of Swords (10 Kiếm) - sự kết thúc đau đớn nhưng cần thiết, chạm đáy và cơ hội để bắt đầu lại trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot 10 of Swords: Sự Kết Thúc Đau Đớn, Thất Bại và Buông Bỏ

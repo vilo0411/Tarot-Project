@@ -11,7 +11,7 @@ function ReadingPage() {
   return (
     <Layout 
       title="Bói Bài Tarot Online Miễn Phí 100%" 
-      description="Các phương pháp Trải Bài Tarot Trực Tuyến"
+      description="Các phương pháp Trải Bài Tarot Trực Tuyến. Bói bài 1 lá, 3 lá, 5 lá dễ dàng vói Tarot Guide Online"
     >
       <div className={styles.pageBackground}>
         <div className={styles.container}>

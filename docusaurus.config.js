@@ -65,9 +65,9 @@ const config = {
         // //   onInlineAuthors: 'warn',
         // //   onUntruncatedBlogPosts: 'warn',
         // // },
-        // theme: {
-        //   customCss: './src/css/custom.css',
-        // },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
       }),
     ],
   ],
@@ -89,6 +89,12 @@ const config = {
         path: 'spreads',
         routeBasePath: 'spreads',
         sidebarPath: require.resolve('./sidebars-spreads.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-google-tag-manager',
+      {
+        containerId: 'GTM-12345',
       },
     ],
   ],
@@ -167,15 +173,15 @@ const config = {
               },
               {
                 label: 'Bói Tarot 1 lá',
-                to: '/one-card-tarot',
+                to: '/reading/one-card-tarot',
               },
               {
                 label: 'Bói Tarot 3 lá',
-                to: '/three-cards-tarot',
+                to: '/reading/three-cards-tarot',
               },
               {
                 label: 'Bòi Tarot 5 lá',
-                to: '/five-cards-tarot',
+                to: '/reading/five-cards-tarot',
               },
             ],
           },

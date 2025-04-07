@@ -15,7 +15,6 @@ function ReadingResults({
   timestamp = new Date(),
   onSubmitEmail,
 }) {
-  const [activeTab, setActiveTab] = useState('summary');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [isEmailValid, setIsEmailValid] = useState(false);
@@ -29,11 +28,6 @@ function ReadingResults({
     timeStyle: 'medium'
   }).format(timestamp);
   
-  // Handle tab selection
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
-
   // Email validation function
   const validateEmail = (email) => {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -89,7 +83,7 @@ function ReadingResults({
       };
       
       // Gửi dữ liệu đến webhook của n8n
-      const webhookResponse = await fetch('https://n8n.banhduc.vn/webhook-test/tarot-reading', {
+      const webhookResponse = await fetch('https://n8n.banhduc.vn/webhook/tarot-reading', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -119,15 +113,7 @@ function ReadingResults({
     }
   };
 
-  // Get mock analysis content or fallback
-  const getReadingContent = () => {
-    if (reading && typeof reading === 'object' && reading.text) {
-      return reading.text;
-    }
-    return 'Không thể hiển thị kết quả bói bài. Vui lòng thử lại.';
-  };
-
-  // Get AI analysis summary content or fallback
+  // Get AI analysis summary content or fallback to mock analysis
   const getSummaryContent = () => {
     // If there's AI analysis available, use it for the summary
     if (aiAnalysis && typeof aiAnalysis === 'object' && aiAnalysis.text) {
@@ -196,35 +182,9 @@ function ReadingResults({
       {/* Reading Section Title */}
       <h2 className={styles.sectionTitle}>Kết Quả</h2>
       
-      <div className={styles.tabContainer}>
-        <div className={styles.tabHeader}>
-          <button 
-            className={`${styles.tabButton} ${activeTab === 'summary' ? styles.active : ''}`}
-            onClick={() => handleTabClick('summary')}
-          >
-            Tóm Tắt
-          </button>
-          <button 
-            className={`${styles.tabButton} ${activeTab === 'full' ? styles.active : ''}`}
-            onClick={() => handleTabClick('full')}
-          >
-            Toàn Bộ Kết Quả
-          </button>
-        </div>
-        
-        <div className={styles.tabContent}>
-          {activeTab === 'summary' && (
-            <div className={styles.summaryTab}>
-              <ReactMarkdown>{getSummaryContent()}</ReactMarkdown>
-            </div>
-          )}
-          
-          {activeTab === 'full' && (
-            <div className={styles.fullResultTab}>
-              <ReactMarkdown>{getReadingContent()}</ReactMarkdown>
-            </div>
-          )}
-        </div>
+      {/* Summary Only Section - No tabs */}
+      <div className={styles.contentContainer}>
+        <ReactMarkdown>{getSummaryContent()}</ReactMarkdown>
       </div>
       
       {/* Email Subscription Section */}

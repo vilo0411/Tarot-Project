@@ -1,7 +1,10 @@
 ---
 sidebar_position: 17
 title: "17 - The Star"
+keywords: ["Tarot The Star", "Ngôi Sao", "Ý nghĩa lá bài The Star", "Hope", "Inspiration", "Healing", "Renewal", "Faith", "Hy vọng", "Cảm hứng", "Chữa lành", "Niềm tin"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Star (Ngôi Sao) - biểu tượng của hy vọng, cảm hứng, sự chữa lành và niềm tin vào tương lai."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Star (Ngôi Sao): Hy Vọng, Cảm Hứng và Sự Chữa Lành
 
 ![The Star](/img/deck/m17.jpg)

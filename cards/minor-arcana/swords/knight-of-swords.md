@@ -1,9 +1,8 @@
 ---
 sidebar_position: 12
 title: "Knight of Swords"
-description: "Hành động nhanh chóng và quyết đoán."
-image: /img/deck/s12.jpg
-keywords: [Knight of Swords]
+keywords: [Knight of Swords, Hiệp Sĩ Kiếm]
+description: "Khám phá ý nghĩa của lá bài Knight of Swords (Hiệp Sĩ Kiếm) - hành động nhanh chóng, tư duy sắc bén và quyết tâm không gì cản nổi trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot Knight of Swords (Hiệp Sĩ Kiếm): Hành Động, Quyết Đoán và Thách Thức

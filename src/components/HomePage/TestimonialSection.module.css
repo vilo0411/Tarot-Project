@@ -74,7 +74,7 @@
     }
     
     .highlight {
-    color: #3b82f6;
+    color: #7828c8;
     font-weight: 500;
     }
     
@@ -153,7 +153,7 @@
     }
     
     .carouselDot.activeDot {
-    background-color: #3b82f6;
+    background-color: #7828c8;
     transform: scale(1.25);
     }
     
@@ -168,7 +168,7 @@
     }
     
     :global([data-theme='dark']) .highlight {
-    color: #60a5fa;
+    color: #a86ae4;
     }
     
     :global([data-theme='dark']) .authorName {
@@ -193,7 +193,7 @@
     }
     
     :global([data-theme='dark']) .carouselDot.activeDot {
-    background-color: #60a5fa;
+    background-color: #a86ae4;
     }
     
     /* Responsive design for different screen sizes */

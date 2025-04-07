@@ -1,9 +1,8 @@
 ---
 sidebar_position: 9
 title: "Nine of Swords"
-description: "Lo âu và mất ngủ."
-image: /img/deck/s09.jpg
-keywords: [Nine of Swords]
+keywords: [Nine of Swords, 9 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Nine of Swords (9 Kiếm) - nỗi lo âu sâu sắc, những ác mộng và cách đối phó với suy nghĩ tiêu cực trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot 9 of Swords (9 Kiếm): Sự Lo Lắng, Ám Ảnh và Tìm Kiếm Giải Pháp

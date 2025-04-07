@@ -1,7 +1,10 @@
 ---
-sidebar_position: 06
+sidebar_position: 6
 title: "06 - The Lovers"
+keywords: ["Tarot The Lovers", "Tình Nhân", "Ý nghĩa lá bài The Lovers", "Love", "Harmony", "Choices", "Partnerships", "Tình yêu", "Lựa chọn", "Giá trị", "Hòa hợp"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Lovers (Tình Nhân) - biểu tượng của tình yêu, lựa chọn và mối quan hệ hài hòa trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Lovers (Tình Nhân): Lựa Chọn, Tình Yêu và Giá Trị
 
 ![The Lovers](/img/deck/m06.jpg)

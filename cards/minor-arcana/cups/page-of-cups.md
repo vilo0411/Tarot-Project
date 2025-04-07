@@ -1,9 +1,10 @@
 ---
 sidebar_position: 11
 title: "Page of Cups"
-description: "Sự sáng tạo và trực giác."
-image: /img/deck/c11.jpg
-keywords: [Page of Cups]
+description: "Khám phá ý nghĩa lá bài Tarot Page of Cups: Biểu tượng của sự sáng tạo, trực giác, tin nhắn bất ngờ về tình cảm và khả năng nhạy cảm tâm linh."
+keywords: 
+  - Page of Cups
+  - Tiểu Đồng Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot Page of Cups: Sự Ngây Thơ, Trực Giác và Khởi Đầu Cảm Xúc

@@ -215,7 +215,7 @@ function OneCardTarotPage() {
   return (
     <Layout 
       title="Bói Bài Tarot Một Lá" 
-      description="Trải Bài Tarot Một Lá - Trả lời nhanh cho câu hỏi đơn giản"
+      description="Trải bài tarot 1 lá online miễn phí 100%. Đặt câu hỏi và rút lá ngẫu nhiên, đáp án sẽ được giải đáp"
     >
       <div className={styles.container}>
         <h1 className={styles.title}>Bói Bài Tarot Một Lá</h1>

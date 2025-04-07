@@ -1,7 +1,10 @@
 ---
 sidebar_position: 10
 title: "10 - Wheel of Fortune"
+keywords: ["Tarot Wheel of Fortune", "Vòng Quay Số Phận", "Ý nghĩa lá bài Wheel of Fortune", "Luck", "Change", "Cycles", "Destiny", "Vận may", "Thay đổi", "Chu kỳ", "Số phận"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot Wheel of Fortune (Vòng Quay Số Phận) - biểu tượng của vận may, chu kỳ và những bước ngoặt định mệnh."
 ---
+
 # Ý Nghĩa Lá Bài Tarot Wheel of Fortune (Vòng Quay Số Phận): Vận May, Chu Kỳ và Thay Đổi
 
 ![Wheel of Fortune](/img/deck/m10.jpg)

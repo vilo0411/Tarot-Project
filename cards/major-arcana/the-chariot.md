@@ -1,7 +1,10 @@
 ---
 sidebar_position: 7
 title: "07 - The Chariot"
+keywords: ["Tarot The Chariot", "Cỗ Xe", "Ý nghĩa lá bài The Chariot", "Willpower", "Determination", "Control", "Success", "Ý chí", "Quyết tâm", "Kiểm soát", "Chiến thắng"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Chariot (Cỗ Xe) - biểu tượng của ý chí mạnh mẽ, quyết tâm và chiến thắng trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Chariot (Cỗ Xe): Ý Chí, Quyết Tâm và Chiến Thắng
 
 ![The Chariot](/img/deck/m07.jpg)

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-title: Tổng quan về các lá bài Tarot
+title: "Tổng Quan Về 78 Lá Bài Tarot"
+description: "Giới thiệu tổng quan về 78 lá bài Tarot. Bắt đầu hành trình tìm hiểu Tarot với Tarot Guide Online"
 ---
 
 import TarotCardGallery from '@site/src/components/TarotCardGallery';
@@ -58,8 +59,8 @@ Tài liệu này được thiết kế để bạn có thể:
 Nếu bạn là người mới, chúng tôi khuyên bạn nên:
 
 <!-- 1. Đọc phần [Lịch sử Tarot](/docs/history/origins) để hiểu nguồn gốc và sự phát triển -->
-1. Tìm hiểu **[Cơ bản về các lá bài](/cards)**
-2. Học cách **[trải bài đơn giản](/spreads)**
+1. Tìm hiểu **[Cơ bản về các lá bài](/cards/)**
+2. Học cách **[trải bài đơn giản](/spreads/)**
 <!-- 4. Khám phá [nguyên tắc diễn giải cơ bản](/docs/interpretations/basics) -->
 
 :::tip Lời khuyên
@@ -76,17 +77,3 @@ Tarot là một công cụ mạnh mẽ, nhưng nên được sử dụng một c
 - Luôn đặt sự phát triển cá nhân và hiểu biết lên hàng đầu
 
 Hãy bắt đầu hành trình khám phá Tarot của bạn!
-
-# Tarot Cards
-
-Tarot cards are a set of 78 cards, each with its own imagery, symbolism, and story. The deck is divided into two main groups: the Major Arcana and the Minor Arcana.
-
-## Major Arcana
-
-The Major Arcana consists of 22 cards that represent major life themes and lessons. They often indicate significant life events or spiritual lessons.
-
-
-## Minor Arcana
-
-The Minor Arcana consists of 56 cards divided into four suits: Cups, Swords, Wands, and Pentacles. These cards typically represent everyday concerns and the temporary ups and downs of life.
-

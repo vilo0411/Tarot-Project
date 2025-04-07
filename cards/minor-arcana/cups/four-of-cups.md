@@ -1,9 +1,10 @@
 ---
 sidebar_position: 4
 title: "Four of Cups"
-description: "Mô tả ngắn giúp SEO tốt hơn"
-image: /img/deck/c04.jpg
-keywords: [Four of cups]
+description: "Khám phá ý nghĩa lá bài Tarot Four of Cups: Biểu tượng của sự thờ ơ, chiêm nghiệm nội tâm, bỏ lỡ cơ hội và thời điểm đánh giá lại cuộc sống."
+keywords: 
+  - Four of cups
+  - Bốn Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot 4 of Cups (4 Cốc): Sự Thờ Ơ, Chiêm Nghiệm và Đánh Giá Lại

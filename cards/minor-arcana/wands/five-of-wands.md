@@ -1,9 +1,8 @@
 ---
 sidebar_position: 5
 title: "Five of Wands"
-description: "Xung đột và cạnh tranh."
-image: /img/deck/w05.jpg
-keywords: [Five of Wands]
+keywords: [Five of Wands, 5 Gậy]
+description: "Khám phá ý nghĩa của lá bài Five of Wands (5 Gậy) - những xung đột, sự cạnh tranh và thử thách cần vượt qua để phát triển trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot 5 of Wands: Xung Đột, Cạnh Tranh và Thử Thách

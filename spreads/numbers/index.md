@@ -29,7 +29,7 @@ Mỗi số lượng lá bài Tarot được trải ra sẽ mang lại một góc
       icon: '📊',
     },
     {
-      title: 'Trải bài 10 lá',
+      title: 'Trải bài 10 lá (Celtic Cross)',
       description: 'Trải bài toàn diện nhất, cung cấp cái nhìn sâu rộng về một tình huống',
       link: '/spreads/numbers/ten-cards',
       icon: '🌟',

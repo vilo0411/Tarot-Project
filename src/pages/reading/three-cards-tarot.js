@@ -215,7 +215,7 @@ function ThreeCardsTarotPage() {
   return (
     <Layout 
       title="Bói Bài Tarot 3 Lá" 
-      description="Trải Bài Tarot 3 Lá"
+      description="Trải bài Tarot 3 lá miễn phí. Đặt câu hỏi bất kì, Tarot Guide Online sẽ giải đáp cho bạn"
     >
       <div className={styles.container}>
         <h1 className={styles.title}>Trải bài Tarot 3 lá</h1>

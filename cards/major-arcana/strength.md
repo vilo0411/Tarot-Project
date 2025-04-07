@@ -1,7 +1,10 @@
 ---
 sidebar_position: 8
 title: "08 - Strength"
+keywords: ["Tarot Strength", "Sức Mạnh", "Ý nghĩa lá bài Strength", "Inner strength", "Courage", "Patience", "Compassion", "Sức mạnh nội tâm", "Lòng dũng cảm", "Kiên nhẫn"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot Strength (Sức Mạnh) - biểu tượng của sức mạnh nội tâm, lòng dũng cảm và sự kiên nhẫn trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot Strength (Sức Mạnh): Sức Mạnh Nội Tâm, Lòng Dũng Cảm và Sự Kiên Nhẫn
 
 ![Strength](/img/deck/m08.jpg)

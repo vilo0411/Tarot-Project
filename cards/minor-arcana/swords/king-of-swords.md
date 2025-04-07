@@ -1,9 +1,8 @@
 ---
 sidebar_position: 14
 title: "King of Swords"
-description: "Trí tuệ và công lý."
-image: /img/deck/s14.jpg
-keywords: [King of Swords]
+keywords: [King of Swords, Vua Kiếm]
+description: "Khám phá ý nghĩa của lá bài King of Swords (Vua Kiếm) - quyền lực trí tuệ, tư duy logic và khả năng lãnh đạo bằng sự công bằng và nguyên tắc trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot King of Swords (Vua Kiếm): Trí Tuệ, Quyền Lực và Sự Thật

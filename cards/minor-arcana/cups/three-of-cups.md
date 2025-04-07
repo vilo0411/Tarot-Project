@@ -1,9 +1,10 @@
 ---
 sidebar_position: 3
 title: Three of Cups
-description: "Mô tả ngắn giúp SEO tốt hơn"
-image: "/img/deck/c03.jpg"
-keywords: [three of cups]
+description: "Khám phá ý nghĩa lá bài Tarot Three of Cups: Biểu tượng của tình bạn, niềm vui, lễ kỷ niệm, sự kết nối cộng đồng và chia sẻ hạnh phúc."
+keywords:
+  - Three of Cups
+  - Ba Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot 3 of Cups: Tình Bạn, Niềm Vui, Sự Kết Nối và Lễ Kỷ Niệm

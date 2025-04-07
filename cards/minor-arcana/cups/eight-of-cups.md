@@ -1,9 +1,10 @@
 ---
 sidebar_position: 8
 title: "Eight of Cups"
-description: "Sự từ bỏ và tìm kiếm ý nghĩa."
-image: /img/deck/c08.jpg
-keywords: [Eight of Cups]
+description: "Khám phá ý nghĩa lá bài Tarot Eight of Cups: Biểu tượng của sự rời bỏ, từ bỏ những gì quen thuộc để tìm kiếm ý nghĩa sâu sắc hơn cho cuộc đời."
+keywords: 
+  - Eight of Cups
+  - Tám Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot 8 of Cups (8 Cốc): Sự Rời Bỏ, Tìm Kiếm Ý Nghĩa Sâu Sắc Hơn

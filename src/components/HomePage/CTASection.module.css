@@ -39,8 +39,8 @@ background-clip: text;
 color: #222;
 }
 
-.ctaTitleBlue {
-color: #4263eb;
+.ctaTitlePurple {
+color: #7828c8;
 font-weight: 700;
 }
 
@@ -49,8 +49,8 @@ font-weight: 700;
 color: #f8f9fa;
 }
 
-:global([data-theme='dark']) .ctaTitleBlue {
-color: #5c7cfa;
+:global([data-theme='dark']) .ctaTitlePurple {
+color: #a86ae4;
 }
 
 .ctaDescription {

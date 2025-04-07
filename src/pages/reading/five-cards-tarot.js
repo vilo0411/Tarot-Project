@@ -215,7 +215,7 @@ function FiveCardsTarotPage() {
   return (
     <Layout 
       title="Bói Bài Tarot 5 Lá" 
-      description="Trải Bài Tarot 5 Lá - Chữ thập"
+      description="Trải bài Tarot 5 lá (Chữ thập) miễn phí 100%. Đặt câu hỏi với Tarot Guide Online, chúng tôi sẽ giải đáp chi tiết vấn đề của bạn!"
     >
       <div className={styles.container}>
         <h1 className={styles.title}>Trải Bài Tarot 5 Lá - Chữ thập</h1>

@@ -1,3 +1,10 @@
+---
+title: "Pentacles (Xu)"
+keywords: ["pentacles", "chất pentacles"]
+description: "Tìm hiểu chất Pentacles (Đồng Tiền/Xu) trong bộ ẩn Phụ."
+---
+
+
 import TarotCardGallery from '@site/src/components/TarotCardGallery';
 
 

@@ -1,7 +1,10 @@
 ---
 sidebar_position: 16
 title: "16 - The Tower"
+keywords: ["Tarot The Tower", "Tòa Tháp", "Ý nghĩa lá bài The Tower", "Sudden change", "Crisis", "Revelation", "Awakening", "Đổ vỡ", "Thay đổi đột ngột", "Khủng hoảng", "Giải phóng"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Tower (Tòa Tháp) - biểu tượng của đổ vỡ, thay đổi đột ngột, sự thật phơi bày và giải phóng."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Tower (Tòa Tháp): Đổ Vỡ, Thay Đổi Đột Ngột và Giải Phóng
 
 ![The Tower](/img/deck/m16.jpg)

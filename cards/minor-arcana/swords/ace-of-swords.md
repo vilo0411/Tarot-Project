@@ -1,9 +1,8 @@
 ---
 sidebar_position: 1
 title: "Ace of Swords"
-description: "Sự rõ ràng và trí tuệ."
-image: /img/deck/s01.jpg
-keywords: [Ace of Swords]
+keywords: [Ace of Swords, Át Kiếm]
+description: "Khám phá ý nghĩa của lá bài Ace of Swords (Át Kiếm) - sự rõ ràng về tinh thần, sức mạnh trí tuệ và khởi đầu mới đầy quyết đoán trong Tarot."
 ---
 
 

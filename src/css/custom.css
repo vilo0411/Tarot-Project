@@ -2,6 +2,7 @@
 
 /* Light mode color palette */
 :root {
+  /* Primary colors */
   --ifm-color-primary: #7828c8;
   --ifm-color-primary-dark: #6b24b5;
   --ifm-color-primary-darker: #6120a8;
@@ -9,12 +10,64 @@
   --ifm-color-primary-light: #8d3edb;
   --ifm-color-primary-lighter: #9650e0;
   --ifm-color-primary-lightest: #a86ae4;
+  
+  /* Secondary colors */
+  --ifm-color-secondary: #e9d5ff;
+  --ifm-color-secondary-dark: #d8b4fe;
+  --ifm-color-secondary-darker: #c084fc;
+  --ifm-color-secondary-darkest: #a855f7;
+  --ifm-color-secondary-light: #f3e8ff;
+  --ifm-color-secondary-lighter: #f5f3ff;
+  --ifm-color-secondary-lightest: #faf5ff;
+  
+  /* Success, info, warning, danger colors */
+  --ifm-color-success: #4ade80;
+  --ifm-color-info: #60a5fa;
+  --ifm-color-warning: #fbbf24;
+  --ifm-color-danger: #f87171;
+  
+  /* Background colors */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f9fafb;
+  
+  /* Text colors */
+  --ifm-font-color-base: #1f2937;
+  --ifm-heading-color: #4c1d95;
+  --ifm-link-color: #7828c8;
+  --ifm-link-hover-color: #6120a8;
+  --ifm-bold-color: #6b24b5;
+  
+  /* Code colors */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-background: #f5f3ff;
+  --ifm-code-color: #7828c8;
+  --docusaurus-highlighted-code-line-bg: rgba(120, 40, 200, 0.1);
+  
+  /* Admonition colors */
+  --ifm-color-info-contrast-background: #e0e7ff;
+  --ifm-color-info-contrast-foreground: #1e40af;
+  --ifm-color-success-contrast-background: #d1fae5;
+  --ifm-color-success-contrast-foreground: #047857;
+  --ifm-color-warning-contrast-background: #fef3c7;
+  --ifm-color-warning-contrast-foreground: #92400e;
+  --ifm-color-danger-contrast-background: #fee2e2;
+  --ifm-color-danger-contrast-foreground: #b91c1c;
+  
+  /* Navbar colors */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #6b24b5;
+  --ifm-navbar-link-hover-color: #7828c8;
+  
+  /* Footer colors */
+  --ifm-footer-background-color: #4c1d95;
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #f5f3ff;
+  --ifm-footer-link-hover-color: #ffffff;
 }
 
 /* Dark mode color palette */
 [data-theme='dark'] {
+  /* Primary colors */
   --ifm-color-primary: #a86ae4;
   --ifm-color-primary-dark: #9650e0;
   --ifm-color-primary-darker: #8d3edb;
@@ -22,7 +75,58 @@
   --ifm-color-primary-light: #b57eea;
   --ifm-color-primary-lighter: #c292ee;
   --ifm-color-primary-lightest: #d1a6f2;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Secondary colors */
+  --ifm-color-secondary: #6b21a8;
+  --ifm-color-secondary-dark: #581c87;
+  --ifm-color-secondary-darker: #4c1d95;
+  --ifm-color-secondary-darkest: #3b0764;
+  --ifm-color-secondary-light: #7e22ce;
+  --ifm-color-secondary-lighter: #9333ea;
+  --ifm-color-secondary-lightest: #a855f7;
+  
+  /* Success, info, warning, danger colors */
+  --ifm-color-success: #22c55e;
+  --ifm-color-info: #3b82f6;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+  
+  /* Background colors */
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  
+  /* Text colors */
+  --ifm-font-color-base: #f1f5f9;
+  --ifm-heading-color: #c084fc;
+  --ifm-link-color: #a86ae4;
+  --ifm-link-hover-color: #c292ee;
+  --ifm-bold-color: #c084fc;
+  
+  /* Code colors */
+  --ifm-code-background: #1e1b4b;
+  --ifm-code-color: #c084fc;
+  --docusaurus-highlighted-code-line-bg: rgba(168, 106, 228, 0.3);
+  
+  /* Admonition colors */
+  --ifm-color-info-contrast-background: #1e1b4b;
+  --ifm-color-info-contrast-foreground: #93c5fd;
+  --ifm-color-success-contrast-background: #022c22;
+  --ifm-color-success-contrast-foreground: #6ee7b7;
+  --ifm-color-warning-contrast-background: #451a03;
+  --ifm-color-warning-contrast-foreground: #fcd34d;
+  --ifm-color-danger-contrast-background: #450a0a;
+  --ifm-color-danger-contrast-foreground: #fca5a5;
+  
+  /* Navbar colors */
+  --ifm-navbar-background-color: #1e293b;
+  --ifm-navbar-link-color: #c084fc;
+  --ifm-navbar-link-hover-color: #d8b4fe;
+  
+  /* Footer colors */
+  --ifm-footer-background-color: #0f172a;
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-link-hover-color: #d8b4fe;
 }
 
 /* Rest of the original CSS remains the same */
@@ -62,11 +166,19 @@
                    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
 }
 
+/* Image styling */
 .markdown img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Table styling */
+.table-of-contents {
+  border-left: 2px solid var(--ifm-color-primary-lighter);
 }
 
 .navbar-dropdown-hover:hover .dropdown__menu {
@@ -76,4 +188,33 @@
 .navbar-dropdown-hover .dropdown__menu {
   top: 100%;
   display: none;
+}
+
+/* Bold text styling */
+strong {
+  color: var(--ifm-bold-color);
+  font-weight: 700;
+}
+
+/* Heading styles with purple gradients */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-heading-color);
+}
+
+/* Tùy chỉnh đặc biệt cho footer trong dark mode */
+[data-theme='dark'] .footer {
+  --ifm-footer-link-color: #ffffff;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #d8b4fe;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: #d8b4fe;
+  text-decoration: none;
 }

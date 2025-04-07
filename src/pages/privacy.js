@@ -1,12 +1,15 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './privacy.module.css';
+import Head from '@docusaurus/Head'; 
 
 export default function Privacy() {
+  const description = "";
+
   return (
     <Layout
       title="Chính sách Bảo mật"
-      description="Chính sách Bảo mật cho Trang Web Đọc Bài Tarot"
+      description="Các chính sách bảo mật thông tin của Tarot Guide Online."
     >
       <div className="container margin-vert--lg">
         <div className={styles.privacyContainer}>

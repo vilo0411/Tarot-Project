@@ -1,9 +1,8 @@
 ---
 sidebar_position: 6
 title: "Six of Swords"
-description: "Chuyển đổi và buông bỏ."
-image: /img/deck/s06.jpg
-keywords: [Six of Swords]
+keywords: [Six of Swords, 6 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Six of Swords (6 Kiếm) - quá trình chuyển tiếp, rời bỏ quá khứ khó khăn và hướng tới tương lai bình yên hơn trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot 6 of Swords (6 Kiếm): Di Chuyển, Quá Độ, và Chữa Lành

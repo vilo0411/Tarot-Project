@@ -6,11 +6,11 @@ description: Khám phá nghệ thuật trải bài Tarot từ cơ bản đến c
 
 import CardLayout from '@site/src/components/CardLayout';
 
-# 🔮 Nghệ Thuật Trải Bài Tarot
+# Nghệ Thuật Trải Bài Tarot
 
 Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, năng lượng và insights cá nhân. Mỗi cách trải bài là một câu chuyện riêng, mang đến những góc nhìn độc đáo về cuộc sống.
 
-## 📊 Phân Loại Trải Bài
+## Phân Loại Trải Bài
 
 <CardLayout 
   categories={[
@@ -29,7 +29,7 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
   ]}
 />
 
-## 🌟 Các Loại Trải Bài Phổ Biến
+## Các Loại Trải Bài Phổ Biến
 
 <CardLayout 
   categories={[
@@ -60,7 +60,7 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
   ]}
 />
 
-## 🌈 Chủ Đề Trải Bài Phổ Biến
+## Chủ Đề Trải Bài Phổ Biến
 
 <CardLayout 
   categories={[
@@ -91,12 +91,12 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
   ]}
 />
 
-## 💡 Lời Khuyên Quan Trọng
+## Lời Khuyên Quan Trọng
 
 1. **Tập Trung Năng Lượng**: Luôn giữ tâm trạng tĩnh tâm khi trải bài.
 2. **Diễn Giải Linh Hoạt**: Tarot là công cụ hướng dẫn, không phải là định mệnh.
 3. **Tin Vào Trực Giác**: Kết hợp giữa ý nghĩa lá bài và cảm nhận cá nhân.
 
-## 🌠 Bắt Đầu Hành Trình Tarot
+## Bắt Đầu Hành Trình Tarot
 
 Cho dù bạn là người mới bắt đầu hay đã có kinh nghiệm, mỗi lần trải bài đều là một cuộc khám phá mới. Hãy tiếp cận Tarot với sự tôn trọng, cởi mở và khát khao học hỏi.

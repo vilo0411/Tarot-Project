@@ -1,7 +1,10 @@
 ---
 sidebar_position: 1
-title: Wands (Gậy)
+title: "Wands (Gậy)"
+keywords: ["wands", "chất wands"]
+description: "Tìm hiểu chất Swords (wands) trong bộ ẩn Phụ."
 ---
+
 
 import TarotCardGallery from '@site/src/components/TarotCardGallery';
 

@@ -1,9 +1,8 @@
 ---
 sidebar_position: 2
 title: "Two of Swords"
-description: "Sự do dự và quyết định khó khăn."
-image: /img/deck/s02.jpg
-keywords: [Two of Swords]
+keywords: [Two of Swords, 2 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Two of Swords (2 Kiếm) - thời điểm phải đối mặt với quyết định khó khăn, cần cân nhắc và tìm sự cân bằng trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot 2 of Swords (Hai Kiếm): Sự Lưỡng Lự, Cân Nhắc và Tìm Kiếm Hòa Bình

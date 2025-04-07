@@ -1,7 +1,10 @@
 ---
 sidebar_position: 14
 title: "14 - Temperance"
+keywords: ["Tarot Temperance", "Điều Độ", "Ý nghĩa lá bài Temperance", "Balance", "Moderation", "Patience", "Harmony", "Purpose", "Cân bằng", "Hài hòa", "Kiên nhẫn", "Kết hợp"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot Temperance (Điều Độ) - biểu tượng của sự cân bằng, hài hòa, kiên nhẫn và sự kết hợp các yếu tố đối lập."
 ---
+
 # Ý Nghĩa Lá Bài Tarot Temperance (Điều Độ): Sự Cân Bằng, Hài Hòa và Kết Hợp
 
 ![Temperance](/img/deck/m14.jpg)

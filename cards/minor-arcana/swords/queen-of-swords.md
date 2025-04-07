@@ -1,9 +1,8 @@
 ---
 sidebar_position: 13
 title: "Queen of Swords"
-description: "Sự thông thái và thẳng thắn."
-image: /img/deck/s13.jpg
-keywords: [Queen of Swords]
+keywords: [Queen of Swords, Hoàng Hậu Kiếm]
+description: "Khám phá ý nghĩa của lá bài Queen of Swords (Hoàng Hậu Kiếm) - trí tuệ sắc bén, tính độc lập và khả năng nhìn nhận sự thật không thiên vị trong Tarot."
 ---
 
 # Ý Nghĩa Lá Bài Tarot Queen of Swords (Nữ Hoàng Kiếm): Trí Tuệ, Sự Độc Lập và Sự Thẳng Thắn

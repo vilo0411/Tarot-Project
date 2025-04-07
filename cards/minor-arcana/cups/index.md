@@ -1,3 +1,10 @@
+---
+title: "Cups (Ly)"
+keywords: ["cups", "chất cups"]
+description: "Tìm hiểu chất Cups (Ly) trong bộ ẩn Phụ."
+---
+
+
 import TarotCardGallery from '@site/src/components/TarotCardGallery';
 
 

@@ -1,9 +1,10 @@
 ---
 sidebar_position: 7
 title: "Seven of Cups"
-description: "Ảo tưởng và sự lựa chọn."
-image: /img/deck/c07.jpg
-keywords: [Seven of Cups]
+description: "Khám phá ý nghĩa lá bài Tarot Seven of Cups: Biểu tượng của ảo tưởng, nhiều lựa chọn, mơ mộng viển vông và sự cần thiết phải đối mặt với thực tế."
+keywords: 
+  - Seven of Cups
+  - Bảy Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot 7 of Cups (7 Ly): Ảo Tưởng, Lựa Chọn và Tiềm Năng

@@ -1,10 +1,12 @@
 ---
 sidebar_position: 3
 title: "Three of Pentacles"
-description: "Hợp tác và làm việc nhóm."
-image: /img/deck/p03.jpg
-keywords: [Three of Pentacles]
+description: "Khám phá ý nghĩa lá bài Tarot Three of Pentacles: Biểu tượng của sự hợp tác làm việc nhóm, kỹ năng chuyên môn, và sự công nhận cho thành tích khi làm việc chung."
+keywords: 
+  - Three of Pentacles
+  - Ba Xu
 ---
+
 # Ý Nghĩa Lá Bài Tarot 3 of Pentacles: Hợp Tác, Kỹ Năng và Thành Tựu
 
 ![Three of Pentacles](/img/deck/p03.jpg)

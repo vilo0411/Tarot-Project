@@ -34,7 +34,6 @@ const TarotReadingOptions = () => {
           to={option.link}
           className={`${styles.optionCard} ${styles[`bgColor${option.backgroundColor}`]}`}
         >
-
           <div className={styles.cardContent}>
             <h3 className={styles.cardTitle}>{option.title}</h3>
             <p className={styles.cardDescription}>{option.description}</p>

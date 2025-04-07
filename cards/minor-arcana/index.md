@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 title: Bộ Ẩn Phụ (Minor Arcana)
+description: "Giới thiệu tổng quan về bộ Ẩn Phụ (Minor Arcana). Tìm hiểu 56 lá ẩn phụ gồm 4 chất chính với Tarot Guide Online"
+keywords: [bộ ẩn phụ, minor arcana]
 ---
 
 import TarotCardGallery from '@site/src/components/TarotCardGallery';
@@ -9,27 +11,27 @@ import TarotCardGallery from '@site/src/components/TarotCardGallery';
 
 Bộ Ẩn Phụ bao gồm 56 lá bài chia thành bốn chất, mỗi chất có 14 lá từ Ace đến King. Các lá này liên quan đến những vấn đề thường ngày và tình huống cụ thể trong cuộc sống, phản ánh các hoạt động, cảm xúc, thách thức và cơ hội mà chúng ta thường gặp phải.
 
-## Cups
+## Cups (Ly)
 
-The Cups suit is associated with the element of water and represents emotions, feelings, relationships, creativity, and intuition.
+Chất Ly được liên kết với nguyên tố nước và đại diện cho cảm xúc, tình cảm, các mối quan hệ, sự sáng tạo và trực giác. 
 
 <TarotCardGallery category="cups" />
 
-## Swords
+## Swords (Kiếm)
 
-The Swords suit is associated with the element of air and represents intellect, thoughts, communication, conflict, and challenges.
+Chất Kiếm được liên kết với nguyên tố không khí và đại diện cho trí tuệ, suy nghĩ, giao tiếp, xung đột và thử thách.
 
 <TarotCardGallery category="swords" />
 
-## Wands
+## Wands (Gậy)
 
-The Wands suit is associated with the element of fire and represents energy, passion, action, inspiration, and creativity.
+Chất Gậy được liên kết với nguyên tố lửa và đại diện cho năng lượng, đam mê, hành động, cảm hứng và sự sáng tạo.
 
 <TarotCardGallery category="wands" />
 
-## Pentacles
+## Pentacles (Đồng Tiền)
 
-The Pentacles suit is associated with the element of earth and represents material aspects such as money, career, resources, and physical health.
+Chất Đồng Tiền được liên kết với nguyên tố đất và đại diện cho các khía cạnh vật chất như tiền bạc, sự nghiệp, tài nguyên và sức khỏe thể chất.
 
 <TarotCardGallery category="pentacles" />
 
@@ -56,7 +58,7 @@ Mỗi chất trong Bộ Ẩn Phụ tương ứng với một yếu tố cơ bả
 - **Wands (Gậy)**: Lửa - Năng lượng, hành động, đam mê
 - **Cups (Ly)**: Nước - Cảm xúc, mối quan hệ, trực giác
 - **Swords (Kiếm)**: Không khí - Tư duy, giao tiếp, thách thức
-- **Pentacles (Xu)**: Đất - Vật chất, thực tế, ổn định
+- **Pentacles (Đồng tiền/Xu)**: Đất - Vật chất, thực tế, ổn định
 
 ## Ý nghĩa trong các trải bài
 

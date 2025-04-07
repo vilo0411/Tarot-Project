@@ -1,7 +1,10 @@
 ---
-sidebar_position: 05
+sidebar_position: 5
 title: "05 - The Hierophant"
+keywords: ["Tarot The Hierophant", "Giáo Hoàng", "Ý nghĩa lá bài The Hierophant", "Tradition", "Conformity", "Belief systems", "Truyền thống", "Đức tin", "Tuân thủ", "Hướng dẫn"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Hierophant (Giáo Hoàng) - biểu tượng của truyền thống, đức tin và hệ thống niềm tin trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Hierophant (Giáo Hoàng): Truyền Thống, Đức Tin và Hướng Dẫn
 
 ![The Hierophant](/img/deck/m05.jpg)

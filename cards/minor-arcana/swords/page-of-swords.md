@@ -1,9 +1,8 @@
 ---
 sidebar_position: 11
 title: "Page of Swords"
-description: "Tò mò và tìm hiểu."
-image: /img/deck/s11.jpg
-keywords: [Page of Swords]
+keywords: [Page of Swords, Linh Hồn Kiếm]
+description: "Khám phá ý nghĩa của lá bài Page of Swords (Linh Hồn Kiếm) - trí óc tò mò, khao khát tìm kiếm sự thật và năng lượng trí tuệ trẻ trung trong Tarot."
 ---
 # Ý Nghĩa Lá Bài Tarot Page of Swords: Sự Tò Mò, Ý Tưởng Mới và Thách Thức Trí Tuệ
 

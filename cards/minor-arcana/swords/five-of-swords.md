@@ -1,9 +1,8 @@
 ---
 sidebar_position: 5
 title: "Five of Swords"
-description: "Xung đột và chiến thắng cay đắng."
-image: /img/deck/s05.jpg
-keywords: [Five of Swords]
+keywords: [Five of Swords, 5 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Five of Swords (5 Kiếm) - những xung đột, chiến thắng cay đắng và bài học về giá trị của hòa bình trong Tarot."
 ---
 # Ý Nghĩa Lá Bài Tarot 5 of Swords (5 Kiếm): Sự Xung Đột, Thất Bại và Chiến Thắng Cay Đắng
 

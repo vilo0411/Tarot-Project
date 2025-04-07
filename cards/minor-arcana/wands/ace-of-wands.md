@@ -1,9 +1,8 @@
 ---
 sidebar_position: 1
 title: "Ace of Wands"
-description: "Nguồn cảm hứng và động lực."
-image: /img/deck/w01.jpg
-keywords: [Ace of Wands]
+keywords: [Ace of Wands, Át Gậy]
+description: "Khám phá ý nghĩa của lá bài Ace of Wands (Át Gậy) - sự khởi đầu đầy năng lượng, nguồn cảm hứng mới và tiềm năng sáng tạo vô hạn trong Tarot."
 ---
 
 

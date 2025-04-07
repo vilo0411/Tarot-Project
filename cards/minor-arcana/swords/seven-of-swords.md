@@ -1,9 +1,8 @@
 ---
 sidebar_position: 7
 title: "Seven of Swords"
-description: "Lừa dối và chiến lược."
-image: /img/deck/s07.jpg
-keywords: [Seven of Swords]
+keywords: [Seven of Swords, 7 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Seven of Swords (7 Kiếm) - những chiến lược tinh vi, hành động lén lút và những lựa chọn đạo đức khó khăn trong Tarot."
 ---
 # Ý Nghĩa Lá Bài Tarot 7 of Swords (7 Gươm): Sự Lừa Dối, Trốn Tránh và Chiến Thuật
 

@@ -1,9 +1,10 @@
 ---
 sidebar_position: 5
 title: "Five of Cups"
-description: "Sự mất mát và hối tiếc."
-image: /img/deck/c05.jpg
-keywords: [Five of Cups]
+description: "Khám phá ý nghĩa lá bài Tarot Five of Cups: Biểu tượng của sự mất mát, hối tiếc, nỗi buồn và quá trình phục hồi sau tổn thương cảm xúc."
+keywords: 
+  - Five of Cups
+  - Năm Cốc
 ---
 
 # Ý Nghĩa Lá Bài Tarot 5 of Cups: Sự Mất Mát, Hối Tiếc và Cơ Hội Phục Hồi

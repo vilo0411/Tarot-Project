@@ -1,7 +1,10 @@
 ---
 sidebar_position: 19
 title: "19 - The Sun"
+keywords: ["Tarot The Sun", "Mặt Trời", "Ý nghĩa lá bài The Sun", "Joy", "Success", "Happiness", "Vitality", "Enlightenment", "Niềm vui", "Thành công", "Hạnh phúc", "Sự sống"]
+description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Sun (Mặt Trời) - biểu tượng của niềm vui, thành công, hạnh phúc và năng lượng tích cực trong bộ bài Ẩn Chính."
 ---
+
 # Ý Nghĩa Lá Bài Tarot The Sun (Mặt Trời): Niềm Vui, Thành Công và Sự Sống
 
 ![The Sun](/img/deck/m19.jpg)

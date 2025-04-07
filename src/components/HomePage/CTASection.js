@@ -9,11 +9,11 @@ export default function CTASection() {
       <div className={styles.ctaContainer}>
         <h2 className={styles.ctaTitle}>
           <span className={styles.ctaTitleDark}>Trải nghiệm</span>{' '}
-          <span className={styles.ctaTitleBlue}>Đọc bài Tarot</span>{' '}
+          <span className={styles.ctaTitlePurple}>Đọc bài Tarot</span>{' '}
           <span className={styles.ctaTitleDark}>Miễn Phí</span>
         </h2>
         <p className={styles.ctaDescription}>
-          Trải nghiệm hệ thống rút bài tarot trực tuyến mới nhất năm 2025 và các bài kiểm tra bói toán tarot
+          Trải nghiệm hệ thống bói bài tarot trực tuyến mới nhất năm 2025 và các bài kiểm tra bói toán tarot
         </p>
         <div className={styles.ctaButtonContainer}>
           <Link to="/reading" className={styles.ctaButton}>

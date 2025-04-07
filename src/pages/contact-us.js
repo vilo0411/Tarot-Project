@@ -31,21 +31,21 @@ const YoutubeIcon = () => (
 export default function ContactUs() {
   return (
     <Layout
-      title="Contact Us"
-      description="Contact the Tarot Reading team"
+      title="Thông Tin Liên Hệ"
+      description="Chi tiết thông tin liên hệ với đội ngũ Tarot Guide Online."
     >
       <div className="container margin-vert--lg">
         <div className={styles.contactContainer}>
-          <h1 className={styles.title}>Contact Us</h1>
+          <h1 className={styles.title}>Thông tin Liên Hệ</h1>
           
           <div className={styles.contactContent}>
             <div className={styles.contactSection}>
-              <h2>Email Us</h2>
+              <h2>Email</h2>
               <p>
                 Đối với bất kỳ câu hỏi hoặc thắc mắc nào, vui lòng liên hệ với chúng tôi tại:
               </p>
-              <a href="mailto:info@tarotguideonline.com" className={styles.emailLink}>
-                info@tarotguideonline.com
+              <a href="mailto:admin@tarotguideonline.com" className={styles.emailLink}>
+                admin@tarotguideonline.com
               </a>
               <p className={styles.responseNote}>
                 Chúng tôi sẽ phản hồi thông tin của bạn trong thời gian sớm nhất!

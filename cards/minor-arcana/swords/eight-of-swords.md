@@ -1,9 +1,8 @@
 ---
 sidebar_position: 8
 title: "Eight of Swords"
-description: "Cảm giác bị mắc kẹt."
-image: /img/deck/s08.jpg
-keywords: [Eight of Swords]
+keywords: [Eight of Swords, 8 Kiếm]
+description: "Khám phá ý nghĩa của lá bài Eight of Swords (8 Kiếm) - cảm giác bị giam cầm, những hạn chế tự áp đặt và cách giải phóng tinh thần trong Tarot."
 ---
 # Ý Nghĩa Lá Bài Tarot 8 of Swords: Sự Hạn Chế, Mắc Kẹt và Tự Giam Cầm
 
