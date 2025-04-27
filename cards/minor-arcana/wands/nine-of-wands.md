@@ -1,8 +1,13 @@
 ---
 sidebar_position: 9
-title: "Nine of Wands"
+title: "Ý Nghĩa Lá Bài 9 of Wands"
+sidebar_label: "9 of Wands"
 keywords: [Nine of Wands, 9 Gậy]
 description: "Khám phá ý nghĩa của lá bài Nine of Wands (9 Gậy) - sự kiên trì, sức mạnh nội tâm và khả năng đứng vững trước những thử thách cuối cùng trong Tarot."
+image: "/img/deck/w09.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 9 of Wands: Sự Kiên Trì, Phòng Thủ, và Sức Mạnh Nội Tâm

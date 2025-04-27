@@ -1,10 +1,15 @@
 ---
 sidebar_position: 2
-title: Two of Cups
+title: "Ý Nghĩa Lá Bài 2 of Cups"
+sidebar_label: "2 of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot Two of Cups: Biểu tượng cho tình yêu đôi lứa, sự kết nối sâu sắc, mối quan hệ hòa hợp và cam kết trong các mối quan hệ."
 keywords:
   - Two of Cups
   - Hai Cốc
+image: "/img/deck/c02.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 2 of Cups (Hai Cốc): Tình Yêu, Sự Kết Nối và Hòa Hợp

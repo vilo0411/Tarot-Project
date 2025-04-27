@@ -3,6 +3,10 @@ sidebar_position: 1
 title: "Bộ Ẩn Chính (Major Arcana)"
 description: "Giới thiệu tổng quan về bộ Ẩn Chính (Major Arcana). Tìm hiểu 22 lá ẩn chính với Tarot Guide Online"
 keywords: [bộ ẩn chính, major arcana]
+image: "/img/deck/default.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 import TarotCardGallery from '@site/src/components/TarotCardGallery';

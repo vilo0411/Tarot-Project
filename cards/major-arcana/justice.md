@@ -1,8 +1,13 @@
 ---
 sidebar_position: 11
-title: "11 - Justice"
+title: "11 - Ý Nghĩa Lá Bài Justice"
+sidebar_label: "11 - Justice"
 keywords: ["Tarot Justice", "Công Lý", "Ý nghĩa lá bài Justice", "Fairness", "Truth", "Cause and effect", "Balance", "Công bằng", "Sự thật", "Luật nhân quả", "Cân bằng"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot Justice (Công Lý) - biểu tượng của sự công bằng, sự thật, luật nhân quả và sự cân bằng trong bộ bài Ẩn Chính."
+image: "/img/deck/m11.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Justice (Công Lý): Sự Thật, Công Bằng và Cân Bằng

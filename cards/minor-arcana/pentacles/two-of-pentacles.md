@@ -1,10 +1,15 @@
 ---
 sidebar_position: 2
-title: "Two of Pentacles"
+title: "Ý Nghĩa Lá Bài 2 of Pentacles"
+sidebar_label: "2 of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Two of Pentacles: Biểu tượng của sự cân bằng tài chính, thích ứng với thay đổi, quản lý đa nhiệm và linh hoạt trong cuộc sống."
 keywords: 
   - Two of Pentacles
   - Hai Xu
+image: "/img/deck/p02.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 2 of Pentacles: Sự Cân Bằng, Thích Nghi và Quản Lý Nguồn Lực

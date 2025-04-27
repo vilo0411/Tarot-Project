@@ -1,10 +1,15 @@
 ---
 sidebar_position: 8
-title: "Eight of Pentacles"
+title: "Ý Nghĩa Lá Bài 8 of Pentacles"
+sidebar_label: "8 of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Eight of Pentacles: Biểu tượng của sự chăm chỉ, kỹ năng thủ công, sự tận tâm với công việc và quá trình tiến bộ thông qua nỗ lực."
 keywords: 
   - Eight of Pentacles
   - Tám Xu
+image: "/img/deck/p08.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 8 of Pentacles (8 Đồng Tiền): Sự Chăm Chỉ, Kỹ Năng và Hoàn Thiện

@@ -1,10 +1,15 @@
 ---
 sidebar_position: 13
-title: "Queen of Pentacles"
+title: "Ý Nghĩa Lá Bài Queen of Pentacles"
+sidebar_label: "Queen of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Queen of Pentacles: Biểu tượng của sự nuôi dưỡng, thực tế, khả năng quản lý tài chính và tạo dựng môi trường ấm áp, thịnh vượng."
 keywords: 
   - Queen of Pentacles
   - Hoàng Hậu Xu
+image: "/img/deck/p13.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Queen of Pentacles (Nữ Hoàng Tiền): Sự Thịnh Vượng, Thực Tế và Nuôi Dưỡng

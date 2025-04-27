@@ -1,8 +1,13 @@
 ---
 sidebar_position: 15
-title: "15 - The Devil"
+title: "15 - Ý Nghĩa Lá Bài The Devil"
+sidebar_label: "15 - The Devil"
 keywords: ["Tarot The Devil", "Ác Quỷ", "Ý nghĩa lá bài The Devil", "Bondage", "Addiction", "Materialism", "Shadow self", "Ràng buộc", "Cám dỗ", "Vật chất", "Giới hạn"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Devil (Ác Quỷ) - biểu tượng của sự ràng buộc, cám dỗ, vật chất và những giới hạn tự áp đặt."
+image: "/img/deck/m15.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot The Devil (Ác Quỷ): Sự Ràng Buộc, Cám Dỗ và Giải Thoát

@@ -1,10 +1,15 @@
 ---
 sidebar_position: 4
-title: "Four of Pentacles"
+title: "Ý Nghĩa Lá Bài 4 of Pentacles"
+sidebar_label: "4 of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Four of Pentacles: Biểu tượng của sự kiểm soát tài chính, an toàn vật chất, bám chấp vào của cải và thái độ bảo thủ."
 keywords: 
   - Four of Pentacles
   - Bốn Xu
+image: "/img/deck/p04.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 4 of Pentacles: Sự Sở Hữu, Kiểm Soát và An Toàn Tài Chính

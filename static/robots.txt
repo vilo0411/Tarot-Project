@@ -1,2 +1,4 @@
 User-agent: *
-Allow:/
+Allow: /
+
+Sitemap: Sitemap: https://tarotguideonline.com/sitemap.xml

@@ -1,10 +1,15 @@
 ---
 sidebar_position: 6
-title: "Six of Cups"
+title: "Ý Nghĩa Lá Bài 6 of Cups"
+sidebar_label: "6 of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot Six of Cups: Biểu tượng của ký ức tuổi thơ, hoài niệm về quá khứ, tình bạn trong sáng và sự hào phóng vô điều kiện."
 keywords: 
   - Six of Cups
   - Sáu Cốc
+image: "/img/deck/c06.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 6 of Cups (6 Cốc): Hoài Niệm, Tuổi Thơ, Tình Bạn, và Sự Hào Phóng

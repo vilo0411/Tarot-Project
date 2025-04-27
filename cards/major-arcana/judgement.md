@@ -1,8 +1,13 @@
 ---
 sidebar_position: 20
-title: "20 - Judgement"
+title: "20 - Ý Nghĩa Lá Bài Judgement"
+sidebar_label: "20 - Judgement"
 keywords: ["Tarot Judgement", "Phán Xét", "Ý nghĩa lá bài Judgement", "Rebirth", "Awakening", "Evaluation", "Forgiveness", "Calling", "Thức tỉnh", "Tái sinh", "Đánh giá", "Tha thứ"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot Judgement (Phán Xét) - biểu tượng của sự thức tỉnh, đánh giá lại và tái sinh trong bộ bài Ẩn Chính."
+image: "/img/deck/m20.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Judgement (Phán Xét): Thức Tỉnh, Đánh Giá và Tái Sinh

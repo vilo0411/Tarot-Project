@@ -2,6 +2,10 @@
 title: "Cups (Ly)"
 keywords: ["cups", "chất cups"]
 description: "Tìm hiểu chất Cups (Ly) trong bộ ẩn Phụ."
+image: "/img/deck/default.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 

@@ -20,6 +20,8 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  trailingSlash: true,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'vilo0411', // Usually your GitHub org/user name.
@@ -94,7 +96,7 @@ const config = {
     [
       '@docusaurus/plugin-google-tag-manager',
       {
-        containerId: 'GTM-12345',
+        containerId: 'GTM-MGB9RTLJ',
       },
     ],
   ],
@@ -144,6 +146,9 @@ const config = {
           }
         ],
       },
+      metadata: [
+        {property: 'og:type', content: 'website'},
+      ],
       footer: {
         style: 'dark',
         links: [

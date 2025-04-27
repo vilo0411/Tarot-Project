@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
-title: "01 - The Magician"
+title: "1 - Ý Nghĩa Lá Bài The Magician"
+sidebar_label: "1 - The Magician"
 keywords: ["Tarot The Magician", "Nhà Ảo Thuật", "Ý nghĩa lá bài The Magician", "Manifestation", "Power", "Action", "Khả năng", "Hành động", "Nguồn lực", "Hiện thực hóa"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Magician (Nhà Ảo Thuật) - biểu tượng của khả năng, hành động và sức mạnh biến ước mơ thành hiện thực."
+image: "/img/deck/m01.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot The Magician (Nhà Ảo Thuật): Khả Năng, Hành Động và Hiện Thực Hóa

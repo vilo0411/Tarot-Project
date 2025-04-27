@@ -1,10 +1,15 @@
 ---
 sidebar_position: 13
-title: "Queen of Cups"
+title: "Ý Nghĩa Lá Bài Queen of Cups"
+sidebar_label: "Queen of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot Queen of Cups: Biểu tượng của sự nhạy cảm, thấu hiểu sâu sắc, trực giác mạnh mẽ và lòng trắc ẩn vô điều kiện."
 keywords: 
   - Queen of Cups
   - Hoàng Hậu Cốc
+image: "/img/deck/c13.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Queen of Cups: Nữ Hoàng Của Cảm Xúc, Trực Giác và Tình Yêu Thương

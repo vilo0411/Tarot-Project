@@ -1,10 +1,15 @@
 ---
 sidebar_position: 12
-title: "Knight of Pentacles"
+title: "Ý Nghĩa Lá Bài Knight of Pentacles"
+sidebar_label: "Knight of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Knight of Pentacles: Biểu tượng của sự kiên trì, cam kết, làm việc chăm chỉ và thái độ thực tế, đáng tin cậy trong mọi nhiệm vụ."
 keywords: 
   - Knight of Pentacles
   - Hiệp Sĩ Xu
+image: "/img/deck/p12.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Knight of Pentacles (Hiệp Sĩ Tiền): Sự Kiên Trì, Trách Nhiệm và Thực Tế

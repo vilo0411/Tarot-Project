@@ -1,8 +1,13 @@
 ---
 sidebar_position: 4
-title: "Four of Swords"
+title: "Ý Nghĩa Lá Bài 4 of Swords"
+sidebar_label: "4 of Swords"
 keywords: [Four of Swords, 4 Kiếm]
 description: "Khám phá ý nghĩa của lá bài Four of Swords (4 Kiếm) - thời gian nghỉ ngơi cần thiết, hồi phục năng lượng và tìm lại sự bình yên nội tâm trong Tarot."
+image: "/img/deck/s04.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 4 of Swords: Nghỉ Ngơi, Phục Hồi, và Chiêm Nghiệm

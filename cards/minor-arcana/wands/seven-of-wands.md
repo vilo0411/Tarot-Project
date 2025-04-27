@@ -1,8 +1,13 @@
 ---
 sidebar_position: 7
-title: "Seven of Wands"
+title: "Ý Nghĩa Lá Bài 7 of Wands"
+sidebar_label: "7 of Wands"
 keywords: [Seven of Wands, 7 Gậy]
 description: "Khám phá ý nghĩa của lá bài Seven of Wands (7 Gậy) - sự kiên trì bảo vệ vị trí, đứng vững trước thách thức và đối mặt cạnh tranh trong Tarot."
+image: "/img/deck/w07.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Seven of Wands (7 Gậy): Sự Kiên Trì, Đối Mặt Thách Thức và Bảo Vệ Lập Trường

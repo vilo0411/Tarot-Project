@@ -1,10 +1,15 @@
 ---
 sidebar_position: 10
-title: "Ten of Cups"
+title: "Ý Nghĩa Lá Bài 10 of Cups"
+sidebar_label: "10 of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot Ten of Cups: Biểu tượng của hạnh phúc gia đình, tình yêu trọn vẹn, sự hòa hợp trong các mối quan hệ và viên mãn cảm xúc."
 keywords: 
   - Ten of Cups
   - Mười Cốc
+image: "/img/deck/c10.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 10 of Cups (Mười Cốc): Hạnh Phúc Viên Mãn, Gia Đình Hòa Thuận, và Niềm Vui Trọn Vẹn

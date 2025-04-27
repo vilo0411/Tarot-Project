@@ -1,8 +1,13 @@
 ---
 sidebar_position: 2
-title: "02 - The High Priestess"
+title: "2 - Ý Nghĩa Lá Bài The High Priestess"
+sidebar_label: "2 - The High Priestess"
 keywords: ["Tarot The High Priestess", "Nữ Tư Tế", "Ý nghĩa lá bài The High Priestess", "Intuition", "Mystery", "Subconscious", "Trực giác", "Bí ẩn", "Tiềm thức", "Nội tâm"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The High Priestess (Nữ Tư Tế) - biểu tượng của trực giác, bí ẩn và kiến thức tiềm thức trong bộ bài Ẩn Chính."
+image: "/img/deck/m02.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot The High Priestess (Nữ Tư Tế): Trực Giác, Bí Ẩn và Tiềm Thức

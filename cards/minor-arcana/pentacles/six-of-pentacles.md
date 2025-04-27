@@ -1,10 +1,15 @@
 ---
 sidebar_position: 6
-title: "Six of Pentacles"
+title: "Ý Nghĩa Lá Bài 6 of Pentacles"
+sidebar_label: "6 of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Six of Pentacles: Biểu tượng của sự chia sẻ, giúp đỡ, lòng hào phóng, cân bằng cho-nhận và sự tương trợ trong khó khăn."
 keywords: 
   - Six of Pentacles
   - Sáu Xu
+image: "/img/deck/p06.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 6 of Pentacles (6 Xu): Sự Hào Phóng, Chia Sẻ và Cân Bằng Tài Chính

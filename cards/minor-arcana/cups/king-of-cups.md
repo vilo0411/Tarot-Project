@@ -1,10 +1,15 @@
 ---
 sidebar_position: 14
-title: "King of Cups"
+title: "Ý Nghĩa Lá Bài King of Cups"
+sidebar_label: "King of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot King of Cups: Biểu tượng của sự trưởng thành cảm xúc, trí tuệ và cân bằng, khả năng làm chủ cảm xúc và phán đoán khôn ngoan."
 keywords: 
   - King of Cups
   - Vua Cốc
+image: "/img/deck/c14.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot King of Cups: Sự Trưởng Thành Cảm Xúc, Trí Tuệ và Lòng Trắc Ẩn

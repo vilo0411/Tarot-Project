@@ -1,10 +1,15 @@
 ---
 sidebar_position: 12
-title: "Knight of Cups"
+title: "Ý Nghĩa Lá Bài Knight of Cups"
+sidebar_label: "Knight of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot Knight of Cups: Biểu tượng của tình yêu lãng mạn, sự quyến rũ, lời mời gọi tình cảm và cá tính nghệ sĩ đầy cảm xúc."
 keywords: 
   - Knight of Cups
   - Hiệp Sĩ Cốc
+image: "/img/deck/c12.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Knight of Cups (Hiệp Sĩ Cốc): Tình Cảm, Sáng Tạo và Sự Theo Đuổi

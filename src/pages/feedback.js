@@ -77,7 +77,7 @@ export default function Feedback() {
       };
       
       // Send data to the n8n webhook
-      const webhookResponse = await fetch('https://n8n.banhduc.vn/webhook/tarot-reading', {
+      const webhookResponse = await fetch('ttps://n8n.tarotguideonline.com/webhook/tarot-reading', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

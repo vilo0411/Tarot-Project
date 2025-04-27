@@ -1,10 +1,15 @@
 ---
 sidebar_position: 1
-title: Ace of Cups
+title: "Ý Nghĩa Lá Bài Ace of Cups"
+sidebar_label: "Ace of Cups"
 description: "Khám phá ý nghĩa lá bài Tarot Ace of Cups: Biểu tượng của tình yêu mới, cảm xúc dạt dào, sự sáng tạo và khởi đầu thuận lợi trong cảm xúc."
 keywords:
   - Ace of Cups
   - Ách Cốc
+image: "/img/deck/c01.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Ace of Cups: Tình Yêu Mới, Cảm Xúc Tràn Đầy và Khởi Đầu Thuận Lợi

@@ -3,6 +3,10 @@ sidebar_position: 1
 title: "Wands (Gậy)"
 keywords: ["wands", "chất wands"]
 description: "Tìm hiểu chất Swords (wands) trong bộ ẩn Phụ."
+image: "/img/deck/default.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 

@@ -83,7 +83,7 @@ function ReadingResults({
       };
       
       // Gửi dữ liệu đến webhook của n8n
-      const webhookResponse = await fetch('https://n8n.banhduc.vn/webhook/tarot-reading', {
+      const webhookResponse = await fetch('https://n8n.tarotguideonline.com/webhook-test/tarot-reading', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

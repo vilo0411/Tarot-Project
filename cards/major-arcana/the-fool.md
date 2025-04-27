@@ -1,8 +1,13 @@
 ---
 sidebar_position: 0
-title: "00 - The Fool"
+title: "0 - Ý Nghĩa Lá Bài The Fool"
+sidebar_label: "0 - The Fool"
 keywords: ["Tarot The Fool", "Kẻ Khờ", "Ý nghĩa lá bài The Fool", "New beginnings", "Spontaneity", "Faith", "Khởi đầu mới", "Tiềm năng", "Tự phát", "Phiêu lưu"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Fool (Kẻ Khờ) - biểu tượng của sự khởi đầu mới, tiềm năng vô hạn và tinh thần phiêu lưu trong bộ bài Ẩn Chính."
+image: "/img/deck/m00.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # The Fool (Lá Kẻ Khờ)

@@ -1,8 +1,13 @@
 ---
 sidebar_position: 11
-title: "Page of Wands"
+title: "Ý Nghĩa Lá Bài Page of Wands"
+sidebar_label: "Page of Wands"
 keywords: [Page of Wands, Linh Hồn Gậy]
 description: "Khám phá ý nghĩa của lá bài Page of Wands (Linh Hồn Gậy) - tinh thần khám phá, sự nhiệt huyết và những ý tưởng sáng tạo mới trong Tarot."
+image: "/img/deck/w11.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Page of Wands: Sự Khám Phá, Đam Mê và Khởi Đầu Mới

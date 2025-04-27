@@ -1,8 +1,13 @@
 ---
 sidebar_position: 14
-title: "King of Wands"
+title: "Ý Nghĩa Lá Bài King of Wands"
+sidebar_label: "King of Wands"
 keywords: [King of Wands, Vua Gậy]
 description: "Khám phá ý nghĩa của lá bài King of Wands (Vua Gậy) - khả năng lãnh đạo mạnh mẽ, tầm nhìn xa và năng lượng sáng tạo đầy quyền lực trong Tarot."
+image: "/img/deck/w14.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot King of Wands: Quyền Lực, Tầm Nhìn và Sự Lãnh Đạo

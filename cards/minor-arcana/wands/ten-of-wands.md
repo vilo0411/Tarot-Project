@@ -1,8 +1,13 @@
 ---
 sidebar_position: 10
-title: "Ten of Wands"
+title: "Ý Nghĩa Lá Bài 10 of Wands"
+sidebar_label: "10 of Wands"
 keywords: [Ten of Wands, 10 Gậy]
 description: "Khám phá ý nghĩa của lá bài Ten of Wands (10 Gậy) - gánh nặng trách nhiệm, cảm giác quá tải và sự cần thiết học cách chia sẻ trong Tarot."
+image: "/img/deck/w10.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 10 of Wands (10 Gậy): Gánh Nặng, Trách Nhiệm, và Sự Kiệt Sức

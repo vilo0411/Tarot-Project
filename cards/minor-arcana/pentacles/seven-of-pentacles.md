@@ -1,10 +1,15 @@
 ---
 sidebar_position: 7
-title: "Seven of Pentacles"
+title: "Ý Nghĩa Lá Bài 7 of Pentacles"
+sidebar_label: "7 of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Seven of Pentacles: Biểu tượng của sự kiên nhẫn, đầu tư lâu dài, thời gian đánh giá thành quả và chờ đợi kết quả từ công sức bỏ ra."
 keywords: 
   - Seven of Pentacles
   - Bảy Xu
+image: "/img/deck/p07.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 7 of Pentacles (7 Đồng Tiền): Sự Chăm Chỉ, Kiên Nhẫn và Đánh Giá Thành Quả

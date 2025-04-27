@@ -1,8 +1,13 @@
 ---
 sidebar_position: 21
-title: "21 - The World"
+title: "21 - Ý Nghĩa Lá Bài The World"
+sidebar_label: "21 - The World"
 keywords: ["Tarot The World", "Thế Giới", "Ý nghĩa lá bài The World", "Completion", "Achievement", "Fulfillment", "Integration", "Travel", "Hoàn thành", "Thành tựu", "Viên mãn"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The World (Thế Giới) - biểu tượng của sự hoàn thành, thành tựu và viên mãn, đánh dấu kết thúc chu kỳ."
+image: "/img/deck/m21.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot The World (Thế Giới): Hoàn Thành, Thành Tựu và Viên Mãn

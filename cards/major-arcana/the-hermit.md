@@ -1,8 +1,13 @@
 ---
 sidebar_position: 9
-title: "09 - The Hermit"
+title: "9 - Ý Nghĩa Lá Bài The Hermit"
+sidebar_label: "9 - The Hermit"
 keywords: ["Tarot The Hermit", "Ẩn Sĩ", "Ý nghĩa lá bài The Hermit", "Solitude", "Introspection", "Guidance", "Inner wisdom", "Tĩnh lặng", "Chiêm nghiệm", "Khôn ngoan", "Soi xét nội tâm"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Hermit (Ẩn Sĩ) - biểu tượng của sự tĩnh lặng, chiêm nghiệm nội tâm và tìm kiếm sự khôn ngoan."
+image: "/img/deck/m09.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot The Hermit (Ẩn Sĩ): Sự Tĩnh Lặng, Chiêm Nghiệm và Tìm Kiếm Nội Tâm

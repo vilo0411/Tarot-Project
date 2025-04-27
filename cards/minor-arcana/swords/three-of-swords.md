@@ -1,8 +1,13 @@
 ---
 sidebar_position: 3
-title: "Three of Swords"
+title: "Ý Nghĩa Lá Bài 3 of Swords"
+sidebar_label: "3 of Swords"
 keywords: [Three of Swords, 3 Kiếm]
 description: "Khám phá ý nghĩa của lá bài Three of Swords (3 Kiếm) - nỗi đau tinh thần, tổn thương tình cảm và quá trình đối mặt với sự thật đau đớn trong Tarot."
+image: "/img/deck/s03.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 3 of Swords (3 Kiếm): Sự Đau Khổ, Tổn Thương và Chữa Lành

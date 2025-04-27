@@ -1,8 +1,13 @@
 ---
 sidebar_position: 1
-title: "Ace of Wands"
+title: "Ý Nghĩa Lá Bài Ace of Wands"
+sidebar_label: "Ace of Wands"
 keywords: [Ace of Wands, Át Gậy]
 description: "Khám phá ý nghĩa của lá bài Ace of Wands (Át Gậy) - sự khởi đầu đầy năng lượng, nguồn cảm hứng mới và tiềm năng sáng tạo vô hạn trong Tarot."
+image: "/img/deck/w01.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 

@@ -1,8 +1,13 @@
 ---
 sidebar_position: 4
-title: "04 - The Emperor"
+title: "4 - Ý Nghĩa Lá Bài The Emperor"
+sidebar_label: "4 - The Emperor"
 keywords: ["Tarot The Emperor", "Hoàng Đế", "Ý nghĩa lá bài The Emperor", "Authority", "Structure", "Power", "Control", "Stability", "Quyền lực", "Kỷ luật", "Trật tự", "Ổn định"]
 description: "Khám phá ý nghĩa đầy đủ của lá bài Tarot The Emperor (Hoàng Đế) - biểu tượng của quyền lực, trật tự, kỷ luật và sự ổn định trong bộ bài Ẩn Chính."
+image: "/img/deck/m04.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot The Emperor (Hoàng Đế): Quyền Lực, Kỷ Luật và Trật Tự

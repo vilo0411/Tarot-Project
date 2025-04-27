@@ -1,10 +1,15 @@
 ---
 sidebar_position: 1
-title: "Ace of Pentacles"
+title: "Ý Nghĩa Lá Bài Ace of Pentacles"
+sidebar_label: "Ace of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Ace of Pentacles: Biểu tượng của cơ hội tài chính mới, sự thịnh vượng, khởi đầu vững chắc và tiềm năng phát triển vật chất."
 keywords: 
   - Ace of Pentacles
   - Ách Xu
+image: "/img/deck/p01.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Ace of Pentacles (Tiền): Cơ Hội, Thịnh Vượng và Khởi Đầu Mới

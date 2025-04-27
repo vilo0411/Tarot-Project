@@ -5,9 +5,9 @@ import styles from './HeroSection.module.css';
 export default function HeroSection() {
   return (
     <div className={styles.heroContainer}>
-      <h2 className={styles.heroHeading}>
+      <h1 className={styles.heroHeading}>
         Discover Tarot Reading
-      </h2>
+      </h1>
       <p className={styles.heroDescription}>
         Thế giới Tarot là một hệ thống huyền bí đầy sức mạnh, giúp bạn hiểu rõ hơn về quá khứ, hiện tại và tương lai. Hãy cùng tôi khám phá ý nghĩa các lá bài, các dạng trải bài và cách giải đoán để mở khóa những thông điệp sâu sắc.
       </p>
@@ -19,10 +19,10 @@ export default function HeroSection() {
             className={`${styles.card} ${styles.standardCard} ${styles[TAROT_FEATURES[0].cardClass]}`}
           >
             <div className={styles.cardContent}>
-              <h3 className={styles.cardTitle}>
+              <h2 className={styles.cardTitle}>
                 <span className={styles.cardIcon}>{TAROT_FEATURES[0].icon}</span>
                 {TAROT_FEATURES[0].title}
-              </h3>
+              </h2>
               <p className={styles.cardDescription}>{TAROT_FEATURES[0].text}</p>
             </div>
           </Link>
@@ -32,10 +32,10 @@ export default function HeroSection() {
             className={`${styles.card} ${styles.standardCard} ${styles[TAROT_FEATURES[1].cardClass]}`}
           >
             <div className={styles.cardContent}>
-              <h3 className={styles.cardTitle}>
+              <h2 className={styles.cardTitle}>
                 <span className={styles.cardIcon}>{TAROT_FEATURES[1].icon}</span>
                 {TAROT_FEATURES[1].title}
-              </h3>
+              </h2>
               <p className={styles.cardDescription}>{TAROT_FEATURES[1].text}</p>
             </div>
           </Link>
@@ -48,10 +48,10 @@ export default function HeroSection() {
             className={`${styles.card} ${styles.wideCard} ${styles[TAROT_FEATURES[2].cardClass]}`}
           >
             <div className={styles.cardContent}>
-              <h3 className={styles.cardTitle}>
+              <h2 className={styles.cardTitle}>
                 <span className={styles.cardIcon}>{TAROT_FEATURES[2].icon}</span>
                 {TAROT_FEATURES[2].title}
-              </h3>
+              </h2>
               <p className={styles.cardDescription}>{TAROT_FEATURES[2].text}</p>
             </div>
           </Link>

@@ -1,10 +1,15 @@
 ---
 sidebar_position: 11
-title: "Page of Pentacles"
+title: "Ý Nghĩa Lá Bài Page of Pentacles"
+sidebar_label: "Page of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Page of Pentacles: Biểu tượng của học tập, cơ hội mới, tiềm năng vật chất và sự khởi đầu trong lĩnh vực tài chính hoặc giáo dục."
 keywords: 
   - Page of Pentacles
   - Tiểu Đồng Xu
+image: "/img/deck/p11.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot Page of Pentacles (Tiểu Đồng Tiền): Sự Khởi Đầu, Cơ Hội và Tiềm Năng

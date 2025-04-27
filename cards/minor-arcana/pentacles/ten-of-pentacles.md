@@ -1,10 +1,15 @@
 ---
 sidebar_position: 10
-title: "Ten of Pentacles"
+title: "Ý Nghĩa Lá Bài 10 of Pentacles"
+sidebar_label: "10 of Pentacles"
 description: "Khám phá ý nghĩa lá bài Tarot Ten of Pentacles: Biểu tượng của sự thịnh vượng gia đình, di sản lâu dài, an ninh tài chính và thành công vật chất bền vững."
 keywords: 
   - Ten of Pentacles
   - Mười Xu
+image: "/img/deck/p10.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 10 of Pentacles (10 Xu): Thành Công, Gia Đình và Di Sản

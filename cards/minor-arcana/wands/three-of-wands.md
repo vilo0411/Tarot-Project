@@ -1,8 +1,13 @@
 ---
 sidebar_position: 3
-title: "Three of Wands"
+title: "Ý Nghĩa Lá Bài 3 of Wands"
+sidebar_label: "3 of Wands"
 keywords: [Three of Wands, 3 Gậy]
 description: "Khám phá ý nghĩa của lá bài Three of Wands (3 Gậy) - sự mở rộng, tầm nhìn xa trông rộng và những cơ hội mới đang đến trong Tarot."
+image: "/img/deck/w03.jpg"
+sitemap:
+  priority: 0.8
+  changefreq: 'daily'
 ---
 
 # Ý Nghĩa Lá Bài Tarot 3 of Wands: Tầm Nhìn, Mở Rộng và Tiến Bộ
