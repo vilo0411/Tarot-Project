@@ -11,7 +11,7 @@ sitemap:
 ---
 
 # Ý Nghĩa Lá Bài Tarot Judgement (Phán Xét): Thức Tỉnh, Đánh Giá và Tái Sinh
-![Judgement](/img/deck/m21.jpg)
+![Judgement](/img/deck/m20.jpg)
 
 Judgement (Phán Xét), lá bài số 20 trong bộ Ẩn Chính (Major Arcana), là một lá bài mạnh mẽ về sự thức tỉnh, đánh giá lại bản thân và tái sinh. Nó đại diện cho thời điểm chúng ta được kêu gọi để xem xét lại cuộc đời mình, đưa ra những quyết định quan trọng và bước sang một giai đoạn mới với sự hiểu biết sâu sắc hơn. Bài viết này sẽ khám phá ý nghĩa, biểu tượng, cách diễn giải khi lá bài xuôi và ngược, các kết hợp quan trọng, và những lời khuyên hữu ích khi Judgement xuất hiện trong trải bài của bạn.
 

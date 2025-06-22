@@ -67,25 +67,25 @@ Trải bài Tarot là con đường kết nối sâu sắc giữa trực giác, 
     {
       title: 'Tình Yêu',
       description: 'Insights sâu sắc về mối quan hệ',
-      link: 'spreads/theme/love',
+      link: '/spreads/theme/love',
       icon: '❤️',
     },
     {
       title: 'Sự Nghiệp',
       description: 'Khám phá hướng đi và cơ hội nghề nghiệp',
-      link: 'spreads/theme/career',
+      link: '/spreads/theme/career',
       icon: '💼',
     },
     {
       title: 'Tài Chính',
       description: 'Đánh giá và định hướng tài chính',
-      link: 'spreads/theme/finance',
+      link: '/spreads/theme/finance',
       icon: '💰',
     },
         {
       title: 'Sức khỏe',
       description: 'Khám phá tính trạng sức khỏe',
-      link: 'spreads/theme/heath',
+      link: '/spreads/theme/heath',
       icon: '💪',
     }
   ]}

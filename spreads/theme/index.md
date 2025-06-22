@@ -13,13 +13,13 @@ Mỗi chủ đề câu hỏi yêu cầu một cách tiếp cận và diễn gi�
     {
       title: 'Tình Yêu',
       description: 'Trải bài chuyên sâu về mối quan hệ, tình cảm và tình yêu',
-      link: '/spreads/theme/love',
+      link: '/spreads/theme/love/',
       icon: '❤️',
     },
     {
       title: 'Sự Nghiệp',
       description: 'Khám phá hướng đi và cơ hội trong công việc',
-      link: '/spreads/theme/career',
+      link: '/spreads/theme/career/',
       icon: '💼',
     },
     {
@@ -37,25 +37,25 @@ Mỗi chủ đề câu hỏi yêu cầu một cách tiếp cận và diễn gi�
     {
       title: 'Trăng Tròn',
       description: 'Trải bài theo chu kỳ Trăng Tròn - thời điểm thu hoạch và phản chiếu',
-      link: '/spreads/theme/full-moon',
+      link: '/spreads/theme/full-moon/',
       icon: '🌕',
     },
     {
       title: 'Trăng Mới',
       description: 'Trải bài theo chu kỳ Trăng Mới - khởi đầu và đặt ý nguyện',
-      link: '/spreads/theme/new-moon',
+      link: '/spreads/theme/new-moon/',
       icon: '🌑',
     },
     {
       title: 'Tài Chính',
       description: 'Insights về tình hình tài chính và các quyết định đầu tư',
-      link: '/spreads/theme/finance',
+      link: '/spreads/theme/finance/',
       icon: '💰',
     },
     {
       title: 'Sức Khỏe',
       description: 'Đánh giá và hướng dẫn về sức khỏe thể chất và tinh thần',
-      link: '/spreads/theme/health',
+      link: '/spreads/theme/heath/',
       icon: '🍎',
     }
   ]}

@@ -195,7 +195,7 @@ export default function Feedback() {
             <p>
               Nếu bạn muốn, bạn cũng có thể gửi phản hồi trực tiếp cho chúng tôi tại{' '}
               <a href="mailto:admin@tarotguideonline.com">feedback@tarotguideonline.com</a> hoặc
-              truy cập trang <a href="/contact-us">Liên Hệ</a> của chúng tôi.
+              truy cập trang <a href="/contact-us/">Liên Hệ</a> của chúng tôi.
             </p>
           </div>
         </div>
