@@ -19,12 +19,7 @@ sitemap:
 
 *The Sun  lá bài mang hình ảnh Mặt Trời rực rỡ, luôn xuất hiện như lời khẳng định về sự lạc quan và ánh sáng xua tan bóng tối. Mỗi chi tiết trên lá bài đều khơi dậy niềm tin vào thành công, sự minh bạch và nguồn năng lượng tích cực tràn đầy, soi đường cho ta tìm thấy niềm vui thuần khiết nhất trong cuộc sống. Trong bài viết này, hãy cùng Tarotguideonline khám phá ý nghĩa lá The Sun để giúp bạn hiểu biết hơn về những bí ẩn của lá bài này.*
 
-
-
-
-
-![alt_text](images/image1.jpg "image_tooltip")
-
+![Ý nghĩa lá The Sun](/img/content/y-nghia-la-The-Sun-1.jpg)
 | **Ý nghĩa tổng quát** | **Ý nghĩa lá bài xuôi** | **Ý nghĩa lá bài ngược** |
 | --- | --- | --- |
 | Ánh sáng, thành công, và sự tích cực | Một giai đoạn tươi sáng, nơi mọi điều diễn ra suôn sẻ, | Phản ánh sự buồn bã, thất vọng và thiếu lạc quan |
@@ -43,8 +38,7 @@ Hành tinh đại diện cho lá bài The Sun chính là Mặt Trời, biểu tr
 
 
 
-![alt_text](images/image2.jpg "image_tooltip")
-
+![Lá The Sun Tarot là gì](/img/content/y-nghia-la-The-Sun-2.jpg)
 
 *Là bài The Sun nằm ở vị trí số 19 trong bộ Major Arcana*
 
@@ -89,8 +83,7 @@ Về mặt biểu tượng, số 19 của The Sun giảm xuống thành 1 (1 + 9
 
 
 
-![alt_text](images/image3.jpg "image_tooltip")
-
+![Ý nghĩa lá The Sun xuôi](/img/content/y-nghia-la-The-Sun-3.jpg)
 
 *The Sun xuôi như ánh sáng rực rỡ chiếu sáng mọi khía cạnh trong cuộc sống*
 
@@ -130,8 +123,7 @@ The Sun ngược chuyển đổi ý nghĩa tích cực của nó, nhấn mạnh 
 
 
 
-![alt_text](images/image4.jpg "image_tooltip")
-
+![Ý nghĩa lá The Sun ngược](/img/content/y-nghia-la-The-Sun-4.jpg)
 
 *The Sun ngược phản ánh những cảm xúc tiêu cực như buồn bã, thất vọng *
 
@@ -176,8 +168,7 @@ Trong Tarot, The Sun luôn mang theo luồng sáng tích cực để sưởi ấ
 
 
 
-![alt_text](images/image5.jpg "image_tooltip")
-
+![Ý nghĩa lá bài The Sun khi phối hợp với các lá khác](/img/content/y-nghia-la-The-Sun-5.jpg)
 
 *Khi xuất hiện cùng những lá bài quan trọng khác, The Sun mang lại ý nghĩa khác nhau*
 
@@ -217,8 +208,7 @@ Khi bạn cảm thấy mọi thứ trở nên u ám, The Sun nhắc bạn hãy q
 
 
 
-![alt_text](images/image6.jpg "image_tooltip")
-
+![Ý nghĩa lá bài The Sun khi phối hợp với các lá khác](/img/content/y-nghia-la-The-Sun-6.jpg)
 
 *The Sun nhắc bạn hãy quay trở lại với niềm tin và sự hồn nhiên ban đầu*
 
