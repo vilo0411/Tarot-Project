@@ -170,7 +170,7 @@ Khi **The Moon** xuất hiện cùng những lá bài khác, nó không chỉ ma
 *Khi The Moon xuất hiện cùng những lá bài khác mở ra nhiều ý nghĩa mới*
 
 
-## **5. Ý nghĩa lá The Moon trong quá khứ, hiện tại và tương lai **
+## **5. Ý nghĩa lá The Moon trong quá khứ, hiện tại và tương lai**
 
 
 

@@ -38,8 +38,7 @@ Hành tinh đại diện cho lá bài The Sun chính là Mặt Trời, biểu tr
 
 
 ![Lá The Sun Tarot là gì](/img/content/y-nghia-la-The-Sun-2.jpg)
-
-*Là bài The Sun nằm ở vị trí số 19 trong bộ Major Arcana*
+<p align="center">*Là bài The Sun nằm ở vị trí số 19 trong bộ Major Arcana*</p>
 
 
 ## **2. Giải thích các biểu tượng trên lá bài The Sun**
@@ -83,8 +82,7 @@ Về mặt biểu tượng, số 19 của The Sun giảm xuống thành 1 (1 + 9
 
 
 ![Ý nghĩa lá The Sun xuôi](/img/content/y-nghia-la-The-Sun-3.jpg)
-
-*The Sun xuôi như ánh sáng rực rỡ chiếu sáng mọi khía cạnh trong cuộc sống*
+<p align="center">*The Sun xuôi như ánh sáng rực rỡ chiếu sáng mọi khía cạnh trong cuộc sống*</p>
 
 
 #### **3.2.1 Tình yêu**
@@ -123,8 +121,7 @@ The Sun ngược chuyển đổi ý nghĩa tích cực của nó, nhấn mạnh 
 
 
 ![Ý nghĩa lá The Sun ngược](/img/content/y-nghia-la-The-Sun-4.jpg)
-
-*The Sun ngược phản ánh những cảm xúc tiêu cực như buồn bã, thất vọng *
+<p align="center">*The Sun ngược phản ánh những cảm xúc tiêu cực như buồn bã, thất vọng*</p>
 
 
 #### **3.3.1 Tình Yêu**
@@ -168,11 +165,10 @@ Trong Tarot, The Sun luôn mang theo luồng sáng tích cực để sưởi ấ
 
 
 ![Ý nghĩa lá bài The Sun khi phối hợp với các lá khác](/img/content/y-nghia-la-The-Sun-5.jpg)
+<p align="center">*Khi xuất hiện cùng những lá bài quan trọng khác, The Sun mang lại ý nghĩa khác nhau*</p>
 
-*Khi xuất hiện cùng những lá bài quan trọng khác, The Sun mang lại ý nghĩa khác nhau*
 
-
-## **5. Ý nghĩa lá The Sun trong quá khứ, hiện tại và tương lai **
+## **5. Ý nghĩa lá The Sun trong quá khứ, hiện tại và tương lai**
 
 
 
@@ -208,8 +204,7 @@ Khi bạn cảm thấy mọi thứ trở nên u ám, The Sun nhắc bạn hãy q
 
 
 ![Ý nghĩa lá bài The Sun khi phối hợp với các lá khác](/img/content/y-nghia-la-The-Sun-6.jpg)
-
-*The Sun nhắc bạn hãy quay trở lại với niềm tin và sự hồn nhiên ban đầu*
+<p align="center">*The Sun nhắc bạn hãy quay trở lại với niềm tin và sự hồn nhiên ban đầu*</p>
 
 
 ## **7. Kết luận**
